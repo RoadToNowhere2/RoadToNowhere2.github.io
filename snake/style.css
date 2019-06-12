@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 50px;
+}
+
+.field {
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #072D4E;
+}
+
+.excel {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #072D4E;
+}
+
+.snake {
+	background-color: #00CA03;
+}
+
+.apple {
+	background-color: red;
+	border-radius: 50%;
+}

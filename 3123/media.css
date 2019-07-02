@@ -1,0 +1,74 @@
+@media (max-width: 991px ) {
+	header .menu .menu-nav {
+		transform: scale(0);
+		visibility: hidden;
+		opacity: 0
+	}
+	header .menu .btn-top-menu {
+		display: block;
+		top: -60px;
+		position: absolute;
+	}
+	header .menu .menu-nav_active {
+		transform: scaleX(1) translateX(0%);
+		opacity: 1;
+		visibility: visible;
+	}
+	header .menu .menu-nav_active a {
+		margin-right: 0;
+		margin-right: 10px;
+	}
+	header .logo .logo-img {
+		margin-right: 20px;
+	}
+	header .captions h1 {
+		line-height: 60px;
+	}
+	.we_do {
+		background-position: 25% 25%;
+	}
+	.testimonials .slider {
+		min-height: 500px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.testimonials .slider-item p {
+		position: static;
+		transform: translateY(0);
+		text-align: center;
+	}
+	.testimonials .slider-item .h {
+		position: static;
+		transform: translateY(0);
+		text-align: center;
+	}
+}
+
+@media (max-width: 1200px) {
+	header .captions h1::before,
+	header .captions h1::after {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.advertising .macBook {
+		display: none;
+
+	}
+	.we_do {
+		background-image: none;
+		background-color: #f2f2f2;
+	}
+}
+
+@media (max-width: 580px) {
+	.portfolio .portfolio_menu {
+		display: none;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'BikhamCyrScript';
+    src: url('../fonts/BikhamCyrScript.ttf');
+}
+
+@font-face {
+    font-family: 'Myriad-Pro';
+    src: url('../fonts/Myriad-Pro.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url('../fonts/Lato/Lato-Thin');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato/Lato-Regular');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular');
+}

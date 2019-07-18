@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,900|Roboto:100,300,400,500,700&display=swap&subset=cyrillic');
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: sans-serif
+header
+    .shadow-container
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15)
+        padding: 15px 0
+        margin-bottom: 20px
+    ul
+        display: flex
+        justify-content: space-around
+        li
+            list-style-type: none
+            a
+                text-decoration: none
+                color: #3c3b3b
+                font-family: 'Lato', sans-serif
+                font-size: 24px
+                font-weight: 400
+                line-height: 60px
+                &:hover
+                    color: lighten(#3c3b3b, 30%)
+    .menu-btn
+        display: none
+        width: 60px
+        height: 50px
+        position: relative
+        right: 0
+        span
+            display: block
+            width: 30px
+            height: 6px
+            border-radius: 6px
+            background-color: #f25a69
+            position: absolute
+            left: 0
+            top: 50%
+            margin-top: -2px
+            &::after
+                content: ''
+                display: block
+                width: 60px
+                height: 6px
+                border-radius: 6px
+                background-color: #f25a69
+                position: absolute
+                left: 0
+                top: -15px
+            &::before
+                content: ''
+                display: block
+                width: 60px
+                height: 6px
+                border-radius: 6px
+                background-color: #f25a69
+                position: absolute
+                left: 0
+                top: 15px
+
+    .search
+        position: relative
+        margin-top: 10px
+        input
+            width: 100%
+            padding: 10px 20px
+            color: #b4b3b3
+            font-family: 'Lato', sans-serif
+            font-size: 16px
+            font-weight: 400
+            border-radius: 24px
+            border: 1px solid #3c3b3b
+            outline: none
+        img
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 15px
+            width: 29px
+            height: 29px
+.header
+    background-image: url('../img/header_bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 120px 0 240px 0
+    text-align: center
+    h1
+        text-shadow: 0 3px 16px rgba(0, 0, 0, 0.15)
+        color: #fefefe
+        font-family: 'Lato', sans-serif
+        font-size: 60px
+        font-weight: 700
+        line-height: 79.3px
+    h3
+        color: #ffffff
+        font-family: 'Lato', sans-serif
+        font-size: 30px
+        font-weight: 400
+        margin-top: 30px
+        margin-bottom: 50px
+    a
+        text-decoration: none
+        color: #3c3b3b
+        font-family: 'Lato', sans-serif
+        font-size: 24px
+        font-weight: 400
+        background-color: #fff
+        padding: 15px 90px
+        border-radius: 30px
+        transition: 0.2s ease
+        &:hover
+            background-color: darken(#ffffff, 10%)
+.turs
+    margin-bottom: 120px
+    .btn
+        display: inline-block
+        margin: 0 auto
+        padding: 0 50px
+        min-height: 0
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15)
+        border-radius: 30px
+        border: 2px solid #f68058
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 24px
+        font-weight: 400
+        line-height: 60px
+        background-color: #fafafa
+        text-decoration: none
+        margin-top: 40px
+    .price
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15)
+        border-radius: 0 0 20px 20px
+        &-inner
+            display: flex
+            justify-content: space-between
+            a
+                text-decoration: none
+                color: #000000
+                font-family: 'Roboto', sans-serif
+                font-size: 20px
+                font-weight: 400
+                flex-basis: 60%
+                margin-top: 15px
+                margin-left: 20px
+                margin-bottom: 20px
+            p
+                color: #000000
+                font-family: 'Roboto', sans-serif
+                font-size: 16px
+                font-weight: 500
+                line-height: 70px
+                margin-bottom: 0
+                margin-right: 10px
+    h3
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 30px
+        font-weight: 400
+        margin-bottom: 15px
+        text-align: center
+    p
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 20px
+        font-weight: 400
+        text-align: center
+        margin-bottom: 30px
+    img
+        width: 100%
+.about
+    padding-bottom: 50px
+    h2
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 30px
+        font-weight: 500
+        text-align: center
+        margin-bottom: 25px
+    h4
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 20px
+        font-weight: 300
+        text-align: center
+        margin-bottom: 30px
+    &-inner
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15)
+        text-align: center
+        padding: 30px
+        min-height: 350px
+        margin-top: 20px
+        h3
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
+            color: #000000
+            font-family: 'Roboto', sans-serif
+            font-size: 24px
+            font-weight: 400
+            margin-bottom: 50px
+        .fix
+            margin-bottom: 25px
+        p
+            color: #000000
+            font-family: 'Roboto', sans-serif
+            font-size: 18px
+            font-weight: 100
+        .img-container
+            margin: 0 auto
+            width: 160px
+            height: 100px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                display: block
+                margin-bottom: 20px
+
+.directions
+    padding-top: 30px
+    padding-bottom: 40px
+    background-color: #fafafa
+    .btn
+        display: inline-block
+        margin: 0 auto
+        padding: 0 50px
+        min-height: 0
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15)
+        border-radius: 30px
+        border: 2px solid #f68058
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 24px
+        font-weight: 400
+        line-height: 60px
+        background-color: #fafafa
+         
+    h2
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 30px
+        font-weight: 500
+        text-align: center
+        margin-bottom: 20px
+    h4
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 20px
+        font-weight: 300
+        margin-bottom: 70px
+        text-align: center
+    a
+        text-decoration: none
+        color: #000000
+        display: block
+        text-align: center
+        background-color: #fff
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15)
+        margin-bottom: 60px
+        padding: 50px 60px 30px 60px
+        min-height: 520px
+        position: relative
+        h3
+            margin-top: 40px
+            margin-bottom: 30px
+            font-family: 'Roboto', sans-serif
+            font-size: 30px
+            font-weight: 400
+        p
+            color: #000000
+            font-family: 'Roboto', sans-serif
+            font-size: 18px
+            font-weight: 100  
+    .second
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: -23px
+            width: 23px
+            height: 350px
+            background-image: linear-gradient(to top, #ed113a 0%, #f68654 100%)
+    .first
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -23px
+            width: 23px
+            height: 350px
+            background-image: linear-gradient(to top, #ed113a 0%, #f68654 100%)
+footer
+    padding-top: 80px
+    h3
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 30px
+        font-weight: 400 
+    p
+        color: #000000
+        font-family: 'Roboto', sans-serif
+        font-size: 18px
+        font-weight: 100
+        line-height: 24px
+        margin-top: 25px
+    .inner-footer
+        background-image: url('../img/footer_bg.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        padding-top: 150px
+        padding-bottom: 70px
+        text-align: center
+        margin-top: 90px
+            
+        h4
+            text-align: left
+            text-transform: uppercase
+            color: #ffffff
+            font-family: 'Roboto', sans-serif
+            font-size: 20px
+            font-weight: 400
+            line-height: 40px 
+            margin-top: 30px
+        ul
+            text-align: left
+            li
+                list-style-type: none
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    font-family: 'Roboto', sans-serif
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 40px       
+
+
+
+
+
+
+
+
+
+

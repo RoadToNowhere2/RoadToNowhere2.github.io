@@ -1,0 +1,109 @@
+@media (max-width:991px) {
+    header ul {
+        transform: scale(0);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s
+    }
+
+    header .menu-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    header .menu-nav_active {
+        display: block;
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header {
+        padding: 10px 0 70px 0;
+        background-image: url('../img/media_header_bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .header h1 {
+        text-shadow: 0 3px 16px rgba(0, 0, 0, 0.15);
+        color: #fefefe;
+        font-family: 'Lato', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 45.15px;
+    }
+
+    .header h3 {
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 5px 0 30px 0;
+    }
+
+    .turs {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    .turs .price {
+        margin-bottom: 30px;
+    }
+
+    .directions h2 {
+        font-size: 22px;
+    }
+
+    footer .inner-footer {
+        background-image: url("../img/footer_bg_media.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 90px;
+        padding-bottom: 70px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    footer .inner-footer h4 {
+        text-align: center;
+    }
+
+    footer .inner-footer ul {
+        margin-left: 30px;
+    }
+    .directions a  {
+        padding: 50px 10px 30px 10px;
+    }
+    .directions h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:500px) {
+    .directions {
+        padding-top: 15px;
+    }
+    .directions .mobile {
+        background-image: url(../img/mobile_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 15px;
+    }
+    .header a {
+        font-size: 20px;
+        padding: 15px 70px;
+    }
+    .directions h4 {
+        font-size: 18px;
+        color: #ffffff
+    }
+    .directions h2 {
+        font-size: 22px;
+        color: #ffffff
+    }
+}
+

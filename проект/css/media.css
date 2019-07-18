@@ -1,9 +1,8 @@
 @media (max-width:991px) {
     header ul {
-        transform: scale(0);
         opacity: 0;
         visibility: hidden;
-        transition: 0.3s
+        transition: 0.3s opacity
     }
 
     header .menu-btn {
@@ -15,7 +14,6 @@
 
     header .menu-nav_active {
         display: block;
-        transform: scale(1);
         opacity: 1;
         visibility: visible;
     }
@@ -104,6 +102,14 @@
     .directions h2 {
         font-size: 22px;
         color: #ffffff
+    }
+    .turs .price-inner p {
+        line-height: 20px;
+        margin-top: 30px;
+    }
+    .turs_katalog .price-inner p {
+        line-height: 20px;
+        margin-top: 30px;
     }
 }
 

@@ -179,7 +179,7 @@ header .search img {
 .turs .price {
   -webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15);
           box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 0 0 20px 20px;
+  border-radius: 45px 45px 20px 20px;
 }
 
 .turs .price-inner {
@@ -460,5 +460,128 @@ footer .inner-footer ul li a {
   font-size: 20px;
   font-weight: 400;
   line-height: 40px;
+}
+
+.mega-search {
+  padding: 20px 0 40px 0;
+  background-color: #fafafa;
+}
+
+.mega-search .dropdawn::after {
+  content: '>';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(40, 40, 40, 0.1);
+  width: 35px;
+  height: 35px;
+  color: #f7755f;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  right: -5px;
+  background-color: #ffffff;
+}
+
+.mega-search input {
+  width: 100%;
+  padding: 8px 15px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid rgba(40, 40, 40, 0.1);
+  background-color: #ffffff;
+  outline: none;
+}
+
+.mega-search .search {
+  display: inline-block;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0 60px;
+  -webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  border: 2px solid #f68058;
+  text-decoration: none;
+}
+
+.turs_katalog {
+  margin-bottom: 120px;
+}
+
+.turs_katalog .price {
+  margin-top: 60px;
+  -webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 45px 45px 20px 20px;
+}
+
+.turs_katalog .price-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.turs_katalog .price-inner a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.turs_katalog .price-inner p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.turs_katalog h3 {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.turs_katalog p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.turs_katalog img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

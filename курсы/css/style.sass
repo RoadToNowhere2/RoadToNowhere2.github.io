@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: sans-serif
+body, html
+    overflow-x: hidden
+header
+    padding: 35px 0
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.17)
+    .menu
+        .menu_btn
+            display: none
+            width: 40px
+            height: 40px
+            position: absolute
+            right: 10px
+            top: 50%
+            transform: translateY(-50%)
+            span
+                display: block
+                width: 40px
+                height: 4px
+                background-color: #000000
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                &:after
+                    content: ''
+                    display: block
+                    width: 40px
+                    height: 4px
+                    background-color: #000000
+                    position: absolute
+                    margin-top: 10px
+                    transition: 0.3s
+                &:before
+                    content: ''
+                    display: block
+                    width: 40px
+                    height: 4px
+                    background-color: #000000
+                    position: absolute
+                    margin-top: -10px
+                    transition: 0.3s
+        ul
+            list-style: none
+            display: flex
+            align-items: center
+            justify-content: space-around
+            li
+                a
+                    text-decoration: none
+                    color: #7e243e
+                    font-family: 'Roboto', sans-serif
+                    font-size: 22px
+                    font-weight: 500
+                    text-transform: uppercase
+                    line-height: 2.3
+                .active
+                    color: #fbb40c
+    .tel
+        a
+            color: #1e3074
+            text-decoration: none
+            font-family: 'Roboto', sans-serif
+            font-size: 20px
+            font-weight: 400
+            line-height: 2.3
+            text-transform: uppercase
+.header
+    background-image: url('../img/header_bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 30px
+    img
+        position: absolute
+        bottom: 0
+        right: 0
+    h1
+        color: #ffffff
+        font-family: 'Roboto', sans-serif
+        font-size: 50px
+        font-weight: 500
+        margin-top: 150px
+        margin-left: 40px
+    h2
+        color: #ffffff
+        font-family: 'Roboto', sans-serif
+        font-size: 30px
+        font-weight: 400
+        margin-top: 30px
+        margin-left: 70px
+    .btn
+        border-radius: 25px
+        padding: 13px 35px
+        background-color: #fbb40c
+        display: inline-block    
+        text-decoration: none
+        margin-left: 70px
+        margin-top: 40px
+        color: #1d2f72
+        font-family: 'Roboto', sans-serif
+        font-size: 24px
+        font-weight: 500
+        text-transform: uppercase
+        margin-bottom: 50px
+.cards
+    padding: 100px 0 50px 0
+    .first_card
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.24)
+        border-radius: 20px
+        border-top: 20px solid #81233e
+        margin-top: 30px
+        text-align: center
+        min-height: 595px
+        display: flex
+        align-items: flex-end
+        padding-bottom: 50px
+        background-image: url('../img/card_bg.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        h2
+            color: #3b2f7f
+            font-family: 'Roboto', sans-serif
+            font-size: 36px
+            font-weight: 500
+            line-height: 48px
+            text-transform: uppercase
+    .card
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.24)
+        border-radius: 20px
+        border-top: 20px solid #81233e
+        margin-top: 30px
+        padding: 100px 20px 170px 20px
+        text-align: center
+        img
+            width: 100%
+            margin-top: 50px
+        .title_container
+            min-height: 60px
+            h3
+                color: #3b2f7f
+                font-family: 'Roboto', sans-serif
+                font-size: 24px
+                font-weight: 400
+                line-height: 30px
+.about_main
+    h2
+        text-transform: uppercase
+        color: #04275a
+        font-family: 'Roboto', sans-serif
+        font-size: 36px
+        font-weight: 500
+        line-height: 30px
+        text-align: center
+    p
+        color: #253676
+        font-family: 'Roboto', sans-serif
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+        text-align: center
+        margin-bottom: 30px
+.about_main_inner
+    background-image: url('../img/header_bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 90px
+    img
+        position: absolute
+        bottom: 0
+        left: -20px
+    ul
+        padding-left: 100px
+        li
+            list-style-type: none
+            color: #ffffff
+            font-family: 'Roboto', sans-serif
+            font-size: 30px
+            font-weight: 400
+            line-height: 30px
+            margin-bottom: 85px
+            position: relative
+            &:nth-child(1):before
+                content: '1'
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 78px
+                height: 78px
+                background-color: #fbb40c
+                border-radius: 50%
+                color: #1d2f72
+                font-family: 'Roboto', sans-serif
+                font-size: 36px
+                font-weight: 700
+                text-transform: uppercase
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -108px
+            &:nth-child(2):before
+                content: '2'
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 78px
+                height: 78px
+                background-color: #fbb40c
+                border-radius: 50%
+                color: #1d2f72
+                font-family: 'Roboto', sans-serif
+                font-size: 36px
+                font-weight: 700
+                text-transform: uppercase
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -108px
+            &:nth-child(3):before
+                content: '3'
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 78px
+                height: 78px
+                background-color: #fbb40c
+                border-radius: 50%
+                color: #1d2f72
+                font-family: 'Roboto', sans-serif
+                font-size: 36px
+                font-weight: 700
+                text-transform: uppercase
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -108px
+            &:nth-child(4):before
+                content: '4'
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 78px
+                height: 78px
+                background-color: #fbb40c
+                border-radius: 50%
+                color: #1d2f72
+                font-family: 'Roboto', sans-serif
+                font-size: 36px
+                font-weight: 700
+                text-transform: uppercase
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -108px
+
+                
+    a
+        display: inline-block
+        margin-bottom: 40px
+        border-radius: 25px
+        padding: 13px 35px
+        background-color: #fbb40c   
+        text-decoration: none
+        color: #1d2f72
+        font-family: 'Roboto', sans-serif
+        font-size: 24px
+        font-weight: 500
+        text-transform: uppercase
+.programs
+    text-align: center
+    margin-top: 100px
+    margin-bottom: 70px
+    h2
+        color: #1d2f72
+        font-family: 'Roboto', sans-serif
+        font-size: 36px
+        font-weight: 500
+        line-height: 30px
+        text-transform: uppercase
+        margin-bottom: 20px
+    p
+        color: #253676
+        font-family: 'Roboto', sans-serif
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+    .card
+        margin-top: 40px
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.24)
+        border-radius: 20px
+        background-color: #81233e
+        padding: 20px
+        min-height: 640px
+        img
+            margin-bottom: 15px
+        .title_container
+            min-height: 60px
+            h3
+                color: #f9fafd
+                font-family: 'Roboto', sans-serif
+                font-size: 30px
+                font-weight: 700
+                line-height: 30px
+        h4
+            margin-top: 20px
+            margin-bottom: 20px
+            color: #f9fafd
+            font-family: 'Roboto', sans-serif
+            font-size: 24px
+            font-weight: 700
+            line-height: 30px
+        p
+            color: #f9fafd
+            font-family: 'Roboto', sans-serif
+            font-size: 24px
+            font-weight: 400
+            line-height: 30px
+        .btn
+            border-radius: 25px
+            width: 100%
+            padding-top: 10px
+            padding-bottom: 10px
+            background-color: #ffffff
+            display: inline-block    
+            text-decoration: none
+            margin-top: 30px
+            color: #81233e
+            font-family: 'Roboto', sans-serif
+            font-size: 24px
+            font-weight: 500
+            text-transform: uppercase
+.contacts_main
+    padding-top: 80px
+    padding-bottom: 60px
+    background-image: url('../img/footer_bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    h2
+        color: #1d2f72
+        font-family: 'Roboto', sans-serif
+        font-size: 36px
+        font-weight: 500
+        line-height: 30px
+        text-transform: uppercase
+        margin-bottom: 50px
+    ul
+        margin-bottom: 30px
+        li
+            list-style-type: none
+            color: #1d2f72
+            font-family: 'Roboto', sans-serif
+            font-size: 30px
+            font-weight: 400
+            span
+                font-weight: 700
+    p
+        font-family: 'Roboto', sans-serif
+        color: #1d2f72
+        font-size: 24px
+        font-weight: 400
+        line-height: 30px
+    .btn
+        border-radius: 25px
+        padding: 10px 50px
+        margin-left: 15px  
+        margin-top: 40px  
+        background-color: #fbb40c
+        display: inline-block    
+        text-decoration: none
+        color: #1d2f72
+        font-family: 'Roboto', sans-serif
+        font-size: 24px
+        font-weight: 500
+        text-transform: uppercase
+footer
+    padding: 35px 0
+    background-image: url('../img/header_bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    img
+        width: 100%
+    .menu
+        ul
+            list-style: none
+            display: flex
+            align-items: center
+            justify-content: space-around
+            li
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    font-family: 'Roboto', sans-serif
+                    font-size: 24px
+                    font-weight: 400
+                    line-height: 70px
+                    text-transform: uppercase
+    .tel
+        a
+            color: #ffffff
+            text-decoration: none
+            font-family: 'Roboto', sans-serif
+            font-size: 20px
+            font-weight: 400
+            line-height: 70px
+            text-transform: uppercase
+
+
+
+
+
+

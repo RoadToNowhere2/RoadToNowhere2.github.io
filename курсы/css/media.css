@@ -1,67 +1,176 @@
-@media (max-width:1199px) {
-    header .tel {
-        display: none;
-    }
+@media (max-width: 1199px) {
+  header .tel {
+    display: none;
+  }
 }
 
-@media (max-width:991px) {
-    header .menu .menu-nav {
-        margin-top: 30px;
-        display: none;
-        flex-wrap: wrap;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.4s ease all
-    }
+@media (max-width: 991px) {
+  header .menu .menu-nav {
+    margin-top: 30px;
+    display: none;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease all;
+  }
 
-    header .menu .menu-nav_active {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    }
+  header .menu .menu-nav_active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
 
-    header .menu .menu_btn {
-        top: -32px;
-        display: block;
-    }
+  header .menu .menu_btn {
+    top: -32px;
+    display: block;
+  }
 
-    header .menu .menu_btn_active span {
-        width: 0;
-    }
+  header .menu .menu_btn_active span {
+    width: 0;
+  }
 
-    header .menu .menu_btn_active span:before {
-        margin-top: 0px;
-        transform: rotate(45deg);
-        transform-origin: center center;
-    }
+  header .menu .menu_btn_active span:before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+    transform-origin: center center;
+  }
 
-    header .menu .menu_btn_active span:after {
-        margin-top: 0px;
-        transform: rotate(-45deg);
-        transform-origin: center center;
-    }
-    .header img {
-        display: none;
-    }
-    .header h1 {
-        margin-top: 30px;
-        margin-left: 0;
-    }
-    .header h2 {
-        margin-left: 0;
-    }
-    .about_main_inner img {
-        display: none;
-    }
-    footer .menu ul {
-        display: block;
-        text-align: center;
-    }
-    footer .tel {
-        text-align: center;
-    }
+  header .menu .menu_btn_active span:after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+    transform-origin: center center;
+  }
+  .header img {
+    display: none;
+  }
+  .header h1 {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .header h2 {
+    margin-left: 0;
+  }
+  .about_main_inner img {
+    display: none;
+  }
+  footer .menu ul {
+    display: block;
+    text-align: center;
+  }
+  footer .tel {
+    text-align: center;
+  }
+  .form_inner {
+    position: static;
+  }
+  .form img {
+    display: none;
+  }
+  .sorevnovaniya img {
+    display: none;
+  }
+  .sorevnovaniya {
+    padding-top: 0;
+  }
+  .sorevnovaniya .text {
+    padding-top: 30px;
+  }
+  .psihology img {
+    display: none;
+  }
+  .otbor .absolute {
+    position: static;
+    padding: 40px;
+  }
+  .otbor .absolute ul {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .otbor .absolute ul li {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .otbor .absolute .btn {
+    padding: 10px 30px;
+  }
+  .otbor {
+    padding-bottom: 100px;
+  }
+  .otbor img {
+    display: none;
+  }
+  .results img {
+    width: 100%;
+  }
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: 575px) {
+  .header {
+    text-align: center;
+  }
+  .header .btn {
+    margin-left: 0;
+  }
+  .about_main_inner ul {
+    padding-left: 60px;
+  }
+  .about_main_inner ul li {
+    font-size: 25px;
+  }
+  .about_main_inner ul li:nth-child(1):before {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    left: -68px;
+  }
+  .about_main_inner ul li:nth-child(2):before {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    left: -68px;
+  }
+  .about_main_inner ul li:nth-child(3):before {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    left: -68px;
+  }
+  .about_main_inner ul li:nth-child(4):before {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    left: -68px;
+  }
+  .form_inner h2 {
+    font-size: 25px;
+  }
+  .form_inner {
+    padding: 30px 10px;
+  }
+  .advantages .card_title {
+    padding: 20px 10px;
+  }
+  .advantages .card_title h2 {
+    font-size: 22px;
+  }
+  .advantages .card_body {
+    padding: 80px 10px 10px 40px;
+  }
+  .advantages .card_body p {
+    font-size: 18px;
+  }
+  .sorevnovaniya .text p {
+    font-size: 18px;
+  }
+  .sorevnovaniya h3 {
+    font-size: 25px;
+  }
+  .psihology ul {
+    padding-left: 60px;
+  }
+  .psihology ul li:before {
+    left: -60px;
+  }
 }

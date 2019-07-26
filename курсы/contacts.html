@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>curs</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-xl-3 col-md-6">
+            <div class="logo">
+              <a href="index.html"><img src="img/top_logo.png" alt=""/></a>
+            </div>
+          </div>
+          <div class="col-lg-9 col-xl-7 col-md-12">
+            <div class="menu">
+              <a href="#" class="menu_btn">
+                <span></span>
+              </a>
+              <ul class="menu-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="programs.html">Программы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-0 col-xl-2">
+            <div class="tel">
+              <a href="tel:+8 (800) 500-64-57" class="tel">8 (800) 500-64-57</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contacts_form">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contacts_form_inner_text">
+              <ul>
+                <li><span>Адрес:</span> Москва,</li>
+                <li><span>Телефон:</span> цифры</li>
+                <li><span>Часы работы:</span> 10:00-20:00</li>
+              </ul>
+              <p>
+                Вы можете задать любой вопрос по телефону. Оставьте заявку и мы
+                перезвоним вам!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form">
+              <h2>Остались вопросы? С радостью ответим!</h2>
+              <form action="">
+                <input type="text" placeholder="Имя" />
+                <input type="text" placeholder="Телефон" />
+                <a href="#" class="btn">
+                  Задать вопрос
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69814c75b7afd1538e21da6ce42ae9ab7a9c6b4f9b699cb10553e19cca000cc7&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="logo">
+              <a href="#"><img src="img/footer_logo.png" alt=""/></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div class="menu">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Программы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <div class="tel">
+              <a href="tel:+8 (800) 500-64-57">8 (800) 500-64-57</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="libs/jquery.min.js"></script>
+    <script>
+      $(".menu_btn").on("click", function(e) {
+        e.preventDefault();
+        $(this).toggleClass("menu_btn_active");
+        $(".menu-nav").toggleClass("menu-nav_active");
+      });
+    </script>
+  </body>
+</html>

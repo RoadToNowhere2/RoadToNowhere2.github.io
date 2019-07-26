@@ -104,6 +104,29 @@
   .results img {
     width: 100%;
   }
+  .contacts_form .form {
+    margin-top: 50px;
+  }
+  .kiber_idea img {
+    display: none;
+  }
+  .flex_container img {
+    margin-top: 30px;
+  }
+  .schedule img {
+    display: none;
+  }
+  .learning .img-container {
+    display: none;
+  }
+  .schedul img {
+    display: none;
+  }
+  .schedul_inner {
+    position: static;
+    transform: translateY(0);
+    padding: 30px 20px;  
+  }
 }
 
 @media (max-width: 575px) {
@@ -172,5 +195,47 @@
   }
   .psihology ul li:before {
     left: -60px;
+  }
+  .opportunities_inner_main h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .program_intro .btn {
+    margin-left: 0;
+  }
+  .opportunities p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .opportunities h4 {
+    padding-left: 15px;
+  }
+  .opportunities img {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .schedule_inner {
+    padding-left: 40px;
+  }
+  .schedule_inner ul li:before {
+    left: -45px;
+  }
+  .schedule img {
+    display: none;
+  }
+  .schedule .btn {
+    margin-left: 0;
+  }
+  .info_cards_kiber .flex_container {
+    padding: 20px 20px;
+  }
+  .info_cards_kiber .flex_container h3 {
+    text-align: center;
+  }
+  .info_cards_kiber {
+    padding-bottom: 0;
+  }
+  .info_cards_innovate .flex_container {
+    padding: 20px 20px;
   }
 }

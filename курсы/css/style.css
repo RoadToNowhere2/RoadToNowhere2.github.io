@@ -992,6 +992,7 @@ footer .tel a {
   font-size: 22px;
   font-weight: 400;
   line-height: 25px;
+  min-height: 100px;
 }
 
 .all_programs .programs_item_card .btn {

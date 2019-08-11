@@ -1,0 +1,170 @@
+@media (max-width:991px) {
+    .numbers .flex_container {
+        flex-wrap: wrap
+    }
+
+    .advantages img {
+        display: none;
+    }
+
+    .tabs .slide_nav {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .tabs .slide_nav a {
+        margin-bottom: 30px;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .owl-carousel.owl-drag .owl-item {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .tabs h5 {
+        position: static;
+        transform: translate(0);
+        line-height: 1;
+    }
+
+    .price .price_nobtn {
+        margin-bottom: 20px;
+    }
+
+    .price .card {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .price {
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
+
+    .info {
+        padding-top: 0;
+    }
+
+    .sertificates img {
+        margin-bottom: 30px;
+    }
+
+    .sertificates {
+        margin-bottom: 0;
+    }
+
+    .avto_cards_inner {
+        position: static;
+    }
+
+    .avto_cards {
+        padding-bottom: 0;
+        margin-bottom: 40px;
+    }
+
+    .avto_cards p {
+        margin-bottom: 30px;
+    }
+
+    .advantages span {
+        display: none;
+    }
+
+    .numbers {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .overlay .popup {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    header form {
+        margin-top: 40px;
+    }
+
+    header nav ul {
+        display: none;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    header nav .menu-nav_active {
+        display: block;
+    }
+
+    .tabs .slide_nav a {
+        flex-basis: 90%;
+    }
+
+    footer nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .numbers .flex_container .flex_container_inner {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .menu-btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #222;
+    }
+
+    .menu-btn span::before,
+    .menu-btn span::after {
+        content: '';
+        display: block;
+        transition: 0.2s;
+    }
+
+    .menu-btn span::before {
+        transform: translateY(-5px);
+    }
+
+    .menu-btn span::after {
+        transform: translateY(5px);
+    }
+
+    .menu-btn_active span:before {
+        transform: rotate(-45deg);
+        transform-origin: center center;
+    }
+
+    .menu-btn_active span {
+        height: 0;
+    }
+
+    .menu-btn_active span:after {
+        transform: rotate(45deg);
+        transform-origin: center center;
+    }
+}

@@ -5,35 +5,69 @@
     font-family: "LATO-REGULAR", sans-serif
 .header
     &-top
-        background-color: #1f1f1f
+        background-color: #fbfbfb
         padding: 15px 0
-        color: #ffffff
+        color: #232121
+        border-bottom: 1px solid rgba(184, 184, 184, 0.29);
         .col-12
             display: flex
             justify-content: space-between
-            align-items: center
         &_contacts
-            width: 80%
-            text-align: right
-            p
-                display: inline-block
-                margin-right: 120px
+            display: flex
+            align-items: center
+            justify-content: space-between
             a
-                color: #ffffff
                 text-decoration: none
-                margin-right: 90px
-                transition: 0.2s
-                &:hover
-                    color: darken(#fff, 10%)
-        &_btn
-            padding: 10px 25px
-            border-radius: 15px
-            background-color: #6ac0f3
-            transition: 0.2s
-            &:hover
-                background-color: darken(#6ac0f3, 10%)
+                color: #232121
+                opacity: 0.72
+                font-size: 18px
+                margin-right: 40px
+            a.social_img_top
+                margin-right: 10px
+                img
+                    width: 32px
+        &_buttons
+            display: flex
+            align-items: center
+            justify-content: space-around
+            .languages_link
+                margin-right: 50px
+                a
+                    text-decoration: none
+                    color: #232121
+                    font-size: 18px
+                    font-weight: 400
+            .btn_modal
+                color: #ffffff
+                font-size: 24px
+                font-weight: 400
+                border-radius: 15px
+                background-color: #6ac0f3
+                padding: 10px 23px
                 cursor: pointer
-                color: darken(#fff, 10%)
+                transition: 0.4s ease all
+                &:hover
+                    background-color: darken(#6ac0f3, 20%)
+    &-top-menu
+        padding: 20px 0
+        background-color: #fbfbfb
+        &_inner
+            display: flex
+            align-items: center
+            a
+                text-decoration: none
+                display: inline-block
+                color: #232121
+                font-size: 18px
+                font-weight: 400
+                margin-right: 40px
+                &:first-child
+                    margin-right: 80px
+        img
+            position: absolute
+            top: 50%
+            right: 30px
+            transform: translateY(-50%)
     &-nav
         padding: 20px 0
         &_inner
@@ -280,6 +314,547 @@ footer
                 font-size: 24px
                 font-weight: 400
                 margin-bottom: 10px
+.curtains
+    .feedback
+        background-color: #f8f6f6
+        .feedback_inner
+            margin-bottom: 60px
+            background-image: url('../img/curtains_feedback.png')
+            padding-top: 160px
+            padding-bottom: 200px
+    .header-main
+        padding: 60px 0 70px 0
+        background-image: url('../img/curtains_calc_bg.png')
+        h1
+            margin-bottom: 20px
+    .calculator_curtains
+        padding-bottom: 30px
+        background-color: #f8f6f6
+        &_inner
+            background-color: #fff
+            padding: 20px 20px 20px 80px
+            border-radius: 15px
+            display: flex
+            justify-content: space-between
+            transform: translateY(-50px)
+            position: relative
+            h2
+                margin: 30px 0
+                color: #18234b
+                font-size: 24px
+                font-weight: 400
+            &_tab_1
+                flex-basis: 70%
+                .tab_1
+                    list-style: none
+                    li
+                        color: #18234b
+                        font-size: 24px
+                        font-weight: 400
+                        padding: 5px
+                        margin-bottom: 40px
+                        position: relative
+                        .checkbox_1
+                            -webkit-appearance: none
+                        .checkbox_1
+                            &:checked  
+                                &+label::before
+                                    background-color: #6ac0f3
+                        label
+                            cursor: pointer        
+                        label::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -20px
+                            width: 20px
+                            height: 20px
+                            border-radius: 50%
+                            border: 1px solid #2d2d2d
+                            background-color: #ffffff
+            .tab_1_next
+                border-radius: 15px
+                background-color: #6ac0f3
+                display: block
+                margin: 0 auto
+                color: #ffffff
+                font-size: 24px
+                font-weight: 400
+                max-width: 250px
+                text-align: center
+                padding: 10px
+                cursor: pointer
+                transition: 0.4s ease all
+                &:hover
+                    background-color: darken(#6ac0f3, 20%)
+            &_tab_2
+                flex-basis: 70%
+                display: none
+                .tab_2_1
+                    list-style: none
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    text-align: center
+                    li
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        position: relative
+                        flex-basis: 30%
+                        label
+                            cursor: pointer
+                            display: block
+                            padding: 10px 
+                            border: 2px solid #fff
+                            border-radius: 15px
+                        .checkbox_2
+                            -webkit-appearance: none
+                        .checkbox_2
+                            &:checked  
+                                &+label
+                                    border: 2px solid #6ac0f3
+                .tab_2_2
+                    list-style: none
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    li
+                        flex-basis: 30%
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        margin-bottom: 40px
+                        position: relative
+                        .checkbox_2
+                            -webkit-appearance: none
+                        .checkbox_2
+                            &:checked  
+                                &+label::before
+                                    background-color: #6ac0f3
+                        label
+                            cursor: pointer        
+                        label::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -20px
+                            width: 20px
+                            height: 20px
+                            border-radius: 50%
+                            border: 1px solid #2d2d2d
+                            background-color: #ffffff
+                .tab_2_3
+                    list-style: none
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-around
+                    li
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        margin-bottom: 40px
+                        position: relative
+                        .checkbox_2
+                            -webkit-appearance: none
+                        .checkbox_2
+                            &:checked  
+                                &+label::before
+                                    background-color: #6ac0f3
+                        label
+                            cursor: pointer        
+                        label::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -20px
+                            width: 20px
+                            height: 20px
+                            border-radius: 50%
+                            border: 1px solid #2d2d2d
+                            background-color: #ffffff
+            .tab_2_next
+                border-radius: 15px
+                background-color: #6ac0f3
+                display: block
+                margin: 0 auto
+                color: #ffffff
+                font-size: 24px
+                font-weight: 400
+                max-width: 250px
+                text-align: center
+                padding: 10px
+                cursor: pointer
+                transition: 0.4s ease all
+                &:hover
+                    background-color: darken(#6ac0f3, 20%)
+            &_tab_2_1
+                flex-basis: 70%
+                display: none   
+                .tab_2_1_1
+                    list-style: none
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    text-align: center
+                    li
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        position: relative
+                        flex-basis: 30%
+                        label
+                            cursor: pointer
+                            display: block
+                            padding: 10px 
+                            border: 2px solid #fff
+                            border-radius: 15px
+                        .checkbox_2_1
+                            -webkit-appearance: none
+                        .checkbox_2_1
+                            &:checked  
+                                &+label
+                                    border: 2px solid #6ac0f3
+            .tab_2_1_next
+                border-radius: 15px
+                background-color: #6ac0f3
+                display: block
+                margin: 0 auto
+                color: #ffffff
+                font-size: 24px
+                font-weight: 400
+                max-width: 250px
+                text-align: center
+                padding: 10px
+                cursor: pointer
+                transition: 0.4s ease all
+                &:hover
+                    background-color: darken(#6ac0f3, 20%)
+            &_tab_2_2
+                flex-basis: 70%
+                display: none   
+                .tab_2_1_2
+                    list-style: none
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    text-align: center
+                    li
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        position: relative
+                        flex-basis: 30%
+                        label
+                            cursor: pointer
+                            display: block
+                            padding: 10px 
+                            border: 2px solid #fff
+                            border-radius: 15px
+                        .checkbox_2_2
+                            -webkit-appearance: none
+                        .checkbox_2_2
+                            &:checked  
+                                &+label
+                                    border: 2px solid #6ac0f3
+            .tab_2_2_next
+                border-radius: 15px
+                background-color: #6ac0f3
+                display: block
+                margin: 30px auto
+                color: #ffffff
+                font-size: 24px
+                font-weight: 400
+                max-width: 250px
+                text-align: center
+                padding: 10px
+                cursor: pointer
+                transition: 0.4s ease all
+                &:hover
+                    background-color: darken(#6ac0f3, 20%)
+            &_tab_2_3
+                flex-basis: 70%
+                display: none   
+                .tab_2_1_3
+                    list-style: none
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    text-align: center
+                    li
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        position: relative
+                        flex-basis: 30%                  
+                        label
+                            cursor: pointer
+                            display: block
+                            padding: 10px 
+                            border: 2px solid #fff
+                            border-radius: 15px
+                        .checkbox_2_3
+                            -webkit-appearance: none
+                        .checkbox_2_3
+                            &:checked  
+                                &+label
+                                    border: 2px solid #6ac0f3
+                .tab_2_2_3
+                    list-style: none
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    li
+                        flex-basis: 30%
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        margin-bottom: 40px
+                        position: relative
+                        .checkbox_2_3
+                            -webkit-appearance: none
+                        .checkbox_2_3
+                            &:checked  
+                                &+label::before
+                                    background-color: #6ac0f3
+                        label
+                            cursor: pointer      
+                        label::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -20px
+                            width: 20px
+                            height: 20px
+                            border-radius: 50%
+                            border: 1px solid #2d2d2d
+                            background-color: #ffffff
+                    li.karniz_element
+                        flex-basis: 80%
+                        label.karniz
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start  
+                            span
+                                display: block
+                                margin-right: 30px
+                            &::before
+                                transform: translateY(0) 
+                .tab_2_3_3
+                    list-style: none
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    li
+                        flex-basis: 50%
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        margin-bottom: 40px
+                        position: relative
+                        .checkbox_2_3
+                            -webkit-appearance: none
+                        .checkbox_2_3
+                            &:checked  
+                                &+label::before
+                                    background-color: #6ac0f3
+                        label
+                            cursor: pointer    
+                            display: flex
+                            justify-content: space-around
+                            align-items: center  
+                        label::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -20px
+                            width: 20px
+                            height: 20px
+                            border-radius: 50%
+                            border: 1px solid #2d2d2d
+                            background-color: #ffffff            
+                .tab_2_3_next
+                    border-radius: 15px
+                    background-color: #6ac0f3
+                    display: block
+                    margin: 30px auto
+                    color: #ffffff
+                    font-size: 24px
+                    font-weight: 400
+                    max-width: 250px
+                    text-align: center
+                    padding: 10px
+                    cursor: pointer
+                    transition: 0.4s ease all
+                    &:hover
+                        background-color: darken(#6ac0f3, 20%)
+            &_tab_2_4
+                flex-basis: 70%
+                display: none   
+                .tab_2_1_4
+                    list-style: none
+                    display: flex
+                    justify-content: center
+                    flex-wrap: wrap
+                    text-align: center
+                    li
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        position: relative
+                        flex-basis: 60%                  
+                        label
+                            cursor: pointer
+                            display: block
+                            padding: 10px 
+                            border: 2px solid #fff
+                            border-radius: 15px
+                            p
+                                margin-top: 10px
+                        .checkbox_2_4
+                            -webkit-appearance: none
+                        .checkbox_2_4
+                            &:checked  
+                                &+label
+                                    border: 2px solid #6ac0f3
+                .tab_2_4_next
+                    border-radius: 15px
+                    background-color: #6ac0f3
+                    display: block
+                    margin: 30px auto
+                    color: #ffffff
+                    font-size: 24px
+                    font-weight: 400
+                    max-width: 250px
+                    text-align: center
+                    padding: 10px
+                    cursor: pointer
+                    transition: 0.4s ease all
+                    &:hover
+                        background-color: darken(#6ac0f3, 20%)
+            &_tab_2_5
+                flex-basis: 70%
+                display: none   
+                .tab_2_1_5
+                    list-style: none
+                    display: flex
+                    justify-content: space-around
+                    flex-wrap: wrap
+                    text-align: center
+                    li
+                        color: #18234b
+                        font-size: 18px
+                        font-weight: 400
+                        padding: 5px
+                        position: relative
+                        flex-basis: 50%                  
+                        label
+                            cursor: pointer
+                            display: block
+                            padding: 10px 
+                            border: 2px solid #fff
+                            border-radius: 15px
+                            p
+                                margin-top: 10px
+                        .checkbox_2_5
+                            -webkit-appearance: none
+                        .checkbox_2_5
+                            &:checked  
+                                &+label
+                                    border: 2px solid #6ac0f3
+                .tab_2_5_next
+                    border-radius: 15px
+                    background-color: #6ac0f3
+                    display: block
+                    margin: 30px auto
+                    color: #ffffff
+                    font-size: 24px
+                    font-weight: 400
+                    max-width: 250px
+                    text-align: center
+                    padding: 10px
+                    cursor: pointer
+                    transition: 0.4s ease all
+                    &:hover
+                        background-color: darken(#6ac0f3, 20%)
+            &_tab_3
+                flex-basis: 70%
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                display: none
+                .first
+                    position: absolute
+                    bottom: 50px
+                    left: 50%
+                    transform: translateX(-50%)
+                .last
+                    position: absolute
+                    right: 90px
+                    top: 50%
+                    transform: translateY(-50%)
+                p
+                    display: flex
+                    align-items: center
+                    input
+                        background-color: #e8e8e8
+                        max-width: 60px
+                        padding:  5px
+                        border: none
+                        outline: none
+                    span
+                        display: block
+                        background-color: #e8e8e8
+                        padding: 4px
+            &_menu
+                background-color: #edf0f5
+                padding: 25px
+                flex-basis: 30%
+                h3
+                    color: #18234b
+                    font-size: 24px
+                    font-weight: 400
+                    margin-bottom: 50px
+                ul
+                    list-style: none
+                    padding-left: 40px
+                    li
+                        color: #2e2e2e
+                        font-size: 20px
+                        font-weight: 400
+                        margin-bottom: 30px
+                .add_to_card
+                    border-radius: 15px
+                    background-color: #74b65f
+                    padding: 12px 30px
+                    color: #ffffff
+                    text-align: center
+                    cursor: pointer
+                    transition: 0.4s ease all
+                    margin-top: 100px
+                    display: none
+                    &:hover
+                        background-color:  darken(#74b65f, 10%)
 
 
 

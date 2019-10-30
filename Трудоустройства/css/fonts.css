@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "FiraSans-Black";
+    src: url('../fonts/FiraSans-Black.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Bold";
+    src: url('../fonts/FiraSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Light";
+    src: url('../fonts/FiraSans-Light.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('../fonts/FiraSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url('../fonts/FiraSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-SemiBold";
+    src: url('../fonts/FiraSans-SemiBold.ttf');
+}

@@ -1,0 +1,815 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: sans-serif
+.header  
+    overflow-x: hidden
+    padding-top: 30px
+    padding-bottom: 60px
+    background-color: #000000
+    background-image: url('../img/header_bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &::after
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #ffffff
+        opacity: 0.4
+        position: absolute
+        bottom: 10px
+    &_menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .social_icons
+            flex-basis: 30%
+            ul
+                list-style: none
+                display: flex
+                align-items: center
+                li:not(:last-child)
+                    margin-right: 40px
+                    position: relative
+                    &::after
+                        content: ''
+                        width: 1px
+                        height: 22px
+                        background-color: #ffffff
+                        opacity: 0.5
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%)
+                        right: -20px
+        .logo
+            text-align: center
+            position: relative
+            z-index: 10
+            color: #ffffff
+            font-family: "FiraSans-Regular"
+            font-size: 48px
+            font-weight: 400
+            text-transform: uppercase
+            &::after
+                content: ''
+                display: block
+                height: 1px
+                background-color: #ffffff
+                opacity: 0.3
+                z-index: 1
+                position: absolute
+                left: calc( 100% + 10px )
+                right: -260px
+                top: 50%
+            &::before
+                content: ''
+                display: block
+                height: 1px
+                background-color: #ffffff
+                opacity: 0.3
+                z-index: 1
+                position: absolute
+                right: calc( 100% + 10px )
+                left: -330px
+                top: 50%
+                
+        &_contacts
+            flex-basis: 30%
+            text-align: right
+            transform: translateY(-13px)
+            color: #ffffff
+            p
+                font-family: "FiraSans-Regular"
+                font-size: 14px
+                font-weight: 400
+                letter-spacing: 2.05px
+            h3
+                margin-top: 10px
+                font-family: "FiraSans-Medium"
+                font-size: 24px
+                font-weight: 500
+                text-transform: uppercase
+                letter-spacing: 4.05px   
+                a
+                    text-decoration: none
+                    color: #ffffff    
+    &_main
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 180px
+        padding-bottom: 120px
+        &_description
+            text-align: center
+            h1
+                font-family: "FiraSans-SemiBold"
+                font-size: 60px
+                font-weight: 400
+                line-height: 80px
+                text-align: center
+                color: #ffffff
+                text-transform: uppercase
+                letter-spacing: 2.88px
+            ul
+                list-style: none
+                display: flex
+                align-items: center
+                justify-content: space-between
+                li
+                    color: #fff
+                    font-family: "FiraSans-Regular"
+                    font-size: 14px
+                    font-weight: 400
+                    text-transform: uppercase
+                    letter-spacing: 4.05px
+            .btn_modal
+                border: 1px solid rgba(255, 255, 255, 0.5)
+                padding: 15px 20px
+                display: inline-block
+                color: #ffffff
+                font-family: "FiraSans-Bold"
+                font-size: 16px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 2.25px
+                margin-top: 40px
+                transition: 0.5s ease all
+                cursor: pointer
+                position: relative
+                &:hover
+                    background-color: #fff
+                    border: 1px solid rgba(255, 255, 255, 1)
+                    color: #000000
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    height: 1px
+                    background-color: #ffffff
+                    opacity: 0.5
+                    right: 100%
+                    left: -180px
+                    top: 50%
+                &::after
+                    content: ''
+                    position: absolute
+                    height: 1px
+                    background-color: #ffffff
+                    opacity: 0.5
+                    left: 100%
+                    right: -180px
+                    top: 50%
+    .down
+        position: absolute
+        bottom: 40px
+        left: 50%
+        transform: translateX(-50%) 
+        border: none
+        outline: none
+        background: none
+        cursor: pointer
+.criteria
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #000
+    &::after
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #ffffff
+        opacity: 0.4
+        position: absolute
+        bottom: 10px
+    &_inner
+        flex-basis: calc( 100% / 6 )
+        padding-top: 500px
+        padding-bottom: 100px
+        text-align: center
+        h3
+            color: #ffffff
+            font-family: "FiraSans-Medium"
+            font-size: 15px
+            font-weight: 500
+            line-height: 30px
+            text-transform: uppercase
+            letter-spacing: 4.05px
+            margin-bottom: 40px
+        &_1
+            background-image: url('../img/1.png')
+            background-repeat: no-repeat
+            background-size: cover
+        &_2
+            background-image: url('../img/2.png')
+            background-repeat: no-repeat
+            background-size: cover
+        &_3
+            background-image: url('../img/3.png')
+            background-repeat: no-repeat
+            background-size: cover
+        &_4
+            background-image: url('../img/4.png')
+            background-repeat: no-repeat
+            background-size: cover
+        &_5
+            background-image: url('../img/5.png')
+            background-repeat: no-repeat
+            background-size: cover
+        &_6
+            background-image: url('../img/6.png')
+            background-repeat: no-repeat
+            background-size: cover
+    h2
+        position: absolute
+        left: 50%
+        top: 100px
+        transform: translateX(-50%)
+        color: #ffffff
+        font-family: "FiraSans-SemiBold"
+        font-size: 60px
+        font-weight: 400
+        text-transform: uppercase
+    p
+        position: absolute
+        left: 50%
+        top: 180px
+        transform: translateX(-50%)
+        color: #ffffff
+        font-family: "FiraSans-Medium"
+        font-size: 18px
+        font-weight: 500
+        text-transform: uppercase
+        letter-spacing: 4.05px
+.benefit
+    overflow-x: hidden
+    padding-top: 100px
+    padding-bottom: 75px
+    text-align: center
+    h2
+        color: #140f0b
+        font-family: "FiraSans-SemiBold"
+        font-size: 60px
+        font-weight: 400
+        text-transform: uppercase   
+        text-align: right    
+        margin-bottom: 50px
+        margin-right: 20px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            height: 1px
+            background-color: #020000
+            opacity: 0.2
+            position: absolute
+            top: 60px
+            right: 64%
+            left: -2000px
+        &::after
+            content: ''
+            display: block
+            height: 1px
+            background-color: #020000
+            opacity: 0.2
+            position: absolute
+            top: 0
+            left: 107%
+            right: -2000px
+    h3
+        color: #140f0b
+        font-family: "FiraSans-SemiBold"
+        font-size: 36px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 7.2px
+        margin-top: 40px
+        margin-bottom: 10px
+        text-align: left
+    p
+        color: #140f0b
+        font-family: "FiraSans-Light"
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 3px
+        text-align: left
+    .double_photo
+        background-image: url('../img/DOUBLE_PHOTO.png')
+        background-size: contain
+        background-repeat: no-repeat
+        position: relative
+        padding: 130px 90px 200px 90px
+        text-align: left
+        .top_text
+            color: #ffffff
+            h4
+                color: #ffffff
+                font-family: "FiraSans-SemiBold"
+                font-size: 28px
+                font-weight: 400
+                text-transform: uppercase
+                margin-bottom: 30px
+                &::before
+                    content: ''
+                    display: block
+                    width: 88px
+                    height: 4px
+                    background-color: #ffffff
+                    margin-bottom: 25px
+            p
+                color: #ffffff
+                font-family: "FiraSans-Medium"
+                font-size: 18px
+                font-weight: 500
+                text-transform: uppercase
+                letter-spacing: 3.64px
+                margin-left: 60px
+                position: relative
+                &::before
+                    content: '6'
+                    position: absolute
+                    bottom: -15px
+                    left: -60px
+                    color: #ffffff
+                    font-family: "FiraSans-SemiBold"
+                    font-size: 72px
+                    font-weight: 400
+                    text-transform: uppercase
+        .right_text
+            position: absolute
+            bottom: 100px
+            right: 90px
+            h4
+                color: #ffffff
+                font-family: "FiraSans-SemiBold"
+                font-size: 72px
+                font-weight: 400
+                text-transform: uppercase
+            p
+                color: #ffffff
+                font-family: "FiraSans-Medium"
+                font-size: 16px
+                font-weight: 500
+                text-transform: uppercase
+                letter-spacing: 3px
+                &::after
+                    content: ''
+                    display: block
+                    width: 88px
+                    height: 4px
+                    background-color: #ffffff
+                    margin-top: 25px
+        .left_text
+            position: absolute
+            left: 0
+            bottom: 0
+            h4
+                color: #140f0b
+                font-family: "FiraSans-SemiBold"
+                font-size: 36px
+                font-weight: 400
+                line-height: 80px
+                text-transform: uppercase
+                letter-spacing: 7.2px
+            p
+                color: #140f0b
+                font-family: "FiraSans-Light"
+                font-size: 18px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 3.64px
+    .bottom
+        text-align: center
+        color: #140f0b
+        font-family: "FiraSans-Light"
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 4.05px
+        margin-top: 100px
+        margin-bottom: 30px
+    .btn_number
+        color: #161109
+        font-family: "FiraSans-Bold"
+        font-size: 19px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 2.14px
+        padding: 15px 20px
+        border: 1px solid #000
+        display: inline-block
+        cursor: pointer
+        transition: .4s ease all
+        position: relative
+        &:hover
+            background-color: #000
+            border: 1px solid #000
+            color: #fff
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            height: 1px
+            background-color: #000
+            opacity: 0.5
+            right: 100%
+            left: -360px
+            top: 50%
+        &::after
+            content: ''
+            position: absolute
+            height: 1px
+            background-color: #000
+            opacity: 0.5
+            left: 100%
+            right: -360px
+            top: 50%
+.advantages
+    overflow-x: hidden
+    background-color: #000
+    background-image: url('../img/advantages_bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    padding-top: 130px
+    padding-bottom: 190px
+    text-align: center
+    h2
+        width: 60%
+        margin-left: 40%
+        text-align: right
+        color: #ffffff
+        font-family: "FiraSans-SemiBold"
+        font-size: 72px
+        font-weight: 400
+        line-height: 80px
+        text-transform: uppercase
+        margin-bottom: 200px
+        position: relative
+        &::after
+            content: ''
+            height: 1px
+            background-color: #ffffff
+            opacity: 0.3
+            position: absolute
+            top: 10px
+            left: 105%
+            right: -2000px
+        &::before
+            content: ''
+            height: 1px
+            background-color: #ffffff
+            opacity: 0.3
+            position: absolute
+            bottom: 10px
+            right: 95%
+            left: -2000px
+    .border-box
+        width: 25px
+        height: 25px
+        border: 4px solid #ffffff
+        margin: 0 auto
+        margin-bottom: 40px
+    h3
+        color: #ffffff
+        text-transform: uppercase
+        font-family: "FiraSans-Medium"
+        font-size: 15px
+        font-weight: 500
+        letter-spacing: 2px
+        margin-bottom: 20px
+        padding: 0 10px
+    p
+        color: #ffffff
+        font-size: 13px
+        text-transform: uppercase
+        font-family: "FiraSans-Light"
+        font-weight: 300
+        letter-spacing: 3.07px
+        position: relative
+        &::after
+            content: ''
+            display: block
+            width: 78px
+            height: 7px
+            background-color: #ffffff
+            position: absolute
+            bottom: -60px
+            left: 50%
+            transform: translateX(-50%)
+    .row
+        .after-col:not(:last-child)
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                bottom: 0
+                right: 0px
+                display: block
+                width: 1px
+                background-color: #ffffff
+                opacity: 0.3
+.stages
+    padding-top: 100px
+    text-align: center
+    overflow-x: hidden
+    margin-bottom: -100px
+    h2
+        display: inline-block
+        color: #140f0b
+        font-family: "FiraSans-SemiBold"
+        font-size: 72px
+        font-weight: 400
+        text-transform: uppercase
+        margin-bottom: 50px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            height: 1px
+            background-color: #020000
+            opacity: 0.2
+            position: absolute
+            top: 10px
+            left: 105%
+            right: -2000px
+        &::after
+            content: ''
+            display: block
+            height: 1px
+            background-color: #020000
+            opacity: 0.2
+            position: absolute
+            bottom: 10px
+            right: 105%
+            left: -2000px
+    &_inner
+        position: relative
+        min-height: 310px
+        &_top
+            margin-bottom: 60px  
+        img
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: -15px
+        h3
+            color: #140f0b
+            font-family: "FiraSans-SemiBold"
+            font-size: 68px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 6.8px
+            position: relative
+            &::before
+                content: ''
+                display: block
+                background-color: #000
+                width: 3px
+                height: 50px
+                opacity: 0.3
+                margin: 0 auto
+                margin-bottom: 20px
+
+        h4
+            color: #9d9d9d
+            font-family: "FiraSans-SemiBold"
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 8.64px
+            margin-bottom: 25px
+        p
+            color: #140f0b
+            font-family: "FiraSans-Light"
+            font-weight: 300
+            text-transform: uppercase
+            font-size: 14px
+            letter-spacing: 3.04px
+.sentence
+    width: 100%
+    background-image: url('../img/2-layers.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    padding-top: 280px
+    padding-bottom: 280px
+    &_inner
+        padding-left: 80px
+        h2
+            color: #ffffff
+            font-family: "FiraSans-SemiBold"
+            font-size: 60px
+            font-weight: 400
+            text-transform: uppercase
+            margin-bottom: 50px
+        p
+            color: #d7d7d7
+            font-family: "FiraSans-Light"
+            font-size: 16px
+            font-weight: 300
+            text-transform: uppercase
+            margin-bottom: 40px
+            position: relative
+            img
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -100px
+            span
+                color: #ffffff
+                font-family: "FiraSans-Bold"
+                font-weight: 400
+                letter-spacing: 3.64px
+        .btn_number
+            color: #fff
+            font-family: "FiraSans-Bold"
+            font-size: 19px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 2.14px
+            padding: 15px 20px
+            border: 1px solid #fff
+            display: inline-block
+            cursor: pointer
+            transition: .4s ease all
+            position: relative
+            &:hover
+                background-color: #fff
+                border: 1px solid #fff
+                color: #000
+    .container
+        position: relative
+        h2.next_section
+            text-align: right
+            color: #000
+            position: absolute
+            bottom: -200px
+            right: 0
+            color: #140f0b
+            font-family: "FiraSans-SemiBold"
+            font-weight: 400
+            text-transform: uppercase
+            font-size: 60px
+            span
+                display: block
+                font-size: 24px
+.numbers
+    margin-bottom: 100px
+    text-align: center
+    h3
+        color: #140f0b
+        font-family: "FiraSans-SemiBold"
+        font-size: 68px
+        font-weight: 400
+        text-transform: uppercase
+        position: relative
+        display: inline-block
+        &::after
+            content: '%'
+            position: absolute
+            top: 12px
+            right: -24px
+            color: #140f0b
+            font-family: "FiraSans-SemiBold"
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+    img
+        display: block
+        margin: 0 auto
+        margin-bottom: 10px
+    p
+        color: #140f0b
+        font-family: "FiraSans-Light"
+        font-size: 13px
+        font-weight: 300
+        text-transform: uppercase
+        letter-spacing: 3px
+.reviews
+    padding-bottom: 40px
+    h2
+        color: #140f0b
+        font-family: "FiraSans-SemiBold"
+        font-size: 36px
+        font-weight: 400
+        line-height: 80px
+        text-transform: uppercase
+        letter-spacing: 7.2px
+        padding-right: 20px
+        background-color: #fff
+        display: inline-block
+        position: relative
+        z-index: 5
+    .line_block
+        position: absolute
+        top: 50%
+        left: 50px
+        right: 0
+        height: 1px
+        background-color: #000000
+        opacity: 0.2
+        z-index: 2
+    .owl-stage
+        display: flex
+        justify-content: center
+        align-items: center
+.footer
+    padding: 90px 0   
+    background-color: #16110c
+    background-image: url('../img/footer_bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    text-align: center
+    color: #ffffff
+    h2
+        font-family: "FiraSans-SemiBold"
+        font-size: 72px
+        font-weight: 400
+        line-height: 80px
+        text-transform: uppercase
+        margin-bottom: 40px
+    h3
+        font-family: "FiraSans-Light"
+        font-size: 18px
+        font-weight: 300
+        line-height: 30px
+        text-transform: uppercase
+        letter-spacing: 2.66px
+        margin-bottom: 40px
+        opacity: 0.4
+    ul
+        li
+            list-style-type: none
+            font-size: 18px
+            font-weight: 500
+            letter-spacing: 4.05px
+            margin-bottom: 20px
+            img
+                margin-right: 10px
+
+            a
+                text-decoration: none
+                color: #ffffff
+                font-size: 24px
+                text-transform: uppercase
+                letter-spacing: 5.4px
+                font-family: "FiraSans-Medium"
+    h4
+        color: #ffffff
+        font-family: "FiraSans-Light"
+        font-size: 24px
+        font-weight: 100
+        line-height: 46.59px
+        text-transform: uppercase
+        letter-spacing: 9.07px
+        opacity: 0.4
+    form
+        margin-top: 40px
+        input
+            display: block
+            margin: 0 auto
+            width: 70%
+            padding: 20px
+            color: #bababa
+            font-family: "FiraSans-Medium"
+            font-size: 16px
+            font-weight: 500
+            text-transform: uppercase
+            letter-spacing: 2.36px
+            outline: none
+        textarea
+            display: block
+            margin: 0 auto
+            width: 70%
+            padding: 20px
+            color: #bababa
+            font-family: "FiraSans-Medium"
+            font-size: 16px
+            font-weight: 500
+            text-transform: uppercase
+            letter-spacing: 2.36px
+            outline: none
+            min-height: 200px
+        button
+            margin-top: 25px
+            background: none
+            border: none
+            outline: none
+            color: #fff7f7
+            font-family: "FiraSans-Bold"
+            font-size: 19px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 2.14px
+            padding: 15px 60px
+            border: 1px solid #ffffff
+            cursor: pointer
+            transition: 0.4s ease all
+            &:hover
+                background-color: #fff
+                color: #000

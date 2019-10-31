@@ -30,6 +30,13 @@
                 list-style: none
                 display: flex
                 align-items: center
+                flex-wrap: wrap
+                margin-top: 20px
+                li
+                    flex-basis: 15%
+                    a
+                        color: #ffffff
+                        font-size: 26px
                 li:not(:last-child)
                     margin-right: 40px
                     position: relative
@@ -42,7 +49,8 @@
                         position: absolute
                         top: 50%
                         transform: translateY(-50%)
-                        right: -20px
+                        right: -10px
+                    
         .logo
             text-align: center
             position: relative
@@ -72,7 +80,7 @@
                 z-index: 1
                 position: absolute
                 right: calc( 100% + 10px )
-                left: -330px
+                left: -250px
                 top: 50%
                 
         &_contacts
@@ -174,7 +182,7 @@
     position: relative
     display: flex
     align-items: center
-    justify-content: center
+    justify-content: space-around
     background-color: #000
     &::after
         content: ''
@@ -186,9 +194,12 @@
         bottom: 10px
     &_inner
         flex-basis: calc( 100% / 6 )
-        padding-top: 500px
+        padding-top: 300px
         padding-bottom: 100px
         text-align: center
+        transition: .4s ease
+        min-height: 700px
+        max-height: 700px
         h3
             color: #ffffff
             font-family: "FiraSans-Medium"
@@ -198,30 +209,31 @@
             text-transform: uppercase
             letter-spacing: 4.05px
             margin-bottom: 40px
+            transition: 0.5s ease all
         &_1
             background-image: url('../img/1.png')
             background-repeat: no-repeat
-            background-size: cover
+            background-size: cover  
         &_2
             background-image: url('../img/2.png')
             background-repeat: no-repeat
-            background-size: cover
+            background-size: cover  
         &_3
             background-image: url('../img/3.png')
             background-repeat: no-repeat
-            background-size: cover
+            background-size: cover  
         &_4
             background-image: url('../img/4.png')
             background-repeat: no-repeat
-            background-size: cover
+            background-size: cover  
         &_5
             background-image: url('../img/5.png')
             background-repeat: no-repeat
-            background-size: cover
+            background-size: cover  
         &_6
             background-image: url('../img/6.png')
             background-repeat: no-repeat
-            background-size: cover
+            background-size: cover  
     h2
         position: absolute
         left: 50%
@@ -243,6 +255,13 @@
         font-weight: 500
         text-transform: uppercase
         letter-spacing: 4.05px
+    p.invisible
+        position: static
+        transform: none
+        font-size: 12px
+        display: none
+        margin-bottom: 30px
+        letter-spacing: 2px
 .benefit
     overflow-x: hidden
     padding-top: 100px
@@ -813,3 +832,110 @@
             &:hover
                 background-color: #fff
                 color: #000
+.criteria_active
+    .criteria_inner
+        flex-basis: calc( 67% / 5 )
+    .active
+        flex-basis: 33%
+        padding-left: 10px
+        padding-right: 10px
+        &:hover p.invisible
+            display: block
+.modal
+    background-color: #000000b6
+    background-image: url('../img/Effect.png')
+    background-size: cover
+    background-repeat: no-repeat
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 100
+    display: none
+    form.modal_form
+        margin: 0 auto
+        margin-top: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        width: 80%
+        .close_modal
+            color: #fff
+            font-size: 42px
+            text-transform: uppercase
+            margin-bottom: 20px
+            position: relative
+            background-color: #00000000
+            cursor: pointer
+            &::after
+                content: ''
+                position: absolute
+                left: 200%
+                right: -330px
+                top: 50%
+                height: 1px
+                background-color: #ffffff   
+                opacity: 0.4
+            &::before
+                content: ''
+                position: absolute
+                right: 200%
+                left: -330px
+                top: 50%
+                height: 1px
+                background-color: #ffffff   
+                opacity: 0.4
+        h2
+            font-family: "FiraSans-SemiBold"
+            font-size: 42px
+            font-weight: 400
+            text-transform: uppercase
+            margin-bottom: 40px
+            color: #ffffff  
+        input
+            display: block
+            margin: 0 auto
+            width: 50%
+            padding: 20px
+            color: #bababa
+            font-family: "FiraSans-Medium"
+            font-size: 16px
+            font-weight: 500
+            text-transform: uppercase
+            letter-spacing: 2.36px
+            outline: none
+        textarea
+            display: block
+            margin: 0 auto
+            width: 50%
+            padding: 20px
+            color: #bababa
+            font-family: "FiraSans-Medium"
+            font-size: 16px
+            font-weight: 500
+            text-transform: uppercase
+            letter-spacing: 2.36px
+            outline: none
+            min-height: 150px
+        button
+            margin-top: 25px
+            background: none
+            border: none
+            outline: none
+            color: #fff7f7
+            font-family: "FiraSans-Bold"
+            font-size: 19px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 2.14px
+            padding: 15px 60px
+            border: 1px solid #ffffff
+            cursor: pointer
+            transition: 0.4s ease all
+            &:hover
+                background-color: #fff
+                color: #000
+        
+

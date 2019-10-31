@@ -47,7 +47,13 @@ $(document).ready(function(){
       $('html').css('overflow', 'visible');
     });
   }
-
+  {
+  $('.modal').on('.click', function() {
+    if(!$('.modal_form')) {
+      $(this).fadeOut();
+    }
+  });
+  }
 
 
 

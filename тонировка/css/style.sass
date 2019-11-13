@@ -1,0 +1,131 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: sans-serif
+
+body
+    overflow-x: hidden
+
+.calc
+    background-color: #f5f6f6
+    padding-top: 100px
+    padding-bottom: 190px
+    h2.calc_title
+        color: #060606
+        font-size: 36px
+        font-weight: 700
+        line-height: 48px
+        margin-bottom: 30px
+        position: relative
+        z-index: 5
+        &::after
+            content: ''
+            margin-top: 15px
+            display: block
+            width: 122px
+            height: 5px
+            background-color: #f70819
+    p
+        color: #000709
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 40px
+        position: relative
+        z-index: 5
+    .flex-container
+        display: flex
+        align-items: center
+        position: relative
+        z-index: 5
+        img
+            margin-right: 20px
+            position: relative
+        h3
+            color: #000709
+            font-weight: 700
+            font-size: 24px
+            span
+                font-size: 16px
+                font-weight: 400
+    .form
+        position: relative
+        img
+            display: block
+            margin-top: 50px
+            transform: translateX(-270px)
+            z-index: 2
+        &_inner
+            z-index: 5
+            position: absolute
+            top: -40px
+            left: 170px
+            right: 10px
+            background-color: #c4c8c8
+            border-radius: 10px
+            padding: 25px 15px
+            text-align: center
+            form
+                margin-bottom: 25px
+                img
+                    position: absolute
+                    bottom: 70px
+                    right: -85%
+                    // transform: translateX(-50%)
+                h2
+                    color: #000709
+                    font-size: 18px
+                    font-weight: 400
+                    margin-bottom: 18px
+                    span
+                        color: #fe0303
+                input[type="text"]
+                    display: block
+                    width: 80%
+                    margin: 0 auto
+                    background-color: #f5f6f6
+                    color: #000709
+                    font-size: 16px
+                    font-weight: 400
+                    padding: 10px 15px
+                    border: none
+                    outline: none
+                    margin-bottom: 18px
+                button
+                    display: block
+                    box-shadow: 0 6px 11px 1px #ffe182, 0 3px 0 #f9c82e
+                    border-radius: 32px
+                    background-color: #f9d903
+                    background-image: linear-gradient(to top, rgba(250, 137, 4, 0.86) 0%, rgba(251, 250, 250, 0) 100%)
+                    background-blend-mode: multiply
+                    padding: 20px 50px
+                    color: #070000
+                    font-size: 24px
+                    font-weight: 700
+                    border: none
+                    outline: none
+                    cursor: pointer
+                    width: 80%
+                    margin: 0 auto
+                    transition: 0.3s ease all
+                    margin-bottom: 20px
+                    &:hover
+                        background-color: #f9b103
+                label
+                    text-align: left
+                    color: #000709
+                    font-size: 12px
+                    font-weight: 400
+                    a.policy
+                        color: #000709
+                        font-size: 12px
+                        font-weight: 400
+            p
+                color: #000709
+                font-size: 14px
+                font-weight: 400
+                margin-bottom: 0
+                a
+                    font-weight: 700 
+                    color: #000000
+                    text-decoration: none

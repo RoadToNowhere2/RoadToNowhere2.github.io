@@ -86,23 +86,23 @@ body {
 .calc .form_inner {
   z-index: 5;
   position: absolute;
-  top: -40px;
-  left: 170px;
-  right: 10px;
-  background-color: #c4c8c8;
+  top: -30px;
+  left: 160px;
+  right: 25px;
+  background-image: url("../img/form_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 10px;
   padding: 25px 15px;
   text-align: center;
 }
 
-.calc .form_inner form {
-  margin-bottom: 25px;
-}
-
 .calc .form_inner form img {
   position: absolute;
   bottom: 70px;
-  right: -85%;
+  right: -40px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .calc .form_inner form h2 {
@@ -127,7 +127,7 @@ body {
   padding: 10px 15px;
   border: none;
   outline: none;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .calc .form_inner form button {
@@ -162,6 +162,21 @@ body {
   color: #000709;
   font-size: 12px;
   font-weight: 400;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.calc .form_inner form label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  right: -15px;
+  background-color: #8f9797;
+  height: 1px;
 }
 
 .calc .form_inner form label a.policy {

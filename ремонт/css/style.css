@@ -1335,4 +1335,1191 @@ html {
   color: #fff;
   cursor: pointer;
 }
+
+.modal_kviz {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  z-index: 100;
+}
+
+.modal_kviz_inner {
+  width: 90%;
+  max-width: 1400px;
+  min-height: 550px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+}
+
+.modal_kviz_inner .kviz_1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+.modal_kviz_inner .kviz_1_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  text-align: center;
+}
+
+.modal_kviz_inner .kviz_1_inner h2 {
+  color: #25252d;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal_kviz_inner .kviz_1_inner p {
+  color: #25252d;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+
+.modal_kviz_inner .kviz_1_inner .kviz_btn_1 {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 37px;
+  background-color: #ffc800;
+  opacity: 0.9;
+  padding: 25px 90px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_1_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 500px;
+  background-image: url("../img/kviz_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px;
+}
+
+.modal_kviz_inner .kviz_1_img .kviz_info {
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 30px;
+  background-color: #ffcd19;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.modal_kviz_inner .kviz_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  min-height: 500px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+.modal_kviz_inner .kviz_2_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  text-align: center;
+}
+
+.modal_kviz_inner .kviz_2_inner h2 {
+  color: #25252d;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal_kviz_inner .kviz_2_inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.modal_kviz_inner .kviz_2_inner form label {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 33px;
+  border: 2px solid #b8b8b8;
+  opacity: 0.9;
+  padding: 20px 40px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  color: #25252d;
+  font-size: 21px;
+  font-weight: 400;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_2_inner form img {
+  display: block;
+  margin-right: 20px;
+}
+
+.modal_kviz_inner .kviz_2_inner form input {
+  -webkit-appearance: none;
+}
+
+.modal_kviz_inner .kviz_2_inner form input:checked + label {
+  background-color: #ffc800;
+}
+
+.modal_kviz_inner .kviz_2_inner .kviz_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2_prew {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  border: 1px solid #c4c4c4;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #d2d2d2;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2_prew img {
+  margin-right: 20px;
+}
+
+.modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2 {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  background-color: #ffc800;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2 img {
+  margin-left: 20px;
+}
+
+.modal_kviz_inner .kviz_2_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 500px;
+  background-image: url("../img/kviz_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px;
+}
+
+.modal_kviz_inner .kviz_2_img .kviz_info {
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 30px;
+  background-color: #ffcd19;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.modal_kviz_inner .kviz_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  min-height: 500px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+.modal_kviz_inner .kviz_3_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  text-align: center;
+}
+
+.modal_kviz_inner .kviz_3_inner h2 {
+  color: #25252d;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal_kviz_inner .kviz_3_inner .input_min_max {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #dfdfdf;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.modal_kviz_inner .kviz_3_inner .input_value {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 31px;
+  border: 1px solid #c4c4c4;
+  opacity: 0.9;
+  padding: 20px 100px;
+  color: #25252d;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+.modal_kviz_inner .kviz_3_inner input {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 8px;
+  background-color: #c4c4c4;
+  outline: none;
+}
+
+.modal_kviz_inner .kviz_3_inner input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  background-color: #ffcd19;
+  border-radius: 50%;
+  border: 9px solid #25252d;
+  cursor: move;
+}
+
+.modal_kviz_inner .kviz_3_inner .kviz_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3_prew {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  border: 1px solid #c4c4c4;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #d2d2d2;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3_prew img {
+  margin-right: 20px;
+}
+
+.modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3 {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  background-color: #ffc800;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3 img {
+  margin-left: 20px;
+}
+
+.modal_kviz_inner .kviz_3_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 500px;
+  background-image: url("../img/kviz_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px;
+}
+
+.modal_kviz_inner .kviz_3_img .kviz_info {
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 30px;
+  background-color: #ffcd19;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.modal_kviz_inner .kviz_4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  min-height: 500px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+.modal_kviz_inner .kviz_4_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  text-align: center;
+}
+
+.modal_kviz_inner .kviz_4_inner h2 {
+  color: #25252d;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal_kviz_inner .kviz_4_inner label {
+  display: block;
+  width: 60%;
+  margin-bottom: 40px;
+  color: #25252d;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_4_inner label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+}
+
+.modal_kviz_inner .kviz_4_inner input {
+  -webkit-appearance: none;
+}
+
+.modal_kviz_inner .kviz_4_inner input:checked + label::before {
+  background-color: #ffc800;
+}
+
+.modal_kviz_inner .kviz_4_inner .kviz_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4_prew {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  border: 1px solid #c4c4c4;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #d2d2d2;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4_prew img {
+  margin-right: 20px;
+}
+
+.modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4 {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  background-color: #ffc800;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4 img {
+  margin-left: 20px;
+}
+
+.modal_kviz_inner .kviz_4_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 500px;
+  background-image: url("../img/kviz_4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px;
+}
+
+.modal_kviz_inner .kviz_4_img .kviz_info {
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 30px;
+  background-color: #ffcd19;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.modal_kviz_inner .kviz_5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  min-height: 500px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+.modal_kviz_inner .kviz_5_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  text-align: center;
+}
+
+.modal_kviz_inner .kviz_5_inner h2 {
+  color: #25252d;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal_kviz_inner .kviz_5_inner .flex_kviz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+.modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 200px;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container label {
+  display: block;
+  text-align: center;
+  border-radius: 26px;
+  border: 2px solid #b8b8b8;
+  background-color: #ffffff;
+  padding: 15px 0;
+  min-width: 240px;
+  color: #25252d;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container input {
+  -webkit-appearance: none;
+}
+
+.modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container input:checked + label {
+  background-color: #ffc800;
+}
+
+.modal_kviz_inner .kviz_5_inner .kviz_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5_prew {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  border: 1px solid #c4c4c4;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #d2d2d2;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5_prew img {
+  margin-right: 20px;
+}
+
+.modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5 {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  background-color: #ffc800;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5 img {
+  margin-left: 20px;
+}
+
+.modal_kviz_inner .kviz_5_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 500px;
+  background-image: url("../img/kviz_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px;
+}
+
+.modal_kviz_inner .kviz_5_img .kviz_info {
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 30px;
+  background-color: #ffcd19;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.modal_kviz_inner .kviz_6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  min-height: 500px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+.modal_kviz_inner .kviz_6_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  text-align: center;
+}
+
+.modal_kviz_inner .kviz_6_inner h2 {
+  color: #25252d;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal_kviz_inner .kviz_6_inner .podarki {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.modal_kviz_inner .kviz_6_inner .podarki label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+  color: #25252d;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_6_inner .podarki label img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.modal_kviz_inner .kviz_6_inner .podarki input {
+  -webkit-appearance: none;
+}
+
+.modal_kviz_inner .kviz_6_inner .podarki input:checked + label {
+  border: 2px solid #ffc800;
+}
+
+.modal_kviz_inner .kviz_6_inner .kviz_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6_prew {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  border: 1px solid #c4c4c4;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #d2d2d2;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6_prew img {
+  margin-right: 20px;
+}
+
+.modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6 {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  background-color: #ffc800;
+  opacity: 0.9;
+  padding: 20px 60px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6 img {
+  margin-left: 20px;
+}
+
+.modal_kviz_inner .kviz_6_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 500px;
+  background-image: url("../img/kviz_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px;
+}
+
+.modal_kviz_inner .kviz_6_img .kviz_info {
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 30px;
+  background-color: #ffcd19;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.modal_kviz_inner .kviz_7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  min-height: 500px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+.modal_kviz_inner .kviz_7_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  text-align: center;
+}
+
+.modal_kviz_inner .kviz_7_inner h2 {
+  color: #25252d;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.modal_kviz_inner .kviz_7_inner form {
+  min-width: 300px;
+}
+
+.modal_kviz_inner .kviz_7_inner form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 50px;
+  color: #676767;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.modal_kviz_inner .kviz_7_inner form input:focus {
+  border-bottom: 1px solid #ffcd19;
+}
+
+.modal_kviz_inner .kviz_7_inner form button {
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  border-radius: 26px;
+  background-color: #ffc800;
+  opacity: 0.9;
+  padding: 15px 40px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal_kviz_inner .kviz_7_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 500px;
+  background-image: url("../img/kviz_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px;
+}
+
+.modal_kviz_inner .kviz_7_img .kviz_info {
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 30px;
+  background-color: #ffcd19;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.kviz_open {
+  position: fixed;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+  top: 65%;
+  left: 0px;
+  padding: 10px;
+  background-color: #ffcd19;
+  -webkit-box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+          box-shadow: 0 8px 40px rgba(234, 185, 5, 0.46);
+  color: #000;
+  font-size: 22px;
+  z-index: 1;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

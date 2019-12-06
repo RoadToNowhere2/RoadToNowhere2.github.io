@@ -107,9 +107,101 @@
         -ms-transform: none;
         -o-transform: none;
     }
+    .modal_kviz_inner .kviz_1_inner,
+    .modal_kviz_inner .kviz_2_inner,
+    .modal_kviz_inner .kviz_3_inner,
+    .modal_kviz_inner .kviz_4_inner,
+    .modal_kviz_inner .kviz_5_inner,
+    .modal_kviz_inner .kviz_6_inner,
+    .modal_kviz_inner .kviz_7_inner {
+        flex-basis: 100%;
+        min-height: 500px;
+    }
+
+    .modal_kviz_inner .kviz_1,
+    .modal_kviz_inner .kviz_2,
+    .modal_kviz_inner .kviz_3,
+    .modal_kviz_inner .kviz_4,
+    .modal_kviz_inner .kviz_5,
+    .modal_kviz_inner .kviz_6,
+    .modal_kviz_inner .kviz_7 {
+        min-height: 500px;
+    }
+
+    .modal_kviz_inner .kviz_1_img,
+    .modal_kviz_inner .kviz_2_img,
+    .modal_kviz_inner .kviz_3_img,
+    .modal_kviz_inner .kviz_4_img,
+    .modal_kviz_inner .kviz_5_img,
+    .modal_kviz_inner .kviz_6_img,
+    .modal_kviz_inner .kviz_7_img {
+        display: none;
+    }
+
+    .modal_kviz_inner {
+        min-height: 500px;
+    }
+    .modal_kviz_inner .kviz_2_inner form label {
+        flex-basis: 25%;
+        padding: 15px 20px;
+    }
+    .modal_kviz_inner .kviz_2_inner h2 {
+        margin-bottom: 20px;
+    }
+    .modal_kviz_inner .kviz_2_inner form {
+        margin-bottom: 20px;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container {
+        flex-basis: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        min-height: auto;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container label {
+        margin-bottom: 20px;
+        min-width: 150px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container input {
+        display: none;
+    }
+    .modal_kviz_inner {
+        width: 95%;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki input {
+        display: none;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki label {
+        max-width: 30%;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki label img {
+        max-width: 250px;
+    }
+    .modal_kviz_inner .kviz_6_inner {
+        width: 100%;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
+    .modal_kviz_inner .kviz_6_inner .podarki label img {
+        max-width: 200px;
+        text-align: center;
+    }
     .header_top .menu_inner {
         display: none;
     }
@@ -255,5 +347,107 @@
     }
     .footer form::before {
         display: none;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .modal_kviz_inner .kviz_6_inner .podarki label {
+        max-width: 180px;
+    }
+    .modal_kviz_inner .kviz_2_inner form label {
+        flex-basis: 40%;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container label {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal_kviz_inner .kviz_1_inner,
+    .modal_kviz_inner .kviz_2_inner,
+    .modal_kviz_inner .kviz_3_inner,
+    .modal_kviz_inner .kviz_4_inner,
+    .modal_kviz_inner .kviz_5_inner,
+    .modal_kviz_inner .kviz_6_inner,
+    .modal_kviz_inner .kviz_7_inner {
+        width: 100%;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki label img {
+        max-height: 100px;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki label {
+        max-width: 30%;
+        margin: 0 2px;
+        font-size: 12px;
+    }
+    .modal_kviz_inner .kviz_6_inner .podarki {
+        justify-content: center;
+    }
+    .modal_kviz_inner .kviz_1_inner h2 br {
+        display: none;
+    }
+    .modal_kviz_inner .kviz_1_inner h2 {
+        font-size: 24px;
+    }
+    .modal_kviz_inner .kviz_1_inner p br {
+        display: none;
+    }
+    .modal_kviz_inner .kviz_1_inner p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .modal_kviz_inner .kviz_1_inner .kviz_btn_1 {
+        padding: 15px 40px;
+    }
+    .modal_kviz_inner .kviz_2_inner form label {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+    .modal_kviz_inner .kviz_2_inner form label {
+        padding: 10px;
+    }
+    .modal_kviz_inner .kviz_2_inner h2 {
+        font-size: 22px;
+    }
+    .modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2_prew,
+    .modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2,
+    .modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3_prew,
+    .modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3,
+    .modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4_prew,
+    .modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4,
+    .modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5_prew,
+    .modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5,
+    .modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6_prew,
+    .modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6 {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2 img,
+    .modal_kviz_inner .kviz_2_inner .kviz_buttons .kviz_btn_2_prew img,
+    .modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3 img,
+    .modal_kviz_inner .kviz_3_inner .kviz_buttons .kviz_btn_3_prew img ,
+    .modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4 img,
+    .modal_kviz_inner .kviz_4_inner .kviz_buttons .kviz_btn_4_prew img ,
+    .modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5 img,
+    .modal_kviz_inner .kviz_5_inner .kviz_buttons .kviz_btn_5_prew img ,
+    .modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6 img,
+    .modal_kviz_inner .kviz_6_inner .kviz_buttons .kviz_btn_6_prew img  {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container {
+        display: block;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz .flex_container label {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .modal_kviz_inner .kviz_5_inner h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .modal_kviz_inner .kviz_5_inner .flex_kviz {
+        margin-bottom: 10px;
     }
 }

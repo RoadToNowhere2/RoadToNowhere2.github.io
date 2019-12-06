@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-2 offset-lg-0 offset-xl-o col-md-4 offset-md-4 col-sm-10 offset-sm-1">
                         <div class="contacts">
-                            <a href="viber://chat?number=+38(073)%20607%2005%2085"><img src="img/whutsup.png" alt=""></a>
+                            <a href="viber://chat?number=+38(073)%20607%2005%2085"><img src="img/whutsup.png" alt="" class="viber_icon"></a>
                             <a href="https://t.me/Comfort_plus"><img src="img/telegram.png" alt=""></a>
                             <div class="phons">
                                 <a href="tel: +38(050)253-25-25">+ 38 (050) 253-25-25</a>
@@ -211,7 +211,7 @@
                                 <li>Клининг</li>
                                 <li>Услуги Сантехника</li>
                             </ul>
-                            <div class="btn_modal js-modal">Заказать звонок</div>
+                            <div class="btn_modal js-modal-work-1">Подробнее</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
@@ -226,7 +226,7 @@
                                 <li>Услуги Электрика</li>
                                 <li>Услуги Плотника</li>
                             </ul>
-                            <div class="btn_modal js-modal">Заказать звонок</div>
+                            <div class="btn_modal js-modal-work-2">Подробнее</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
@@ -239,7 +239,7 @@
                                 <li>Клининг</li>
                                 <li>Услуги Сантехника</li>
                             </ul>
-                            <div class="btn_modal js-modal">Заказать звонок</div>
+                            <div class="btn_modal js-modal-work-3">Подробнее</div>
                         </div>
                     </div>
                 </div>
@@ -385,9 +385,9 @@
                     <form action="#" id="form_footer">
                         <h2>ЗАКАЗАТЬ ЗАМЕРЩИКА БЕСПЛАТНО</h2>
                         <p>Мы предоставляем комплексную услугу, от создания <br> дизайна интерьера до полной реализации проекта.</p>
-                        <input type="text" placeholder="Имя">
-                        <input type="tel" placeholder="Телефон">
-                        <button type="button">Заказать звонок</button>
+                        <input type="text" placeholder="Имя" id="name_form_2">
+                        <input type="tel" placeholder="Телефон" id="tel_form_2">
+                        <button type="button" id="modal_submit_btn_2">Заказать звонок</button>
                     </form>
                 </div>
                 <div class="col-lg-10">
@@ -402,7 +402,7 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="footer_social">
-                        <a href="viber://chat?number=+38(073)%20607%2005%2085"><img src="img/whutsup.png" alt=""></a>
+                        <a href="viber://chat?number=+38(073)%20607%2005%2085"><img src="img/whutsup.png" alt="" class="viber_icon"></a>
                         <a href="https://t.me/Comfort_plus"><img src="img/telegram.png" alt=""></a>
                     </div>
                 </div>
@@ -432,12 +432,453 @@
             </div>
         </div>
     </div>
+    <div class="modal_work_1">
+        <div class="modal_work_1_inner">
+            <div class="close_modal_work_1">&#10006;</div>
+            <h2>Пакет Стандарт (185 $)</h2>
+            <ul>
+                <li class="js-work-1">
+                    <h3><span>01</span>Создание технического дизайн проекта <span class="arrow">></span></h3>
+                    <div class="modal_work_1_hidden">
+                        <p>План с расстановкой мебели</p>
+                        <p>План сантехники</p>
+                        <p>План электрики</p>
+                    </div>
+                </li>
+                <li class="js-work-1">
+                    <h3><span>02</span>Подготовительные работы <span class="arrow">></span></h3>
+                    <div class="modal_work_1_hidden">
+                        <p>Подготовка сметы на работы</p>
+                        <p>Расчет стоимости черновых материалов</p>
+                        <p>Заключение Договора</p>
+                        <p>Закупка черновых материалов</p>
+                    </div>
+                </li>
+                <li class="js-work-1">
+                    <h3><span>03</span>Менеджмент и контроль качества <span class="arrow">></span></h3>
+                    <div class="modal_work_1_hidden">
+                        <p>Online Контроль Ремонта</p>
+                        <p>Координация всех работ Руководителем проекта</p>
+                        <p>Контроль качества инженером технического надзора</p>
+                    </div>
+                </li>
+                <li class="js-work-1">
+                    <h3><span>04</span>Черновые работы и материалы <span class="arrow">></span></h3>
+                    <div class="modal_work_1_hidden">
+                        <h4>Электромонтажные работы:</h4>
+                        <p>Установка точечных светильников.</p>
+                        <p>Установка электрофурнитуры.</p>
+                        <p>Установка люстр.</p>
+                        <p>Штробление стен и разводка проводов.</p>
+                        <p>Монтаж электрощита и автоматов.</p>
+                        <p>Монтаж реле напряжения и узо.</p>
+                        <h4>Сантехнические работы:</h4>
+                        <p>Штробление стен.</p>
+                        <p>Разводка труб под: стиральную машину, умывальник , ванну , унитаз ,бойлер , смесители.</p>
+                        <p>Подключение: унитаза , бойлера ,умывальника , ванны , смесители.</p>
+                        <h4>Малярные  и чистовые работы:</h4>
+                        <p>Штукатурка стен с замывкой под обои.</p>
+                        <p>Шпаклевка стен и потолков под покраску.</p>
+                        <p>Грунтовка стен , полов и потолков.</p>
+                        <p>Покраска стен, откосов и потолков.</p>
+                        <p>Поклейка обоев.</p>
+                        <p>Поклейка багетов.</p>
+                        <p>Монтаж ламината.</p>
+                        <p>Монтаж плинтуса , порожков , уголков.</p>
+                        <p>Потолочные работы:</p>
+                        <p>Устройство гипсокартонных потолков.</p>
+                        <p>Устройство натяжных потолков.</p>
+                        <h4>Плиточные работы:</h4>
+                        <p>Монтаж плитки коридора.</p>
+                        <p>Монтаж плитки с/у.</p>
+                        <p>Монтаж плитки рабочей стенки кухни.</p>
+                        <h4>Электромонтажные материалы:</h4>
+                        <p>Провод 3х1,5 - под освещение.</p>
+                        <p>Провод 3х2,5 - под розетки.</p>
+                        <p>Провод 3х4 – под силовые приборы.</p>
+                        <h4>Сантехнические материалы:</h4>
+                        <p>Водопроводная труба.</p>
+                        <p>Канализационная труба.</p>
+                        <p>Гофры,хомуты,фитинги.</p>
+                        <h4>Малярные  и чистовые материалы:</h4>
+                        <p>Гипсовая штукатурка</p>
+                        <p>Шпаклевка Старт финиш Изогипс</p>
+                        <p>Грунтовка</p>
+                        <p>Краска</p>
+                        <p>Обойный клей</p>
+                        <p>Клей для багетов</p>
+                        <h4>Потолочные материалы:</h4>
+                        <p>ГКЛ и профиля</p>
+                        <p>Натяжные потолки</p>
+                        <p>Под натяжные потолки багет не монтируется.</p>
+                        <h4>Плиточные материалы:</h4>
+                        <p>Грунтовка</p>
+                        <p>Клей плиточный</p>
+                        <p class="expendable_materials">*Расходные материалы - дюбеля , шурупы , гвозди , хомуты , лезвия, диски , силиконы , герметики</p>
+                    </div>
+                </li>
+                <li class="js-work-1">
+                    <h3><span>05</span>Электромонтаж <span class="arrow">></span></h3>
+                    <div class="modal_work_1_hidden">
+                        <p>Разводка кабеля.</p>
+                        <p>Монтаж электрощита и автоматов.</p>
+                        <p>Монтаж реле напряжения.</p>
+                        <p>Установка точечных светильников.</p>
+                        <p>Установка электрофурнитуры.</p>
+                        <p>Установка люстр.</p>
+                        <p>Устройство вводного щита</p>
+                    </div>
+                </li>
+                <li class="js-work-1">
+                    <h3><span>06</span>Сантехника <span class="arrow">></span></h3>
+                    <div class="modal_work_1_hidden">
+                        <p>В пакет входит разводка труб под: умывальник , ванну , унитаз ,бойлер , стиральная машина , смесители , кухонная мойка. Подключение: умывальника , ванны , унитаза ,бойлер, смесители с/у.</p>
+                    </div>
+                </li>
+                <li class="js-work-1">
+                    <h3><span>07</span>Потолок <span class="arrow">></span></h3>
+                    <div class="modal_work_1_hidden">
+                        <p>На выбор мы предлагаем: натяжной, тканевый  потолок</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal_work_2">
+        <div class="modal_work_2_inner">
+            <div class="close_modal_work_2">&#10006;</div>
+            <h2>Пакет Комфорт(260 $)</h2>
+            <ul>
+                <li class="js-work-2">
+                    <h3><span>01</span>Создание технического дизайн проекта <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>План с расстановкой мебели</p>
+                        <p>План сантехники</p>
+                        <p>План электрики</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>02</span>Подготовительные работы <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Подготовка сметы на работы</p>
+                        <p>Расчет стоимости черновых материалов</p>
+                        <p>Заключение Договора</p>
+                        <p>Закупка черновых материалов</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>03</span>Менеджмент и контроль качества <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Online Контроль Ремонта</p>
+                        <p>Координация всех работ Руководителем проекта</p>
+                        <p>Контроль качества инженером технического надзора</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>04</span>Черновые работы и материалы <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <h4>Электромонтажные работы:</h4>
+                        <p>Установка точечных светильников.</p>
+                        <p>Установка электрофурнитуры.</p>
+                        <p>Установка люстр.</p>
+                        <p>Штробление стен и разводка проводов.</p>
+                        <p>Монтаж электрощита и автоматов.</p>
+                        <p>Монтаж реле напряжения и узо.</p>
+                        <h4>Сантехнические работы:</h4>
+                        <p>Штробление стен.</p>
+                        <p>Разводка труб под: стиральную машину, умывальник , ванну , унитаз ,бойлер , смесители.</p>
+                        <p>Подключение: унитаза , бойлера ,умывальника , ванны , смесители.</p>
+                        <h4>Малярные  и чистовые работы:</h4>
+                        <p>Штукатурка стен с замывкой под обои.</p>
+                        <p>Шпаклевка стен и потолков под покраску.</p>
+                        <p>Грунтовка стен , полов и потолков.</p>
+                        <p>Покраска стен, откосов и потолков.</p>
+                        <p>Поклейка обоев.</p>
+                        <p>Поклейка багетов.</p>
+                        <p>Монтаж ламината.</p>
+                        <p>Монтаж плинтуса , порожков , уголков.</p>
+                        <p>Потолочные работы:</p>
+                        <p>Устройство гипсокартонных потолков.</p>
+                        <p>Устройство натяжных потолков.</p>
+                        <h4>Плиточные работы:</h4>
+                        <p>Монтаж плитки коридора.</p>
+                        <p>Монтаж плитки с/у.</p>
+                        <p>Монтаж плитки рабочей стенки кухни.</p>
+                        <h4>Электромонтажные материалы:</h4>
+                        <p>Провод 3х1,5 - под освещение.</p>
+                        <p>Провод 3х2,5 - под розетки.</p>
+                        <p>Провод 3х4 – под силовые приборы.</p>
+                        <h4>Сантехнические материалы:</h4>
+                        <p>Водопроводная труба.</p>
+                        <p>Канализационная труба.</p>
+                        <p>Гофры,хомуты,фитинги.</p>
+                        <h4>Малярные  и чистовые материалы:</h4>
+                        <p>Гипсовая штукатурка</p>
+                        <p>Шпаклевка Старт финиш Изогипс</p>
+                        <p>Грунтовка</p>
+                        <p>Краска</p>
+                        <p>Обойный клей</p>
+                        <p>Клей для багетов</p>
+                        <h4>Потолочные материалы:</h4>
+                        <p>ГКЛ и профиля</p>
+                        <p>Натяжные потолки</p>
+                        <p>Под натяжные потолки багет не монтируется.</p>
+                        <h4>Плиточные материалы:</h4>
+                        <p>Грунтовка</p>
+                        <p>Клей плиточный</p>
+                        <p class="expendable_materials">*Расходные материалы - дюбеля , шурупы , гвозди , хомуты , лезвия, диски , силиконы , герметики</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>05</span>Электромонтаж <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Разводка кабеля.</p>
+                        <p>Монтаж электрощита и автоматов.</p>
+                        <p>Монтаж реле напряжения.</p>
+                        <p>Установка точечных светильников.</p>
+                        <p>Установка электрофурнитуры.</p>
+                        <p>Установка люстр.</p>
+                        <p>Устройство вводного щита</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>06</span>Сантехника <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>В пакет входит разводка труб под: умывальник , ванну , унитаз ,бойлер , стиральная машина , смесители , кухонная мойка. Подключение: умывальника , ванны , унитаза ,бойлер, смесители с/у.</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>07</span>Потолок <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>На выбор мы предлагаем: натяжной, тканевый  потолок</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>08</span>Обои <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Обои на выбор от лидирующих мировых брэндов</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>09</span>Ламинат <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Ламинат</p>
+                        <p>Плинтус МДФ</p>
+                        <p>Плинтус пластиковый</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>10</span>Санфаянс <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Унитаз</p>
+                        <p>Умывальник</p>
+                        <p>Ванна</p>
+                        <p>Смесители</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>11</span>Осветительные приборы <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Бра</p>
+                        <p>Точечные</p>
+                        <p>Люстры</p>
+                        <p>Свесы</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>12</span>Плитка <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Плитка на выбор от лидирующих мировых брэндов. Включает в себя все черновые и чистовые материалы и работы.</p>
+                    </div>
+                </li>
+                <li class="js-work-2">
+                    <h3><span>13</span>Двери <span class="arrow">></span></h3>
+                    <div class="modal_work_2_hidden">
+                        <p>Двери из евробруса</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal_work_3">
+        <div class="modal_work_3_inner">
+            <div class="close_modal_work_3">&#10006;</div>
+            <h2>Пакет Комфорт Плюс(375 $)</h2>
+            <ul>
+                <li class="js-work-3">
+                    <h3><span>01</span>Создание технического дизайн проекта <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>План с расстановкой мебели</p>
+                        <p>План сантехники</p>
+                        <p>План электрики</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>02</span>Подготовительные работы <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Подготовка сметы на работы</p>
+                        <p>Расчет стоимости черновых материалов</p>
+                        <p>Заключение Договора</p>
+                        <p>Закупка черновых материалов</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>03</span>Менеджмент и контроль качества <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Online Контроль Ремонта</p>
+                        <p>Координация всех работ Руководителем проекта</p>
+                        <p>Контроль качества инженером технического надзора</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>04</span>Черновые работы и материалы <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <h4>Электромонтажные работы:</h4>
+                        <p>Установка точечных светильников.</p>
+                        <p>Установка электрофурнитуры.</p>
+                        <p>Установка люстр.</p>
+                        <p>Штробление стен и разводка проводов.</p>
+                        <p>Монтаж электрощита и автоматов.</p>
+                        <p>Монтаж реле напряжения и узо.</p>
+                        <h4>Сантехнические работы:</h4>
+                        <p>Штробление стен.</p>
+                        <p>Разводка труб под: стиральную машину, умывальник , ванну , унитаз ,бойлер , смесители.</p>
+                        <p>Подключение: унитаза , бойлера ,умывальника , ванны , смесители.</p>
+                        <h4>Малярные  и чистовые работы:</h4>
+                        <p>Штукатурка стен с замывкой под обои.</p>
+                        <p>Шпаклевка стен и потолков под покраску.</p>
+                        <p>Грунтовка стен , полов и потолков.</p>
+                        <p>Покраска стен, откосов и потолков.</p>
+                        <p>Поклейка обоев.</p>
+                        <p>Поклейка багетов.</p>
+                        <p>Монтаж ламината.</p>
+                        <p>Монтаж плинтуса , порожков , уголков.</p>
+                        <p>Потолочные работы:</p>
+                        <p>Устройство гипсокартонных потолков.</p>
+                        <p>Устройство натяжных потолков.</p>
+                        <h4>Плиточные работы:</h4>
+                        <p>Монтаж плитки коридора.</p>
+                        <p>Монтаж плитки с/у.</p>
+                        <p>Монтаж плитки рабочей стенки кухни.</p>
+                        <h4>Электромонтажные материалы:</h4>
+                        <p>Провод 3х1,5 - под освещение.</p>
+                        <p>Провод 3х2,5 - под розетки.</p>
+                        <p>Провод 3х4 – под силовые приборы.</p>
+                        <h4>Сантехнические материалы:</h4>
+                        <p>Водопроводная труба.</p>
+                        <p>Канализационная труба.</p>
+                        <p>Гофры,хомуты,фитинги.</p>
+                        <h4>Малярные  и чистовые материалы:</h4>
+                        <p>Гипсовая штукатурка</p>
+                        <p>Шпаклевка Старт финиш Изогипс</p>
+                        <p>Грунтовка</p>
+                        <p>Краска</p>
+                        <p>Обойный клей</p>
+                        <p>Клей для багетов</p>
+                        <h4>Потолочные материалы:</h4>
+                        <p>ГКЛ и профиля</p>
+                        <p>Натяжные потолки</p>
+                        <p>Под натяжные потолки багет не монтируется.</p>
+                        <h4>Плиточные материалы:</h4>
+                        <p>Грунтовка</p>
+                        <p>Клей плиточный</p>
+                        <p class="expendable_materials">*Расходные материалы - дюбеля , шурупы , гвозди , хомуты , лезвия, диски , силиконы , герметики</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>05</span>Электромонтаж <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Разводка кабеля.</p>
+                        <p>Монтаж электрощита и автоматов.</p>
+                        <p>Монтаж реле напряжения.</p>
+                        <p>Установка точечных светильников.</p>
+                        <p>Установка электрофурнитуры.</p>
+                        <p>Установка люстр.</p>
+                        <p>Устройство вводного щита</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>06</span>Сантехника <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>В пакет входит разводка труб под: умывальник , ванну , унитаз ,бойлер , стиральная машина , смесители , кухонная мойка. Подключение: умывальника , ванны , унитаза ,бойлер, смесители с/у.</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>07</span>Потолок <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>На выбор мы предлагаем: натяжной, тканевый  потолок</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>08</span>Обои <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Обои на выбор от лидирующих мировых брэндов</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>09</span>Ламинат <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Ламинат</p>
+                        <p>Плинтус МДФ</p>
+                        <p>Плинтус пластиковый</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>10</span>Санфаянс <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Унитаз</p>
+                        <p>Умывальник</p>
+                        <p>Ванна</p>
+                        <p>Смесители</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>11</span>Осветительные приборы <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Бра</p>
+                        <p>Точечные</p>
+                        <p>Люстры</p>
+                        <p>Свесы</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>12</span>Плитка <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Плитка на выбор от лидирующих мировых брэндов. Включает в себя все черновые и чистовые материалы и работы.</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>13</span>Двери <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Двери из евробруса</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>14</span>Климатическая техника <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>Бойлеры и кондиционеры</p>
+                    </div>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>15</span>Кухня под заказ <span class="arrow">></span></h3>
+                </li>
+                <li class="js-work-3">
+                    <h3><span>16</span>Аксессуары на выбор: <span class="arrow">></span></h3>
+                    <div class="modal_work_3_hidden">
+                        <p>зеркало с LED подсветкой</p>
+                        <p>полотенцесушитель </p>
+                        <p>тумба под умывальник</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="modal_form">
         <form class="modal_form_inner" action="#">
             <div class="close_modal_2">&#10006;</div>
-            <input type="text" placeholder="Имя">
-            <input type="tel" placeholder="Телефон">
-            <button type="button">Заказать звонок</button>
+            <input type="text" placeholder="Имя" id="name_form_1">
+            <input type="tel" placeholder="Телефон" id="tel_form_1">
+            <button type="button" id="modal_submit_btn_1">Заказать звонок</button>
         </form>
     </div>
     <div class="modal_kviz">
@@ -458,11 +899,11 @@
                 <div class="kviz_2_inner">
                     <h2>Где нужен ремонт?</h2>
                     <form>
-                        <input type="radio" id="kviz_2_1" name="kviz_2_radio"><label for="kviz_2_1"><img src="img/kviz_2_thumbnail_1.png" alt="">Новострой</label>
-                        <input type="radio" id="kviz_2_2" name="kviz_2_radio"><label for="kviz_2_2"><img src="img/kviz_2_thumbnail_2.png" alt="">Дом</label>
-                        <input type="radio" id="kviz_2_3" name="kviz_2_radio"><label for="kviz_2_3"><img src="img/kviz_2_thumbnail_3.png" alt="">Вторичка</label>
-                        <input type="radio" id="kviz_2_4" name="kviz_2_radio"><label for="kviz_2_4"><img src="img/kviz_2_thumbnail_4.png" alt="">Офис</label>
-                        <input type="radio" id="kviz_2_5" name="kviz_2_radio"><label for="kviz_2_5"><img src="img/kviz_2_thumbnail_5.png" alt="">Другое</label>
+                        <input type="radio" id="kviz_2_1" name="kviz_2_radio" checked value="Новострой"><label for="kviz_2_1"><img src="img/kviz_2_thumbnail_1.png" alt="">Новострой</label>
+                        <input type="radio" id="kviz_2_2" name="kviz_2_radio" value="Дом"><label for="kviz_2_2"><img src="img/kviz_2_thumbnail_2.png" alt="">Дом</label>
+                        <input type="radio" id="kviz_2_3" name="kviz_2_radio" value="Вторичка"><label for="kviz_2_3"><img src="img/kviz_2_thumbnail_3.png" alt="">Вторичка</label>
+                        <input type="radio" id="kviz_2_4" name="kviz_2_radio" value="Офис"><label for="kviz_2_4"><img src="img/kviz_2_thumbnail_4.png" alt="">Офис</label>
+                        <input type="radio" id="kviz_2_5" name="kviz_2_radio" value="Другое"><label for="kviz_2_5"><img src="img/kviz_2_thumbnail_5.png" alt="">Другое</label>
                     </form>
                     <div class="kviz_buttons">
                         <div class="kviz_btn_2_prew"><img src="img/left_arrow.png" alt="">Назад</div>
@@ -478,12 +919,12 @@
             <div class="js-kviz-3 kviz_3">
                 <div class="kviz_3_inner">
                     <h2>Площадь объекта</h2>
-                    <input type="range" min="0" max="1000">
+                    <input type="range" min="0" max="1000" value="50" id="range_slider">
                     <div class="input_min_max">
                         <div class="min_value">0 м2</div>
                         <div class="max_value">1000 м2</div>
                     </div>
-                    <div class="input_value">20 м<span>2</span></div>
+                    <div class="input_value"><span>50</span> м2</div>
                     <div class="kviz_buttons">
                         <div class="kviz_btn_3_prew"><img src="img/left_arrow.png" alt="">Назад</div>
                         <div class="kviz_btn_3">Дальше<img src="img/right_arrow.png" alt=""></div>
@@ -498,8 +939,8 @@
             <div class="js-kviz-4 kviz_4">
                 <div class="kviz_4_inner">
                     <h2>У Вас есть дизайн-проект?</h2>
-                    <input type="radio" id="kviz_4_1" name="kviz_4_radio"><label for="kviz_4_1">Да</label>
-                    <input type="radio" id="kviz_4_2" name="kviz_4_radio"><label for="kviz_4_2">Нет, но сделайте предложение</label>
+                    <input type="radio" id="kviz_4_1" name="kviz_4_radio" checked value="Есть дизайн проект"><label for="kviz_4_1">Да</label>
+                    <input type="radio" id="kviz_4_2" name="kviz_4_radio" value="Сделайте предложение"><label for="kviz_4_2">Нет, но сделайте предложение</label>
                     <div class="kviz_buttons">
                         <div class="kviz_btn_4_prew"><img src="img/left_arrow.png" alt="">Назад</div>
                         <div class="kviz_btn_4">Дальше<img src="img/right_arrow.png" alt=""></div>
@@ -516,17 +957,17 @@
                     <h2>Какие виды ремонтных работ необходимо сделать?</h2>
                         <div class="flex_kviz">
                             <div class="flex_container">
-                                <input type="radio" id="kviz_5_1" name="kviz_5_radio"><label for="kviz_5_1">Штукатурка</label>
-                                <input type="radio" id="kviz_5_2" name="kviz_5_radio"><label for="kviz_5_2">Сантехника</label>
+                                <input type="checkbox" id="kviz_5_1" name="kviz_5_radio" value="Штукатурка"><label for="kviz_5_1">Штукатурка</label>
+                                <input type="checkbox" id="kviz_5_2" name="kviz_5_radio" value="Сантехника"><label for="kviz_5_2">Сантехника</label>
                             </div>
                             <div class="flex_container">
-                                <input type="radio" id="kviz_5_3" name="kviz_5_radio"><label for="kviz_5_3">Нужна консультация</label>
-                                <input type="radio" id="kviz_5_4" name="kviz_5_radio"><label for="kviz_5_4">Под ключ</label>
-                                <input type="radio" id="kviz_5_5" name="kviz_5_radio"><label for="kviz_5_5">Стены (обои / покраска)</label>
+                                <input type="checkbox" id="kviz_5_3" name="kviz_5_radio" checked value="Нужна консультация"><label for="kviz_5_3">Нужна консультация</label>
+                                <input type="checkbox" id="kviz_5_4" name="kviz_5_radio" value="Под ключ"><label for="kviz_5_4">Под ключ</label>
+                                <input type="checkbox" id="kviz_5_5" name="kviz_5_radio" value="Стены (обои / покраска)"><label for="kviz_5_5">Стены (обои / покраска)</label>
                             </div>
                             <div class="flex_container">
-                                <input type="radio" id="kviz_5_6" name="kviz_5_radio"><label for="kviz_5_6">Электрика</label>
-                                <input type="radio" id="kviz_5_7" name="kviz_5_radio"><label for="kviz_5_7">Плитка</label>
+                                <input type="checkbox" id="kviz_5_6" name="kviz_5_radio" value="Электрика"><label for="kviz_5_6">Электрика</label>
+                                <input type="checkbox" id="kviz_5_7" name="kviz_5_radio" value="Плитка"><label for="kviz_5_7">Плитка</label>
                             </div>   
                         </div>
                     <div class="kviz_buttons">
@@ -544,9 +985,9 @@
                 <div class="kviz_6_inner">
                     <h2>Выберите 1 из 3 подарков</h2>
                         <div class="podarki">
-                            <input type="radio" id="kviz_6_1" name="kviz_6_radio"><label for="kviz_6_1"><img src="img/kviz_6_1.png" alt=""> Клининг</label>
-                            <input type="radio" id="kviz_6_2" name="kviz_6_radio"><label for="kviz_6_2"><img src="img/kviz_6_2.png" alt="">Доставка материала</label>
-                            <input type="radio" id="kviz_6_3" name="kviz_6_radio"><label for="kviz_6_3"><img src="img/kviz_6_3.png" alt="">Закладная под кондиционер</label>
+                            <input type="radio" id="kviz_6_1" name="kviz_6_radio" value="Клининг"><label for="kviz_6_1"><img src="img/kviz_6_1.png" alt="">Клининг</label>
+                            <input type="radio" id="kviz_6_2" name="kviz_6_radio" checked value="Доставка материала"><label for="kviz_6_2"><img src="img/kviz_6_2.png" alt="">Доставка материала</label>
+                            <input type="radio" id="kviz_6_3" name="kviz_6_radio" value="Закладная под кондиционер"><label for="kviz_6_3"><img src="img/kviz_6_3.png" alt="">Закладная под кондиционер</label>
                         </div>
                     <div class="kviz_buttons">
                         <div class="kviz_btn_6_prew"><img src="img/left_arrow.png" alt="">Назад</div>
@@ -563,14 +1004,14 @@
                 <div class="kviz_7_inner">
                     <h2>Заполните форму, чтобы мы смогли <br> сообщить вам стоимость ремонта</h2>
                     <form action="#" id="kviz_form">
-                        <input type="hidden" id="kviz_value_1">
-                        <input type="hidden" id="kviz_value_2">
-                        <input type="hidden" id="kviz_value_3">
-                        <input type="hidden" id="kviz_value_4">
-                        <input type="hidden" id="kviz_value_5">
-                        <input type="text" placeholder="Имя">
-                        <input type="tel" placeholder="Телефон">
-                        <button type="button">Просчитать</button>
+                        <input type="hidden" id="kviz_value_1" value="" name="hidden_kviz_1">
+                        <input type="hidden" id="kviz_value_2" value="" name="hidden_kviz_2">
+                        <input type="hidden" id="kviz_value_3" value="" name="hidden_kviz_3">
+                        <input type="hidden" id="kviz_value_4" value="" name="hidden_kviz_4">
+                        <input type="hidden" id="kviz_value_5" value="" name="hidden_kviz_5">
+                        <input type="text" placeholder="Имя" name="name" id="kviz_name">
+                        <input type="tel" placeholder="Телефон" name="tel" id="kviz_tel">
+                        <button type="button" id="kviz_submit_btn">Просчитать</button>
                     </form>
                 </div>
                 <div class="kviz_7_img">
@@ -580,8 +1021,10 @@
                 </div>
             </div>
         </div>
+        <div class="close_kviz">&#10006;</div>
     </div>
     <div class="kviz_open">Узнайте стоимость</div>
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>

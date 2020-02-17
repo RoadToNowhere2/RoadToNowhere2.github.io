@@ -653,6 +653,173 @@
           animation: bingc-animation 5s ease-in-out infinite;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  display: none;
+}
+
+.modal .close_modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal_inner {
+  width: 100%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  display: none;
+}
+
+.modal_inner h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.modal_inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal_inner form input {
+  display: block;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+  outline: none;
+  background-color: inherit;
+  margin-bottom: 20px;
+  -webkit-animation: bingc-animation 5s ease-in-out infinite;
+          animation: bingc-animation 5s ease-in-out infinite;
+}
+
+.modal_inner form button {
+  color: #102269;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 15px 60px;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-animation: bingc-animation 5s ease-in-out infinite;
+          animation: bingc-animation 5s ease-in-out infinite;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.preloader .loader {
+  width: 100%;
+  max-width: 200px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preloader .loader ul {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.preloader .loader ul li {
+  width: 5px;
+  height: 20px;
+  background-color: #fff;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
 @-webkit-keyframes bingc-animation {
   0% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);

@@ -1,0 +1,173 @@
+@media (max-width: 1199px) {
+    .advantages .row p {
+        font-size: 14px;    
+    }
+    .advantages .row img.left_olivko {
+        left: 10px;
+    }
+    .advantages .row img.right_olivko {
+        right: 10px;
+    }
+    .specialist .row .flex_list {
+        padding: 20px 0 20px 20px;
+    }
+    .specialist .row .flex_list .flex_container p {
+        font-size: 16px;
+    }
+    .catalog .card .title_card h4 {
+        font-size: 18px;
+    }
+    .catalog .card_body .card_text {
+        min-height: 260px;
+    }
+    .catalog .card .title_card .left_mini_olivo {
+        left: 0;
+    }
+    .catalog .card .title_card .right_mini_olivo {
+        right: 0;
+    }
+}
+
+@media(max-width: 991px) {
+    .footer,
+    .footer p,
+    .footer_tel {
+        text-align: center;
+    }
+    .footer h3 {
+        margin-bottom: 30px;
+    }
+    .form form {
+        margin: 0 auto;
+    }
+    .zapchasti .row img {
+        display: block;
+        margin: 0 auto;
+    }
+    .zapchasti .row ul {
+        padding-top: 30px;
+        margin-left: 150px;
+    }
+    .zapchasti .row .flex_container {
+        padding-bottom: 20px;
+    }
+    .catalog .card {
+        margin-bottom: 30px;
+        padding: 40px 20px;
+    }
+    .specialist .row .poligon_img {
+        display: none;   
+    }
+    .specialist h3 br {
+        display: none;
+    }
+    .advantages .row p {
+        font-size: 20px;
+    }
+    .advantages .row img.left_olivko {
+        left: 40px;
+    }
+    .advantages .row img.right_olivko {
+        right: 40px;
+    }
+    .header_inner {
+        padding: 0 15px;
+    }
+    .header h1 {
+        text-align: center;
+    }
+    .header ul {
+        margin-left: 100px;
+    }
+}
+
+@media(max-width: 767px) {
+    .header ul {
+        margin-left: 0;
+    }
+    .header h1 br {
+        display: none;
+    }
+    .catalog .card_body {
+        justify-content: flex-start;
+    }
+    .zapchasti .row ul {
+        margin-left: 0;
+    }
+    .form {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .zapchasti .row .flex_container {
+        flex-direction: column;
+    }
+    .catalog .card_body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .catalog .card_body .card_text {
+        align-items: center;
+        width: 100%;
+    }
+    .specialist .row .flex_list {
+        padding: 10px;
+    }
+    .specialist .row .flex_list .flex_container .img_container {
+        min-width: 65px;
+        min-height: 65px;
+        margin-right: 20px;
+    }
+    .advantages .row p {
+        font-size: 16px;
+    }
+    .advantages .row p br {
+        display: none;
+    }
+    .advantages .row img.left_olivko {
+        left: 0;
+    }
+    .advantages .row img.right_olivko {
+        right: 0;
+    }
+    .header ul li {
+        line-height: 1;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .header h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .header_inner {
+        flex-direction: column;
+    }
+    .header_inner img {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .header .btn {
+        padding: 20px 30px;
+    }
+    .zapchasti .row .flex_container a.download {
+        padding: 15px 30px;
+    }
+    .form form h2 {
+        text-align: center;
+    }
+    .form form input {
+        max-width: 100%;
+    }
+    .form form {
+        padding: 20px;
+    }
+    .form {
+        padding-top: 30px;
+    }
+    .form form button {
+        padding: 15px 30px;
+    }
+}

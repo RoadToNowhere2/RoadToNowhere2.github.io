@@ -15,6 +15,13 @@
     overflow: hidden;
 }
 
+.content .circle {
+    display: block;
+    margin: 0 auto 23px auto;
+    animation: rotate 1s linear infinite;
+    -webkit-animation: rotate 1s linear infinite;
+}
+
 .hello {
     background-image: url('../img/hello_bg.png');
     background-size: cover;
@@ -37,11 +44,6 @@
     margin-bottom: 85px;
     letter-spacing: 0.58px;
     text-align: right;
-}
-
-.content .phone a {
-    text-decoration: none;
-    color: #fff;
 }
 
 .content h1 {
@@ -136,9 +138,10 @@
 }
 
 .content .table ul.columns ul.rows li {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 13px;
 }
 
@@ -228,4 +231,313 @@
 .menu .btns .btn:last-child:active {
     box-shadow: 5px 6px 21px rgba(0, 0, 0, 0.3);
     
+}
+
+.vidan {
+    background-image: url('../img/terminal_vidan.png');
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.vozvrashen {
+    background-image: url('../img/terminal_vozvrashen.png');
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.avtorisaciya {
+    background-image: url('../img/avtorisaciya.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.vozmite {
+    background-image: url('../img/nomer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ne_vidan {
+    background-image: url('../img/ne_vidan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.na_rukah {
+    background-image: url('../img/na_rukah.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ready {
+    padding-top: 100px;
+    background-image: url('../img/ready.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vidan h1,
+.vozvrashen h1,
+.avtorisaciya h1,
+.vozmite h1,
+.ne_vidan h1,
+.na_rukah h1,
+.ready h1 {
+    text-align: left;
+    padding-left: 50px;
+    color: #474747;
+    /* font-family: "Geometria - Extra Bold"; */
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.35px;
+}
+
+.vidan .table,
+.vozvrashen .table,
+.avtorisaciya .table,
+.vozmite .table,
+.ne_vidan .table,
+.na_rukah .table,
+.ready .table {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.vidan .phone,
+.vozvrashen .phone,
+.avtorisaciya .phone,
+.vozmite .phone,
+.ne_vidan .phone,
+.na_rukah .phone {
+    opacity: 0.4;
+    color: #000000;
+    /* font-family: Geometria; */
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.58px;
+}
+
+.vidan h1::after,
+.vozvrashen h1::after,
+.avtorisaciya h1::after,
+.vozmite h1::after,
+.ne_vidan h1::after,
+.na_rukah h1::after,
+.ready h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50px;
+    bottom: -12px;
+    transform: translateX(0);
+    width: 18px;
+    height: 2px;
+    background-color: #97d2ff;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.ready img {
+    display: block;
+    padding-left: 50px;
+    margin-bottom: 16px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    50% {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+.content .img_container_2 {
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 19px 23px 80px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.units h1 {
+    margin-bottom: 40px;
+}
+
+.units h1::after {
+    display: none;
+}
+
+.units h2 {
+    color: #97d2ff;
+    /* font-family: Geometria; */
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    margin-bottom: 20px;
+}
+
+.units .single_units_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+.units .single_units_list li {
+    width: 328px;
+    height: 45px;   
+    box-shadow: 5px 6px 21px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 45%;
+    margin-bottom: 11px;
+    opacity: 0.7;
+    color: #000000;
+    /* font-family: Geometria; */
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+}
+
+.units .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.units .buttons .next {
+    width: 221px;
+    height: 71px;
+    box-shadow: 5px 6px 21px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    background-color: #69beff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    /* font-family: Geometria; */
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    cursor: pointer;
+}
+
+.units .buttons .prew {
+    width: 238px;
+    height: 71px;
+    box-shadow: 5px 6px 21px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    border: 3px solid #69beff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #69beff;
+    /* font-family: Geometria; */
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    cursor: pointer;
+}
+
+.units .buttons .wrappers {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: Geometria; */
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.units .buttons .wrappers div {
+    color: #b3b3b3;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.units .buttons .wrappers .active {
+    color: #474747;
+}
+
+.units .active_list {
+    opacity: 1;
+}
+
+
+
+@media (min-width: 801px) {
+    .vidan .table,
+    .vozvrashen .table,
+    .avtorisaciya .table,
+    .vozmite .table,
+    .ne_vidan .table,
+    .na_rukah .table,
+    .ready .table {
+            height: 245px;
+        }
+    .units .buttons {
+        bottom: 30px;
+    }
+    .units h1 {
+        margin-bottom: 70px;
+    }
 }

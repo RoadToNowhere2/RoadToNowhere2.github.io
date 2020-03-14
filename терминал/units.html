@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content menu units">
+        <h1>Units list.</h1>
+        <a href="/" class="img_container_2">
+            <img src="img/arrow.png" alt="">
+        </a>
+        <h2>Select one</h2>
+        <ul class="single_units_list active_list" data-list="0">
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+        </ul>
+        <ul class="single_units_list" data-list="1" style="display: none;">
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+        </ul>
+        <ul class="single_units_list" data-list="2" style="display: none;">
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+        </ul>
+        <ul class="single_units_list" data-list="3" style="display: none;">
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+            <li>90e7c7a8-5558-4092-9e53-6666eab5e5d0</li>
+        </ul>
+        <div class="buttons">
+            <div class="next" data-chek='1'>Следующая страница</div>
+            <div class="prew" data-chek='2'>Предыдущая страница</div>
+            <div class="wrappers">
+                <div  class="link active" data-link='0'>1</div>
+                <div  class="link" data-link='1'>2</div>
+                <div  class="link" data-link='2'>3</div>
+                <div  class="link" data-link='3'>4</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        document.querySelector('.next').addEventListener('click', slide);
+        document.querySelector('.prew').addEventListener('click', slide);
+
+        function slide() {
+            var lists     = document.querySelectorAll('.single_units_list');
+            var data_list = document.querySelector('.active_list');
+            var data_btn  = this.dataset.chek;
+            var caunt     = data_list.dataset.list;
+
+
+            if (data_btn == 1) {
+                var k = + caunt + 1;
+
+                if (k == lists.length) {
+                    k = 0;
+                }
+
+                document.querySelector('.active').classList.remove('active');
+                links[k].classList.add('active');
+                
+                data_list.style.display = 'none' ;
+                data_list.style.opacity = '0' ;    
+
+                data_list.classList.remove('active_list');
+                Array.from(lists)[k].classList.add('active_list');
+
+                lists[k].style.opacity = '0' ;
+                lists[k].style.display = 'flex' ;
+
+                var start = Date.now(); // запомнить время начала
+                var timer = setInterval(function() {
+                // сколько времени прошло с начала анимации?
+                var timePassed = Date.now() - start;
+                if (timePassed >= 1000) {
+                    clearInterval(timer); // закончить анимацию через 2 секунды
+                    return;
+                }
+                // отрисовать анимацию на момент timePassed, прошедший с начала анимации
+                draw(timePassed);
+
+                }, 100);
+                // в то время как timePassed идёт от 0 до 2000
+                // left изменяет значение от 0px до 400px
+                function draw(timePassed) {
+                lists[k].style.opacity = 1;
+                }
+
+                
+            }  else if (data_btn == 2) {
+                var k = + caunt - 1;
+
+                if (k < 0) {
+                    k = lists.length - 1;
+                }
+
+                document.querySelector('.active').classList.remove('active');
+                links[k].classList.add('active');
+                
+                data_list.style.display = 'none' ;
+                data_list.style.opacity = '0' ;    
+
+                data_list.classList.remove('active_list');
+                Array.from(lists)[k].classList.add('active_list');
+
+                lists[k].style.opacity = '0' ;
+                lists[k].style.display = 'flex' ;
+
+                var start = Date.now(); // запомнить время начала
+                var timer = setInterval(function() {
+                // сколько времени прошло с начала анимации?
+                var timePassed = Date.now() - start;
+                if (timePassed >= 1000) {
+                    clearInterval(timer); // закончить анимацию через 2 секунды
+                    return;
+                }
+                // отрисовать анимацию на момент timePassed, прошедший с начала анимации
+                draw(timePassed);
+
+                }, 100);
+                // в то время как timePassed идёт от 0 до 2000
+                // left изменяет значение от 0px до 400px
+                function draw(timePassed) {
+                lists[k].style.opacity = 1;
+                }
+            } 
+        }
+
+        var links = document.querySelectorAll('.link');
+        Array.from(links);
+        
+        for( var i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', function () {
+                var data_link = this.dataset.link ;
+                var lists     = document.querySelectorAll('.single_units_list');
+                var data_list = document.querySelector('.active_list');
+
+                document.querySelector('.active').classList.remove('active');
+                this.classList.add('active');
+
+                data_list.style.display = 'none' ;
+                data_list.style.opacity = '0' ;  
+                 
+
+                data_list.classList.remove('active_list');
+                Array.from(lists)[data_link].classList.add('active_list');
+
+                lists[data_link].style.opacity = '0' ;
+                lists[data_link].style.display = 'flex' ;
+
+                var start = Date.now(); // запомнить время начала
+                var timer = setInterval(function() {
+                // сколько времени прошло с начала анимации?
+                var timePassed = Date.now() - start;
+                if (timePassed >= 1000) {
+                    clearInterval(timer); // закончить анимацию через 2 секунды
+                    return;
+                }
+                // отрисовать анимацию на момент timePassed, прошедший с начала анимации
+                draw(timePassed);
+
+                }, 100);
+                // в то время как timePassed идёт от 0 до 2000
+                // left изменяет значение от 0px до 400px
+                function draw(timePassed) {
+                lists[data_link].style.opacity = 1;
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>

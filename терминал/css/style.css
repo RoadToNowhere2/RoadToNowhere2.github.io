@@ -1,7 +1,19 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria.eot');
+	src: local('Geometria'),
+		url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria.woff') format('woff'),
+		url('../fonts/Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Geometria', sans-serif;
     box-sizing: border-box;
 }
 

@@ -368,7 +368,7 @@
     -o-transform: translateX(0);
 }
 
-.ready img {
+.ready img.like {
     display: block;
     padding-left: 50px;
     margin-bottom: 16px;

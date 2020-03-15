@@ -9,6 +9,16 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Geometria-bold';
+	src: url('../fonts/Geometria-ExtraBold.eot');
+	src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
+		url('../fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-ExtraBold.woff') format('woff'),
+		url('../fonts/Geometria-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
 
 * {
     padding: 0;
@@ -49,7 +59,7 @@
 .content .phone {
     opacity: 0.6;
     color: #ffffff;
-    /* font-family: Geometria; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 13px;
     font-weight: 700;
     margin-right: 23px;
@@ -61,7 +71,7 @@
 .content h1 {
     text-align: center;
     color: #fff;
-    /* font-family: "Geometria - Extra Bold"; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
@@ -125,7 +135,7 @@
     text-align: center;
     opacity: 0.85;
     color: #000000;
-    /* font-family: "Geometria - Extra Bold"; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -189,7 +199,7 @@
     text-align: center;
     margin-top: 30px;
     color: #000;
-    /* font-family: "Geometria - Extra Bold"; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -210,7 +220,7 @@
     outline: none;
     border: none;
     color: #ffffff;
-    /* font-family: Geometria; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.35px;
@@ -298,7 +308,7 @@
     text-align: left;
     padding-left: 50px;
     color: #474747;
-    /* font-family: "Geometria - Extra Bold"; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -329,7 +339,7 @@
 .na_rukah .phone {
     opacity: 0.4;
     color: #000000;
-    /* font-family: Geometria; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.58px;
@@ -485,7 +495,7 @@
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    /* font-family: Geometria; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.35px;
@@ -502,7 +512,7 @@
     align-items: center;
     justify-content: center;
     color: #69beff;
-    /* font-family: Geometria; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.35px;
@@ -514,7 +524,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* font-family: Geometria; */
+    font-family: 'Geometria-bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;

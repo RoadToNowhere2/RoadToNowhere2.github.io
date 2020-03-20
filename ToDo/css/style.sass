@@ -1,0 +1,151 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: sans-serif
+    font-size: 24px
+
+header
+    padding: 40px 20px 30px 20px
+    text-align: center
+    color: #ffffff
+    background-color: #42bcf5
+    border-bottom: 10px solid darken(#42bcf5, 20%)
+    h1
+        font-size: 30px
+        text-transform: uppercase
+        font-weight: 700
+        margin-bottom: 25px
+        letter-spacing: 2px
+    p
+        letter-spacing: 2px
+main
+    position: relative
+    .left_menu
+        position: fixed
+        top: 0
+        bottom: 0
+        background-color: #5ec7f7c2
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        padding: 10px
+        color: #ffffff
+        transition: .5s ease all
+        left: -100%
+        right: 100%
+        .openAddToDo
+            position: absolute
+            top: 30px
+            right: -50px
+            padding: 5px
+            background-color: #685ef7  
+            border-radius: 15px
+            transition: .4s ease all
+            i
+                font-size: 40px  
+                color: #ffffff
+                transition: .4s ease all
+        .openAddToDo_active
+            top: 50%
+            transform: translateY(-50%) 
+            background-color: #000000
+            i
+                transform: rotate(45deg)
+                color: #42bcf5
+
+        .addToDo
+            p
+                margin-bottom: 20px
+            input
+                outline: none
+                padding: 10px 15px
+                width: 100%
+                border: none
+                border-radius: 25px
+                background-color: #ffffff
+                color: #685ef7
+            button
+                margin-top: 30px
+                border: none
+                outline: none
+                color: #ffffff
+                background-color: #685ef7
+                padding: 10px 15px
+                border-radius: 25px
+                width: 100%
+    .clear
+        position: fixed
+        top: 30px
+        right: 0
+        padding: 5px
+        background-color: #685ef7  
+        border-radius: 15px
+        width: 50px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        i
+            font-size: 30px  
+            color: #ffffff
+    .todo_list
+        list-style: none
+        padding: 5px
+        margin-top: 30px
+        li
+            display: flex
+            justify-content: space-between
+            background-color: #42bcf5
+            margin-bottom: 15px
+            border-radius: 25px
+            transition: .4s ease all
+            .buttons
+                display: flex
+                align-items: center
+                justify-content: space-between
+                max-width: 110px
+                width: 100%
+                padding-right: 5px
+            p,
+            .number,
+            .star,
+            .ok,
+            .del
+                font-size: 18px
+                padding: 10px 5px
+                line-height: 26px
+                transition: .4s ease all
+            .number
+                background-color: #685ef7
+                color: #fff
+                border-top-left-radius: 25px
+                border-bottom-left-radius: 25px 
+                padding: 10px  
+                display: flex
+                align-items: center
+                justify-content: center 
+            p
+                color: #ffffff
+            .ok
+                color: #019413
+            .del
+                color: #8f0000
+            .star
+                color: #fcfcde
+            .stra_active
+                color: #d1d100
+            input[type="checkbox"]
+                display: none
+        li.important
+            p
+                font-weight: 700
+                font-size: 24px
+        li.checked
+            background-color: green
+            .checked_p
+                background-color: green
+main .active_menu
+    left: 0
+    right: 100px

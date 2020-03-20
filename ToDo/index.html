@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <script src="https://kit.fontawesome.com/ddcf245c2b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="main_title">Привет, Лёлик!</h1>
+        <p>Что у нас на сегодня?</p>
+    </header>
+    <main>
+        <div class="left_menu">
+            <div class="openAddToDo"><i class="fas fa-plus-circle"></i></div>
+            <div class="addToDo">
+                <p>Введи задачу:</p>
+                <input type="text" placeholder="Нужно сделать..." id="AddToDoName">
+                <button id="addToDo">Добавить</button>
+            </div>
+        </div>
+        <div class="clear"><i class="fas fa-trash-alt"></i></div>
+        <ul class="todo_list">
+        </ul>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

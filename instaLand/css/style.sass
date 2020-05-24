@@ -35,6 +35,17 @@ header,
 .packages-single
     margin-bottom: 60px
 
+.packages.container
+    max-width: 315px
+
+.packages-single
+    border: 1px dashed #313131
+    border-radius: 10px
+    padding: 5px
+    
+#timerd9c8548ddde5484969ed7dc11f689259
+    margin-bottom: 20px!important
+
 h1,h2,h3,li
     margin-bottom: 20px
 
@@ -77,18 +88,48 @@ ul
     img
         margin-bottom: 20px
 
+.desctope-container
+    background-image: url(../img/lights-on-bg.png)
+    background-size: cover
+    background-position: top center
+    background-repeat: no-repeat
+
 p
     font-style: normal
     font-weight: 300
     font-size: 14px
     line-height: 19px
     text-align: center
-    color: #252529
+    color: #989898
+    a
+        color: #989898
+        display: block
+        margin-top: 20px
 
 img.margin
     display: block
     margin: 0 auto
     margin-bottom: 20px
+
+img.button-fade
+    display: none
+.btn
+    overflow: hidden
+    .button-animate
+        display: block
+        width: 30px
+        height: 105px
+        background-color: #ffffff7a
+        z-index: 15
+        position: absolute
+        top: 50%
+        right: calc( 100% + 35px )
+        transition: .4s linear all
+        transform: translateY(-50%) rotate(45deg)
+
+            
+    
+    
         
 @media   ( max-width: 310px )
     .container

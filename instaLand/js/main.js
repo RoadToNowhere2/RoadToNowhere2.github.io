@@ -8,8 +8,8 @@ $(document).ready(function() {
     });
     
     {
-        let offset = $('.packages').offset().top;
-        doc_w = $(document).width();
+        let offset  = $('#scroll-item').offset().top,
+            doc_w   = $(document).width();
     
         console.log(offset)
         $('.js-scroll').on('click', function() {

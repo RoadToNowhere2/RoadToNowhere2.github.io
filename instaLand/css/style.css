@@ -194,4 +194,10 @@ img.margin {
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .desctope-bg {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

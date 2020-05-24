@@ -26,6 +26,7 @@ html {
   height: 55px;
   margin: 0 auto;
   position: relative;
+  cursor: pointer;
 }
 
 .btn img {
@@ -157,5 +158,40 @@ img.margin {
 .slick-initialized .slick-slide.slick-active::after {
   opacity: 0;
   visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
+  body .desctope-container {
+    position: relative;
+    width: 410px;
+    margin: 0 auto;
+    height: 700px;
+    overflow: scroll;
+  }
+  body .desctope-container .desctope-bg {
+    position: fixed;
+    width: 410px;
+    height: 800px;
+    top: 51%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  body .desctope-container::-webkit-scrollbar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -124,6 +124,29 @@ img.margin
         opacity: 0
         visibility: hidden
     
+@media   ( min-width: 500px )
+    body
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 0
+        .desctope-container
+            position: relative
+            width: 410px
+            margin: 0 auto
+            height: 700px
+            overflow: scroll
+            .desctope-bg
+                position: fixed
+                width: 410px
+                height: 800px
+                top: 51%
+                left: 50%
+                transform: translate(-50%, -50%)
+                z-index: -1
+            &::-webkit-scrollbar
+                display: none
+    
 
 
 

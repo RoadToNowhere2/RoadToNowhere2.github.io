@@ -1,0 +1,155 @@
+*
+    padding: 0
+    margin: 0
+    color: #ffffff
+    font-family: 'MuseoSansCyrl', sans-serif
+
+body
+    background: #09090C
+    min-height: 100vh
+    padding-top: 31px
+
+body,
+html
+    overflow-x: hidden
+
+.container
+    max-width: 305px
+    margin: 0 auto
+
+.btn
+    width: 100%
+    height: 55px
+    margin: 0 auto
+    position: relative
+    cursor: pointer
+    img
+        display: block
+        position: absolute  
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+section,
+header,
+.packages-single
+    margin-bottom: 60px
+
+h1,h2,h3,li
+    margin-bottom: 20px
+
+h1
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+
+h2
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+
+h3
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    color: #C9C9C9
+
+ul
+    list-style: none
+    li
+        position: relative
+        font-style: normal
+        font-weight: 300
+        font-size: 20px
+        line-height: 24px
+        padding-left: 60px
+        img
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+
+.center
+    text-align: center
+    img
+        margin-bottom: 20px
+
+p
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    text-align: center
+    color: #252529
+
+img.margin
+    display: block
+    margin: 0 auto
+    margin-bottom: 20px
+        
+@media   ( max-width: 310px )
+    .container
+        max-width: 100%
+        padding-left: 10px
+        padding-right: 10px
+    
+.slider
+    .slide
+        margin-right: 20px
+        img
+            width: auto!important
+    &:last-child
+        margin-right: 0
+
+.slick-initialized .slick-slide
+    transition: .3s ease all
+    position: relative
+    outline: none
+    border: none
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 2
+        background: #0000007c
+        transition: .3s ease all
+.slick-initialized .slick-slide.slick-active
+    &::after
+        opacity: 0
+        visibility: hidden
+    
+@media   ( min-width: 500px )
+    body
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 0
+        .desctope-container
+            position: relative
+            width: 410px
+            margin: 0 auto
+            height: 700px
+            overflow: scroll
+            .desctope-bg
+                position: fixed
+                width: 410px
+                height: 800px
+                top: 51%
+                left: 50%
+                transform: translate(-50%, -50%)
+                z-index: -1
+            &::-webkit-scrollbar
+                display: none
+    
+@media   ( max-width: 500px )
+    .desctope-bg
+        display: none
+
+
+

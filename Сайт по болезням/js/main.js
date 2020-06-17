@@ -102,6 +102,18 @@ $(document).ready(function() {
             $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
             e.preventDefault();
           });
+
+          doc_w = $('body').width();
+
+          if (doc_w < 1000) {
+            $("body").on('click', '[href*="#"]', function(e){
+                var fixed_offset = 100;
+                $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+                e.preventDefault();
+                $('.header-menu ul').removeClass('flex');
+                $('.mobile-menu').removeClass('active');
+            });
+        }
     }
 
     {

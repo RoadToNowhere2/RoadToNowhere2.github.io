@@ -159,6 +159,18 @@ a {
   background-repeat: no-repeat;
 }
 
+.header-menu__logo {
+  width: 310px;
+  height: 1px;
+  position: relative;
+}
+
+.header-menu__logo svg {
+  position: absolute;
+  left: 0;
+  top: -45px;
+}
+
 .header-menu .mobile-menu {
   display: none;
 }

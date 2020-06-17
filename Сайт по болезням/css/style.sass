@@ -1,0 +1,1197 @@
+*
+    font-family: "Gilroy-Light"
+    font-size: 18px
+    box-sizing: border-box
+
+body,
+html
+    overflow-x: hidden
+    
+h1,h2,h3
+    font-family: "Gilroy-ExtraBold"
+    margin: 0
+
+.container
+    max-width:  1400px
+    margin: 0 auto
+
+a
+    text-decoration: none
+    color: inherit  
+
+@media (max-width: 1500px)
+    .container
+        max-width: 1200px
+
+@media (max-width: 1300px)
+    .container
+        max-width: 1000px
+
+@media (max-width: 1100px)
+    .container
+        max-width: 900px
+
+@media (max-width: 1000px)
+    .container
+        max-width: 100%
+        padding-left: 15px
+        padding-right: 15px
+
+.header
+    background-color: #ffffff
+    padding-top: 35px
+    padding-bottom: 35px
+    position: fixed
+    left: 0
+    right: 0
+    z-index: 999
+    &-menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        ul
+            display: flex
+            align-items: center
+            justify-content: space-between
+            min-width: 490px
+            list-style: none
+            padding-left: 0
+            li
+                color: #3f4567
+                font-family: "Gilroy-Light"
+                font-size: 16px
+                font-weight: 300    
+                letter-spacing: 0.4px
+                position: relative
+                &::after
+                    content: ''
+                    position: absolute
+                    bottom: -3px
+                    left: 50%
+                    transform: translateX(-50%)
+                    width: 0
+                    height: 1px
+                    background-color: #ff5476
+                    transition: .3s ease all
+                &:hover
+                    &::after
+                        width: 100%
+        .phone
+            padding: 13px 22px
+            padding-left: 59px
+            border-radius: 20px
+            background-color: #fff4fa
+            color: #3f4567
+            font-family: "Gilroy-ExtraBold"
+            font-size: 18px
+            font-weight: 400
+            letter-spacing: 0.45px
+            position: relative
+            .circle
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 22px
+                width: 26px
+                height: 26px
+                border-radius: 50%
+                box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                background-color: #02a6ed
+                background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    width: 16px
+                    height: 16px
+                    border-radius: 50%
+                    transform: translateY(-50%) translateX(-50%)
+                    left: 50%
+                    background-image: url(../img/icon-phone.png)
+                    background-size: 16px 16px
+                    background-repeat: no-repeat
+        .mobile-menu
+            display: none
+.first-screen
+    margin-top: 126px
+    padding-top: 100px
+    padding-bottom: 165px
+    position: relative
+    width: 100%
+    &__bg
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: -1
+    &__top
+        &--block
+            h1
+                color: #3f4567
+                font-family: "Gilroy-ExtraBold"
+                font-size: 40px
+                font-weight: 400
+                line-height: 54px
+                margin-bottom: 40px
+            h2
+                color: #3f4567
+                font-family: "Gilroy-ExtraBold"
+                font-size: 30px
+                font-weight: 400
+                margin-bottom: 36px
+            ul
+                list-style: none
+                padding-left: 26px
+                margin-bottom: 47px
+                li
+                    position: relative
+                    color: #3f4567
+                    font-family: "Gilroy-Light"
+                    font-size: 18px
+                    font-weight: 300
+                    margin-bottom: 23px
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%)
+                        left: -26px
+                        width: 14px
+                        height: 14px
+                        border-radius: 50%
+                        box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                        background-color: #000000
+                        background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+            .btn
+                display: block
+                padding: 30px 60px
+                border-radius: 38px
+                background-color: #fd0b4a
+                background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                color: #ffffff
+                font-size: 18px
+                font-weight: 300
+                font-family: "Gilroy-ExtraBold"
+                font-weight: 400 
+                max-width: 320px
+                text-align: center
+                cursor: pointer
+                span
+                    font-family: "Gilroy-Light"
+                    font-weight: 300
+    .container
+        position: relative
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: absolute
+        left: 0
+        bottom: -290px
+        background-color: transparent
+        width: 100%
+        &--card
+            width: 320px
+            height: 180px
+            box-shadow: 0 48px 87px rgba(255, 84, 118, 0.07)
+            border-radius: 10px
+            background-color: #ffffff
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            flex-direction: column
+            text-align: center
+            .img-container
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 170px
+                height: 60px
+                border-bottom-left-radius: 10px
+                border-bottom-right-radius: 10px
+                background-color: #ff5476
+            p
+                color: #3f4567
+                font-family: "Gilroy-Light"
+                font-size: 16px
+                font-weight: 300
+                line-height: 22px
+                letter-spacing: 0.4px
+.about
+    margin-top: 330px
+    h2
+        color: #3f4567
+        font-family: "Gilroy-ExtraBold"
+        font-size: 40px
+        font-weight: 400
+        line-height: 22px
+        letter-spacing: 1px
+        text-align: center
+        position: relative
+        margin-bottom: 130px
+        &::after
+            content: ''
+            position: absolute
+            bottom: -55px
+            left: 50%
+            transform: translateX(-50%)
+            width: 175px
+            height: 30px
+            background-image: url(../img/after-title.png)
+    .container
+        display: flex
+        justify-content: center
+        .about-block
+            width: 50%
+            &:nth-child(1)
+                position: relative
+                .bg-man
+                    max-width: 100% 
+                .search-block
+                    position: absolute
+                    top: 0
+                    right: 50px
+                    width: 187px
+                    height: 295px
+                    box-shadow: 0 25px 92px rgba(255, 84, 118, 0.27)
+                    border-radius: 10px
+                    background-color: #ffffff
+                    padding: 25px 16px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    .icon-search
+                        position: absolute
+                        top: -17px
+                        right: -16px
+                        width: 43px
+                        height: 43px
+                        border-radius: 50%
+                        box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                        background-color: #ffffff
+                        background-image: linear-gradient(45deg, #fd6585 0%, #ffd3a5 100%)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        cursor: pointer
+                    p
+                        margin-top: 20px
+                        color: #3f4567
+                        font-family: Gilroy
+                        font-size: 14px
+                        font-weight: 300
+                        line-height: 17px
+                        font-family: "Gilroy-Light"
+                        font-weight: 300
+                        span
+                            font-size: 14px
+                            font-weight: 300
+                            line-height: 17px
+                            font-family: "Gilroy-ExtraBold"
+                            font-weight: 400
+            &:nth-child(2)  
+                p
+                    color: #3f4567
+                    font-family: "Gilroy-Light"
+                    font-size: 18px
+                    font-weight: 300
+                    line-height: 27px
+                    letter-spacing: 0.45px  
+.components
+    margin-bottom: 105px
+    h2
+        text-align: center
+        color: #3f4567
+        font-family: "Gilroy-ExtraBold"
+        font-size: 30px
+        font-weight: 400
+        margin-bottom: 40px
+    .container
+        display: flex
+        flex-wrap: wrap
+        align-items: stretch
+        justify-content: space-between
+        margin-bottom: 58px
+        .card
+            width: calc( (100% - 60px) / 4 )
+            min-height: 210px
+            box-shadow: 0 0 87px rgba(255, 84, 118, 0.14)
+            border-radius: 10px
+            background-color: #ffffff
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            padding-bottom: 35px
+            padding-top: 30px
+            margin-bottom: 20px
+            p
+                margin: 0
+                color: #3f4567
+                font-family: "Gilroy-Light"
+                font-size: 18px
+                font-weight: 300
+                line-height: 24px
+    .btn
+        display: block
+        margin: 0 auto
+        padding: 30px 60px
+        border-radius: 38px
+        background-color: #fd0b4a
+        background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+        color: #ffffff
+        font-size: 18px
+        font-weight: 300
+        font-family: "Gilroy-ExtraBold"
+        font-weight: 400 
+        max-width: 320px
+        text-align: center
+        cursor: pointer
+        span
+            font-family: "Gilroy-Light"
+            font-weight: 300
+.reviews
+    background-image: url(../img/bg-reviews.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+    padding-top: 135px
+    padding-bottom: 120px
+    margin-bottom: 150px
+    h2
+        text-align: center
+        color: #3f4567
+        font-family: "Gilroy-ExtraBold"
+        font-size: 36px
+        font-weight: 400
+        line-height: 46px
+        position: relative
+        margin-bottom: 100px
+        &::after
+            content: ''
+            position: absolute
+            bottom: -55px
+            left: 50%
+            transform: translateX(-50%)
+            width: 175px
+            height: 30px
+            background-image: url(../img/after-title.png)
+    .container
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        .video-card
+            width: calc( (100% - 210px) / 4 )
+            height: 250px
+            box-shadow: 0 0 87px rgba(66, 59, 51, 0.14)
+            border-radius: 20px
+            background-color: #ffffff
+            margin-bottom: 80px
+            position: relative
+            p
+                text-align: center
+                margin: 0
+                margin-top: 24px
+                color: #3f4567
+                font-family: "Gilroy-ExtraBold"
+                font-size: 14px
+                font-weight: 400
+                line-height: 18px
+            img.prewyu
+                width: 100%
+                height: 186px
+            .play-icon
+                position: absolute
+                left: 50%
+                top: 60px
+                transform: translateX(-50%)
+                border-radius: 50%
+                width: 71px
+                height: 71px
+                box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                background-color: #ffffff
+                background-image: linear-gradient(45deg, #fd6585 0%, #ffd3a5 100%)
+                display: flex
+                align-items: center
+                justify-content: center
+                z-index: 4
+                .animate
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translateX(-50%) translateY(-50%)
+                    width: 113px
+                    height: 113px
+                    box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                    background-color: #350818
+                    background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                    opacity: 0.8
+                    border-radius: 50%
+                    animation: pulse 2s linear 0s infinite normal none
+                    z-index: -1
+                img
+                    z-index: 4
+.accordion
+    margin-bottom: 200px
+    h2
+        color: #3f4567
+        font-family: "Gilroy-ExtraBold"
+        font-size: 44px
+        font-weight: 400
+        line-height: 53px
+        position: relative
+        margin-bottom: 100px
+        text-align: center
+        &::after
+            content: ''
+            position: absolute
+            bottom: -55px
+            left: 50%
+            transform: translateX(-50%)
+            width: 175px
+            height: 30px
+            background-image: url(../img/after-title.png)
+    &-inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        max-width: 960px
+        margin: 0 auto
+        &__block
+            margin-bottom: 60px
+            display: flex
+            flex-direction: column
+            box-shadow: 0 0 59px rgba(255, 84, 118, 0.13)
+            width: 100%
+            &--header
+                width: 100%
+                max-width: 960px
+                height: 90px
+                border-radius: 10px
+                background-color: #ffffff
+                padding-left: 65px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                cursor: pointer
+                h3
+                    color: #3f4567
+                    font-family: "Gilroy-Light"
+                    font-size: 20px
+                    font-weight: 300
+                    padding-top: 35px
+                    padding-bottom: 35px
+                    span
+                        color: #ff5476
+                        font-family: "Gilroy-ExtraBold"
+                        font-weight: 400
+                .accordion-button
+                    padding-top: 35px
+                    padding-bottom: 35px
+                    padding-right: 35px
+                    padding-left: 40px
+                    border-radius: 10px
+                    background-color: #fff4fa
+                    display: flex
+                    align-items: center
+                    color: #3f4567
+                    font-family: "Gilroy-Light"
+                    font-size: 14px
+                    font-weight: 300
+                    img
+                        margin-left: 10px
+                        transition: .3s ease all
+            &--body
+                width: 100%
+                max-width: 960px
+                border-radius: 10px
+                background-color: #ffffff
+                padding: 35px 35px 50px 65px
+                display: none
+                p
+                    color: #3f4567
+                    font-family: "Gilroy-Light"
+                    font-size: 16px
+                    font-weight: 300
+                    line-height: 26px
+                    span
+                        color: #ff5476
+                        font-family: "Gilroy-ExtraBold"
+                        font-size: 20px
+                        font-weight: 400
+    .btn
+        display: block
+        margin: 0 auto
+        margin-top: 20px
+        padding: 30px 60px
+        border-radius: 38px
+        background-color: #fd0b4a
+        background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+        color: #ffffff
+        font-size: 18px
+        font-weight: 300
+        font-family: "Gilroy-ExtraBold"
+        font-weight: 400 
+        max-width: 320px
+        text-align: center
+        cursor: pointer
+        span
+            font-family: "Gilroy-Light"
+            font-weight: 300
+.contacts
+    padding-top: 120px
+    background-image: url(../img/bg-contacts.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top center
+    padding-bottom: 200px
+    h2
+        color: #3f4567
+        font-family: "Gilroy-ExtraBold"
+        font-size: 44px
+        font-weight: 300
+        line-height: 46px
+        text-align: center
+        position: relative
+        margin-bottom: 100px
+        span
+            font-family: "Gilroy-Light"
+            font-size: 30px
+            font-weight: 300
+        &::after
+            content: ''
+            position: absolute
+            bottom: -55px
+            left: 50%
+            transform: translateX(-50%)
+            width: 175px
+            height: 30px
+            background-image: url(../img/after-title.png)
+    .container
+        &-inner
+            display: flex
+            max-width: 800px
+            margin: 0 auto
+            justify-content: space-between
+            ul
+                list-style: none
+                width: 40%
+                padding: 0
+                li
+                    font-family: "Gilroy-Light"
+                    font-weight: 300
+                    letter-spacing: 0.7px
+                    line-height: 18px
+                    margin-bottom: 30px
+                    position: relative
+                    a
+                        color: #3f4567
+                        font-family: "Gilroy-ExtraBold"
+                        font-size: 18px
+                        font-weight: 400
+                        letter-spacing: 0.9px
+                        line-height: 30px
+                        display: block
+                &:nth-child(1)
+                    li::before
+                        content: ''
+                        position: absolute
+                        width: 24px
+                        height: 24px
+                        top: 50%
+                        transform: translateY(-50%)
+                        left: -39px
+                        background-image: url(../img/Layer_33.png)
+                        background-size: 24px
+                        background-repeat: no-repeat
+                        background-position: center center
+                &:nth-child(2)
+                    li:nth-child(1)
+                        &::before
+                            content: ''
+                            position: absolute
+                            width: 23px
+                            height: 17px
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -39px
+                            background-image: url(../img/Layer_34.png)
+                            background-size: 23px 17px
+                            background-repeat: no-repeat
+                            background-position: center center
+                    li:nth-child(2)
+                        &::before
+                            content: ''
+                            position: absolute
+                            width: 24px
+                            height: 24px
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -39px
+                            background-image: url(../img/Layer_35.png)
+                            background-size: 24px
+                            background-repeat: no-repeat
+                            background-position: center center
+                    li:nth-child(3)
+                        &::before
+                            content: ''
+                            position: absolute
+                            width: 17px
+                            height: 23px
+                            top: 10px
+                            left: -39px
+                            background-image: url(../img/Layer_36.png)
+                            background-size: 17px 23px
+                            background-repeat: no-repeat
+                            background-position: center center
+.footer
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 60px 0
+        .phone
+            padding: 13px 22px
+            padding-left: 59px
+            border-radius: 20px
+            background-color: #fff4fa
+            color: #3f4567
+            font-family: "Gilroy-ExtraBold"
+            font-size: 18px
+            font-weight: 400
+            letter-spacing: 0.45px
+            position: relative
+            .circle
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 22px
+                width: 26px
+                height: 26px
+                border-radius: 50%
+                box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                background-color: #02a6ed
+                background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    width: 16px
+                    height: 16px
+                    border-radius: 50%
+                    transform: translateY(-50%) translateX(-50%)
+                    left: 50%
+                    background-image: url(../img/icon-phone.png)
+                    background-size: 16px 16px
+                    background-repeat: no-repeat
+
+
+@media ( max-width: 1500px )
+    .first-screen 
+        padding-top: 50px
+        padding-bottom: 80px
+    .first-screen__bottom
+        bottom: -200px
+@media ( max-width: 1300px )
+    .about .container .about-block:nth-child(1) .search-block
+        right: auto
+        left: 10px
+    .about .container .about-block:nth-child(2) p
+        font-size: 16px
+        line-height: 150%
+    .reviews .container .video-card
+        width: calc( (100% - 30px) / 4)
+@media ( max-width: 1100px )
+    .header-menu ul
+        display: none
+        position: fixed
+        top: 165px
+        width: 100%
+        height: 100%
+        bottom: 0
+        flex-direction: column
+        margin: 0
+        align-items: center
+        justify-content: center
+        background-color: #fff
+        z-index: 999
+        & li
+            margin-bottom: 30px
+    .header .mobile-menu
+        width: 100%
+        display: block
+        position: absolute
+        top: 50px
+        left: calc( 100% + 20px )
+        width: 30px
+        height: 2px
+        background-color: #000
+        transition: .2s ease all
+        transform-origin: center center
+        z-index: 1000
+        &::before
+            content: ''
+            position: absolute
+            top: -10px
+            left: 0
+            width: 30px
+            height: 2px
+            background-color: #000
+            transition: .3s ease all
+            transform-origin: center center
+        &::after
+            content: ''
+            position: absolute
+            bottom: -10px
+            left: 0
+            width: 30px
+            height: 2px
+            background-color: #000
+            transition: .3s ease all
+            transform-origin: center center
+    .header .mobile-menu.active
+        height: 0
+        &::before
+            top: 0
+            bottom: 0
+            transform: rotate(45deg)
+        &::after
+            top: 0
+            bottom: 0
+            transform: rotate(-45deg)
+    .header-menu
+        flex-direction: column
+        &__logo
+            margin-bottom: 20px
+    .first-screen
+        padding-top: 100px
+    .first-screen__top--block .btn
+        padding: 20px 40px
+@media ( max-width: 1000px )
+    .components .container .card
+        width: calc( (100% - 30px) / 2)
+    .about .container
+        flex-wrap: wrap
+    .about .container .about-block
+        width: 100%
+    .about .container .about-block:nth-child(1) .search-block
+        right: 30%
+        left: auto
+    .about .container .about-block:nth-child(2) p
+        max-width: 80%
+        margin-left: auto
+        margin-right: auto
+        font-size: 14px
+    .first-screen__bg
+        position: static
+    .first-screen__bottom
+        bottom: -900px
+    .first-screen
+        background-color:  #fff4fa
+    .contacts .container-inner
+        flex-wrap: wrap
+        ul
+            width: 100%
+            padding-left: 40px
+            margin: 0 auto
+       
+
+
+@media ( max-width: 900px )   
+    .header .mobile-menu
+        left: 85%    
+    .reviews .container
+        justify-content: space-around
+    .reviews .container .video-card
+        width: calc( (100% - 200px) / 2)     
+    .accordion-inner__block--header .accordion-button
+        min-width: 227px
+    .first-screen__bottom
+        bottom: -800px
+    
+@media ( max-width: 800px )            
+    .about .container .about-block:nth-child(1) .search-block
+        right: 10px
+    .first-screen__bottom
+        bottom: -900px
+        flex-wrap: wrap
+        justify-content: center
+    .first-screen__bottom--card
+        margin-bottom: 10px
+        margin-right: 10px
+        margin-left: 10px
+@media ( max-width: 700px ) 
+    .first-screen__top--block h1 
+        font-size: 24px
+        line-height: 150%
+        margin-bottom: 20px
+    .first-screen__top--block h2
+        font-size: 18px
+        line-height: 150%
+        margin-bottom: 20px
+    .first-screen__top--block ul li
+        font-size: 14px
+    .first-screen 
+        padding-bottom: 680px
+    .first-screen__bottom
+        bottom: -1100px
+    .components .container .card
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+    .reviews .container
+        justify-content: center
+    .reviews .container .video-card
+        width: auto
+        max-width: 90%
+        margin: 10px
+    .accordion-inner__block--header
+        position: relative
+        padding-left: 10px
+    .accordion-inner__block--header h3
+        margin-right: 160px
+        font-size: 15px
+        padding: 10px 0
+    .accordion-inner__block--header .accordion-button
+        min-width: 160px
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        padding-right: 5px
+        padding-left: 10px
+        justify-content: flex-end
+    .accordion-inner__block--body
+        padding: 10px
+    .accordion-inner__block--header .accordion-button .text
+        font-size: 15px
+    .footer .container
+        padding: 30px 0
+        flex-direction: column  
+        img
+            margin-bottom: 20px
+    .header
+        padding-top: 5px
+        padding-bottom: 10px
+        &__logo
+            margin-bottom: 10px
+    .header-menu ul
+        top: 110px
+    .accordion .btn 
+        padding: 20px 40px
+    .accordion h2,
+    .reviews h2,
+    .components h2,
+    .about h2
+        font-size: 32px
+        line-height: 150%
+        padding: 0 5px
+    .accordion h2 br,
+    .reviews h2 br 
+        display: none
+        
+    
+        
+    .accordion-inner__block--header
+        min-height: 70px
+        height: auto
+
+
+.flex
+    display: flex!important
+@media ( max-width: 600px )
+    .first-screen__bottom
+        bottom: -900px
+    .about
+        margin-top: 100px
+@media ( max-width: 500px )
+    .about .container .about-block:nth-child(1) .search-block
+        right: 50%
+        transform: translateX(50%)
+    .first-screen__top--block h1 br 
+        display: none
+
+
+
+
+@keyframes pulse
+    0%
+        width: 0
+        height: 0
+        opacity: 1
+    100%
+        width: 150px
+        height: 150px
+        opacity: 0
+
+
+.first-screen__video
+    position: absolute
+    width: 200px
+    height: 340px
+    top: 190px
+    // right: 700px
+    right: 36%
+    h2
+        color: #3f4567
+        font-family: "Gilroy-ExtraBold"
+        font-size: 24px
+        font-weight: 400
+        line-height: 27px
+        margin-bottom: 84px
+    .play-icon
+        border-radius: 50%
+        width: 71px
+        height: 71px
+        box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+        background-color: #ffffff
+        background-image: linear-gradient(45deg, #fd6585 0%, #ffd3a5 100%)
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 32px
+        margin-left: auto
+        margin-bottom: 95px
+        position: relative
+        .animate
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            width: 113px
+            height: 113px
+            box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+            background-color: #350818
+            background-image: -webkit-gradient(linear, left bottom, left top, from(#fd6585), to(#ffd3a5))
+            background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+            opacity: 0.8
+            border-radius: 50%
+            animation: pulse 2s linear 0s infinite normal none
+        img
+            z-index: 2
+    p
+        color: #3f4567
+        font-family: "Gilroy-Light"
+        font-size: 16px
+        font-weight: 300
+        line-height: 24px
+        position: relative
+        &::after
+            content: ''
+            width: 33px
+            height: 26px
+            background-image: url(../img/arrow.png)
+            background-size: 33px 26px
+            background-repeat: no-repeat
+            background-position: center center
+            position: absolute
+            top: -3px
+            left: -40px
+
+.video
+    display: none
+
+@media ( max-width: 1700px )
+    .first-screen__video
+        right: 34%
+@media ( max-width: 1500px )
+    .first-screen__video
+        top: 140px
+    .first-screen__video h2
+        margin-bottom: 64px
+    .first-screen__video p
+        transform: translateX(20px)
+@media ( max-width: 1400px )
+    .first-screen__video h2
+        margin-bottom: 54px
+        font-size: 18px
+        line-height: 24px
+        margin-top: 20px
+    .first-screen__video .play-icon
+        margin-bottom: 85px
+    .first-screen__video
+        right: 32%
+    .first-screen__video .play-icon
+        margin-right: 52px
+
+@media ( max-width: 1200px )
+    .first-screen__bg
+        width: calc( 100% + 200px )
+    .first-screen__video
+        right: 22%
+        
+@media ( max-width: 1100px )
+    .first-screen__bg
+        width: calc( 100% + 300px )
+    .first-screen__video
+        right: 13%
+        top: 150px
+
+@media ( max-width: 1000px )
+    .first-screen__bg
+        width: 100%
+    .first-screen__video
+        right: auto
+        left: 20%
+        top: 710px
+    .first-screen__video .play-icon
+        margin-bottom: 105px
+
+@media ( max-width: 900px )
+    .first-screen__video
+        top: 670px
+    .first-screen__video h2
+        margin-bottom: 84px
+    .first-screen__video .play-icon
+        margin-right: 65px
+
+@media ( max-width: 800px )
+    .first-screen__top--block h1,
+    .first-screen__top--block h2
+        text-align: center
+    .first-screen__top--block .btn
+        margin: 0 auto
+    .first-screen__bg
+        margin-top: 30px
+    .first-screen__video
+        display: none
+    .first-screen__video .play-icon
+        margin-bottom: 55px
+    .first-screen__video h2
+        margin-bottom: 57px
+    .video
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        flex-direction: column
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(calc(-50% - 20px))
+            border-radius: 50%;
+            width: 71px
+            height: 71px
+            box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+            background-color: #ffffff
+            background-image: linear-gradient(45deg, #fd6585 0%, #ffd3a5 100%)
+            display: flex
+            align-items: center
+            justify-content: center
+            z-index: 4
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 15px
+            height: 18px
+            top: 50%
+            left: 50%
+            z-index: 5
+            transform: translateX(-50%) translateY(calc(-50% - 20px))
+            background-image: url(../img/play.png)
+            background-size: 15px 18px
+            background-repeat: no-repeat
+            background-position: center center
+        .animate
+            animation: pulse 2s linear 0s infinite normal none
+            box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+            background-color: #350818
+            background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+            opacity: 0.8
+            border-radius: 50%
+            position: absolute
+            top: calc(50% - 20px)
+            left: 50%
+            z-index: 3
+            transform: translateX(-50%) translateY(-50%)
+        h2
+            color: #3f4567
+            font-family: "Gilroy-ExtraBold"
+            font-size: 24px
+            font-weight: 400
+            line-height: 27px
+            transform: translateY(40px)
+        p
+            color: #3f4567
+            font-family: "Gilroy-Light"
+            font-size: 16px
+            font-weight: 300
+            line-height: 24px
+            position: relative
+            transform: translateY(-40px)
+            &::after
+                content: ''
+                width: 33px
+                height: 26px
+                background-image: url(../img/arrow.png)
+                background-size: 33px 26px
+                background-repeat: no-repeat
+                background-position: center center
+                position: absolute
+                top: -3px
+                left: -40px
+            
+
+    .first-screen__bottom
+        bottom: -1350px
+    
+@media ( max-width: 680px )
+    .first-screen__bottom
+        bottom: -1500px
+
+@media ( max-width: 600px )
+    .first-screen__bottom
+        bottom: -1400px
+
+.modal-video,
+.modal-sert,
+.modal-rev-1,
+.modal-rev-2,
+.modal-rev-3,
+.modal-rev-4,
+.modal-rev-5,
+.modal-rev-6,
+.modal-rev-7,
+.modal-rev-8
+    z-index: 1100
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #000000b7
+    display: none
+    &__inner
+        width: 90%
+        max-width: 900px  
+        height: 500px
+        display: flex
+        align-items: center
+        justify-content: center
+        iframe
+            width: 90%
+            max-width: 900px    
+            height: 500px
+.modal-sert
+    img
+        max-width: 90%
+@media ( max-width: 600px )
+    .modal-video__inner,
+    .modal-video__inner iframe
+        height: 300px
+
+

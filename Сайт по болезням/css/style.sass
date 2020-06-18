@@ -76,6 +76,15 @@ a
                 &:hover
                     &::after
                         width: 100%
+        .sign-in
+            margin-right: 10px
+            padding: 5px 20px
+            color: #3f4567
+            font-family: "Gilroy-Light"
+            font-size: 18px
+            border: 1px solid #ff5476
+            border-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+            border-image-slice: 1;
         .phone
             padding: 13px 22px
             padding-left: 59px
@@ -110,14 +119,6 @@ a
                     background-image: url(../img/icon-phone.png)
                     background-size: 16px 16px
                     background-repeat: no-repeat
-        &__logo
-            width: 270px
-            height: 1px
-            position: relative
-            svg
-                position: absolute
-                left: 0
-                top: -80px
         .mobile-menu
             display: none
 .first-screen
@@ -161,10 +162,11 @@ a
                     font-size: 18px
                     font-weight: 300
                     margin-bottom: 23px
-                    transition: 1s ease-in-out transform
+                    transition: 0.5s ease-in-out transform
                     &::before
                         content: ''
                         position: absolute
+                        transition: 0.5s ease-in-out transform
                         top: 50%
                         transform: translateY(-50%)
                         left: -26px
@@ -174,6 +176,28 @@ a
                         box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
                         background-color: #000000
                         background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                .anim__bounce
+                    position: relative
+                    color: #3f4567
+                    font-family: "Gilroy-Light"
+                    font-size: 18px
+                    font-weight: 300
+                    margin-bottom: 23px
+                    transition: 0.5s ease-in-out transform
+                    &::before
+                        content: ''
+                        position: absolute
+                        transition: 0.5s ease-in-out transform
+                        top: 50%
+                        transform: translateY(calc(-50% - 6px))
+                        left: -26px
+                        width: 14px
+                        height: 14px
+                        border-radius: 50%
+                        box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                        background-color: #000000
+                        background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                    
                     
             .btn
                 display: block
@@ -396,6 +420,7 @@ a
         align-items: center
         justify-content: space-between
         .video-card
+            cursor: pointer
             width: calc( (100% - 210px) / 4 )
             height: 250px
             box-shadow: 0 0 87px rgba(66, 59, 51, 0.14)
@@ -703,7 +728,18 @@ a
         padding-bottom: 80px
     .first-screen__bottom
         bottom: -200px
+    .reviews .container .video-card img.prewyu
+        height: 166px
 @media ( max-width: 1300px )
+    .header-menu ul 
+        min-width: 410px
+    .header__contacts
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .sign-in
+            margin-bottom: 10px
     .about .container .about-block:nth-child(1) .search-block
         right: auto
         left: 10px
@@ -713,6 +749,12 @@ a
     .reviews .container .video-card
         width: calc( (100% - 30px) / 4)
 @media ( max-width: 1100px )
+    .header__contacts
+        flex-direction: column-reverse
+        .sign-in
+            margin-right: 0
+            margin-top: 10px
+            margin-bottom: 0
     .header-menu ul
         display: none
         position: fixed
@@ -809,6 +851,8 @@ a
 
 
 @media ( max-width: 900px )   
+    .reviews .container .video-card img.prewyu
+        height: 186px
     .header .mobile-menu
         left: 85%    
     .reviews .container
@@ -840,7 +884,8 @@ a
         font-size: 18px
         line-height: 150%
         margin-bottom: 20px
-    .first-screen__top--block ul li
+    .first-screen__top--block ul li,
+    .first-screen__top--block ul li.anim__bounce
         font-size: 14px
     .first-screen 
         padding-bottom: 680px
@@ -853,8 +898,7 @@ a
     .reviews .container
         justify-content: center
     .reviews .container .video-card
-        width: auto
-        max-width: 90%
+        width: 90%
         margin: 10px
     .accordion-inner__block--header
         position: relative
@@ -882,7 +926,7 @@ a
         img
             margin-bottom: 20px
     .header
-        padding-top: 45px
+        padding-top: 25px
         padding-bottom: 10px
         &__logo
             margin-bottom: 10px
@@ -955,6 +999,7 @@ a
     width: 200px
     height: 340px
     top: 190px
+    cursor: pointer
     // right: 700px
     right: 36%
     h2

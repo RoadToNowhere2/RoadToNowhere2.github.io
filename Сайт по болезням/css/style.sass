@@ -98,8 +98,8 @@ a
                 box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
                 background-color: #02a6ed
                 background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
-                &::before
-                    content: ''
+                svg
+                    fill: #fff
                     position: absolute
                     top: 50%
                     width: 16px
@@ -110,14 +110,14 @@ a
                     background-image: url(../img/icon-phone.png)
                     background-size: 16px 16px
                     background-repeat: no-repeat
-        // &__logo
-        //     width: 310px
-        //     height: 1px
-        //     position: relative
-        //     svg
-        //         position: absolute
-        //         left: 0
-        //         top: -45px
+        &__logo
+            width: 270px
+            height: 1px
+            position: relative
+            svg
+                position: absolute
+                left: 0
+                top: -80px
         .mobile-menu
             display: none
 .first-screen
@@ -161,6 +161,7 @@ a
                     font-size: 18px
                     font-weight: 300
                     margin-bottom: 23px
+                    transition: 1s ease-in-out transform
                     &::before
                         content: ''
                         position: absolute
@@ -173,6 +174,7 @@ a
                         box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
                         background-color: #000000
                         background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                    
             .btn
                 display: block
                 padding: 30px 60px
@@ -401,6 +403,8 @@ a
             background-color: #ffffff
             margin-bottom: 80px
             position: relative
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
             p
                 text-align: center
                 margin: 0
@@ -413,6 +417,8 @@ a
             img.prewyu
                 width: 100%
                 height: 186px
+                border-top-left-radius: 20px
+                border-top-right-radius: 20px
             .play-icon
                 position: absolute
                 left: 50%
@@ -421,15 +427,27 @@ a
                 border-radius: 50%
                 width: 71px
                 height: 71px
-                box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
-                background-color: #ffffff
-                background-image: linear-gradient(45deg, #fd6585 0%, #ffd3a5 100%)
-                display: flex
-                align-items: center
-                justify-content: center
-                z-index: 4
+                &__inner
+                    position: absolute
+                    top: 0
+                    left: 0
+                    border-radius: 50%
+                    width: 71px
+                    height: 71px
+                    box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+                    background-color: #ffffff
+                    background-image: linear-gradient(45deg, #fd6585 0%, #ffd3a5 100%)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                .play
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translateX(-50%) translateY(-50%)
+                    z-index: 2
+            &:hover
                 .animate
-                    content: ''
                     position: absolute
                     top: 50%
                     left: 50%
@@ -441,10 +459,8 @@ a
                     background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
                     opacity: 0.8
                     border-radius: 50%
-                    animation: pulse 2s linear 0s infinite normal none
-                    z-index: -1
-                img
-                    z-index: 4
+                    animation: pulse 1.5s linear 0s infinite normal none
+                    z-index: -1        
 .accordion
     margin-bottom: 200px
     h2
@@ -609,57 +625,39 @@ a
                         line-height: 30px
                         display: block
                 &:nth-child(1)
-                    li::before
-                        content: ''
-                        position: absolute
-                        width: 24px
-                        height: 24px
-                        top: 50%
-                        transform: translateY(-50%)
-                        left: -39px
-                        background-image: url(../img/Layer_33.png)
-                        background-size: 24px
-                        background-repeat: no-repeat
-                        background-position: center center
-                &:nth-child(2)
-                    li:nth-child(1)
-                        &::before
-                            content: ''
-                            position: absolute
-                            width: 23px
-                            height: 17px
-                            top: 50%
-                            transform: translateY(-50%)
-                            left: -39px
-                            background-image: url(../img/Layer_34.png)
-                            background-size: 23px 17px
-                            background-repeat: no-repeat
-                            background-position: center center
-                    li:nth-child(2)
-                        &::before
-                            content: ''
+                    li
+                        svg
                             position: absolute
                             width: 24px
                             height: 24px
                             top: 50%
                             transform: translateY(-50%)
                             left: -39px
-                            background-image: url(../img/Layer_35.png)
-                            background-size: 24px
-                            background-repeat: no-repeat
-                            background-position: center center
+                            linearGradient: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+                &:nth-child(2)
+                    li:nth-child(1)
+                        svg
+                            position: absolute
+                            width: 23px
+                            height: 17px
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -39px
+                    li:nth-child(2)
+                        svg
+                            position: absolute
+                            width: 24px
+                            height: 24px
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: -39px
                     li:nth-child(3)
-                        &::before
-                            content: ''
+                        svg
                             position: absolute
                             width: 17px
                             height: 23px
                             top: 10px
                             left: -39px
-                            background-image: url(../img/Layer_36.png)
-                            background-size: 17px 23px
-                            background-repeat: no-repeat
-                            background-position: center center
 .footer
     .container
         display: flex
@@ -688,8 +686,7 @@ a
                 box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
                 background-color: #02a6ed
                 background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
-                &::before
-                    content: ''
+                svg
                     position: absolute
                     top: 50%
                     width: 16px
@@ -697,9 +694,7 @@ a
                     border-radius: 50%
                     transform: translateY(-50%) translateX(-50%)
                     left: 50%
-                    background-image: url(../img/icon-phone.png)
-                    background-size: 16px 16px
-                    background-repeat: no-repeat
+                    fill: #ffffff
 
 
 @media ( max-width: 1500px )
@@ -887,10 +882,12 @@ a
         img
             margin-bottom: 20px
     .header
-        padding-top: 5px
+        padding-top: 45px
         padding-bottom: 10px
         &__logo
             margin-bottom: 10px
+    .header-menu__logo svg
+        transform: translateX(20px)
     .header-menu ul
         top: 110px
     .accordion .btn 
@@ -922,10 +919,22 @@ a
         margin-top: 100px
 @media ( max-width: 500px )
     .about .container .about-block:nth-child(1) .search-block
-        right: 50%
-        transform: translateX(50%)
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        right: auto
+        margin-bottom: 30px
+    .about .container .about-block:nth-child(1)
+        display: flex
+        flex-direction: column-reverse
     .first-screen__top--block h1 br 
         display: none
+    .btn
+        width: 300px!important
+        padding: 30px 0!important
+        text-align: center!important
+    .first-screen__bottom
+        z-index: 2
 
 
 
@@ -983,6 +992,7 @@ a
             opacity: 0.8
             border-radius: 50%
             animation: pulse 2s linear 0s infinite normal none
+            z-index: -1
         img
             z-index: 2
     p
@@ -1003,20 +1013,49 @@ a
             position: absolute
             top: -3px
             left: -40px
-
+.search-block
+    z-index: 1
+    .icon-search
+        .animate
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            width: 113px
+            height: 113px
+            box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61)
+            background-color: #350818
+            background-image: -webkit-gradient(linear, left bottom, left top, from(#fd6585), to(#ffd3a5))
+            background-image: linear-gradient(to top, #fd6585 0%, #ffd3a5 100%)
+            opacity: 0.8
+            border-radius: 50%
+            animation: pulse 2s linear 0s infinite normal none
+            z-index: -1
+    .doc
+        z-index: -1
 .video
     display: none
 
 @media ( max-width: 1700px )
     .first-screen__video
         right: 34%
+@media ( max-width: 1600px )
+    .first-screen
+        padding-bottom: 115px
+    .first-screen__video
+        top: 170px
 @media ( max-width: 1500px )
     .first-screen__video
-        top: 140px
+        top: 155px
     .first-screen__video h2
         margin-bottom: 64px
     .first-screen__video p
         transform: translateX(20px)
+    .first-screen__bg
+        width: calc( 100% + 150px )
+        right: -150px
+    .first-screen__video
+        right: calc( 34% - 90px )
 @media ( max-width: 1400px )
     .first-screen__video h2
         margin-bottom: 54px
@@ -1026,13 +1065,13 @@ a
     .first-screen__video .play-icon
         margin-bottom: 85px
     .first-screen__video
-        right: 32%
+        right: calc( 34% - 110px )
     .first-screen__video .play-icon
         margin-right: 52px
 
 @media ( max-width: 1200px )
     .first-screen__bg
-        width: calc( 100% + 200px )
+        calc( 100% + 150px)
     .first-screen__video
         right: 22%
         
@@ -1041,7 +1080,7 @@ a
         width: calc( 100% + 300px )
     .first-screen__video
         right: 13%
-        top: 150px
+        top: 165px
 
 @media ( max-width: 1000px )
     .first-screen__bg
@@ -1052,6 +1091,8 @@ a
         top: 710px
     .first-screen__video .play-icon
         margin-bottom: 105px
+    .first-screen__video h2
+        
 
 @media ( max-width: 900px )
     .first-screen__video
@@ -1160,7 +1201,9 @@ a
 
 @media ( max-width: 600px )
     .first-screen__bottom
-        bottom: -1400px
+        bottom: -1300px
+    .about
+        margin-top: 490px
 
 .modal-video,
 .modal-sert,
@@ -1172,7 +1215,19 @@ a
 .modal-rev-5,
 .modal-rev-6,
 .modal-rev-7,
-.modal-rev-8
+.modal-rev-8,
+.modal-rev-9,
+.modal-rev-10,
+.modal-rev-11,
+.modal-rev-12,
+.modal-rev-13,
+.modal-rev-14,
+.modal-rev-15,
+.modal-rev-16,
+.modal-rev-17,
+.modal-rev-18,
+.modal-rev-19,
+.modal-rev-20
     z-index: 1100
     position: fixed
     top: 0
@@ -1202,5 +1257,37 @@ a
     .modal-video__inner,
     .modal-video__inner iframe
         height: 300px
+
+.btn
+    overflow: hidden
+    position: relative
+    transition: .4s ease box-shadow
+    box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61), 0px 4px 0px 0px rgba(255,84,118,1)
+    &::after
+        content: ''
+        position: absolute;
+        top: -10px
+        bottom: -15px
+        left: -15px
+        display: block
+        margin-left: -1px
+        box-shadow: 0 0 15px 3px #fff
+        background: 0 0
+        transform: rotate(38deg)
+        animation: blick 2s ease-out infinite
+        opacity: 1
+        transition: opacity 0.28s ease-out
+    &:hover
+        box-shadow: 0 24px 79px rgba(253, 104, 134, 0.61), 0px 6px 0px 0px rgba(255,84,118,1)
+@keyframes blick 
+  0% 
+    left: 0
+  
+  70% 
+    left: 120%
+  
+  100% 
+    left: 130%
+
 
 

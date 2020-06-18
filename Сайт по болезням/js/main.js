@@ -1,6 +1,20 @@
 $(document).ready(function() {
 
     {
+
+        doc_w = $('body').width();
+
+        if (doc_w < 1000) {
+            $('.first-screen .first-screen__bg').attr('src', 'img/bg-header-mobile.png')
+        }
+
+        if (doc_w < 800) {
+            $('.first-screen .first-screen__bg').attr('src', 'img/test.png')
+        }
+    
+    }
+
+    {
             $('.accordion-inner__block--header').click(function () {
                 $(this).next().slideToggle('slow');
                 $(this).toggleClass('active');
@@ -40,35 +54,29 @@ $(document).ready(function() {
             }
         });
 
-        $('.video img').on('click', function() {
+        
+
+        $('.video').on('click', function() {
             $('.modal-video').fadeIn();
             $('.modal-video').css('display', 'flex');
             $('.modal-video__inner').append('<iframe class="iframe__1" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
         });
 
-        $('.search-block').on('click', function() {
-            $('.modal-sert').fadeIn();
-            $('.modal-sert').css('display', 'flex');
-        });
-
-        $('.modal-sert').on('click', function (e) {
-
-            let image = $('.modal-sert img');
-
-            if (e.target != image) {
-                $('.modal-sert').fadeOut();
-            }
-        });
+        
     {
         let video = [
-            '<iframe class="reviews__1" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-            '<iframe class="reviews__2" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-            '<iframe class="reviews__3" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-            '<iframe class="reviews__4" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-            '<iframe class="reviews__5" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-            '<iframe class="reviews__6" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-            '<iframe class="reviews__7" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-            '<iframe class="reviews__8" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/i1SIAyYuIGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/NDgWWYdhhzM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/_ALpvqbLZzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/-H8PmP9BYOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/rq_aFEcZ9jY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/ZbVAJbqe6xI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/-iSg9GG7bsc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/Tqk9rVwiIZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/hqXGmqSbkSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/YT0gWL3bU2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/vXWdQNymtZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            '<iframe src="https://www.youtube.com/embed/Ipupr0bUVmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         ]
 
         let videoButtons = $('.reviews .container .video-card');
@@ -97,7 +105,7 @@ $(document).ready(function() {
     }
 
     {
-        $("body").on('click', '[href*="#"]', function(e){
+        $("ul").on('click', '[href*="#"]', function(e){
             var fixed_offset = 100;
             $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
             e.preventDefault();
@@ -106,7 +114,7 @@ $(document).ready(function() {
           doc_w = $('body').width();
 
           if (doc_w < 1000) {
-            $("body").on('click', '[href*="#"]', function(e){
+            $("ul").on('click', '[href*="#"]', function(e){
                 var fixed_offset = 100;
                 $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
                 e.preventDefault();
@@ -117,16 +125,43 @@ $(document).ready(function() {
     }
 
     {
+        animate()
 
-            doc_w = $('body').width();
+        function animate() {
+            $('.first-screen__top--block ul li:nth-child(1)').css('transform', 'translateY(-6px)');
+            
+            setTimeout(() => {
+                $('.first-screen__top--block ul li:nth-child(2)').css('transform', 'translateY(-6px)');
+            }, 400);
 
-            if (doc_w < 1000) {
-                $('.first-screen .first-screen__bg').attr('src', 'img/bg-header-mobile.png')
-            }
+            setTimeout(() => {
+                $('.first-screen__top--block ul li:nth-child(3)').css('transform', 'translateY(-6px)');
+            }, 800);
 
-            if (doc_w < 800) {
-                $('.first-screen .first-screen__bg').attr('src', 'img/test.png')
-            }
+            setTimeout(() => {
+                $('.first-screen__top--block ul li:nth-child(4)').css('transform', 'translateY(-6px)');
+            }, 1200);
+
+            setTimeout(() => {
+                $('.first-screen__top--block ul li:nth-child(1)').css('transform', 'translateY(0px)');
+            }, 1000);
+
+            setTimeout(() => {
+                $('.first-screen__top--block ul li:nth-child(2)').css('transform', 'translateY(0px)');
+            }, 1400);
+
+            setTimeout(() => {
+                $('.first-screen__top--block ul li:nth-child(3)').css('transform', 'translateY(0px)');
+            }, 1800);
+
+            setTimeout(() => {
+                $('.first-screen__top--block ul li:nth-child(4)').css('transform', 'translateY(0px)');
+            }, 2200);
+        }
+
+        setInterval(() => {
+            animate();
+        }, 3200);
         
     }
 

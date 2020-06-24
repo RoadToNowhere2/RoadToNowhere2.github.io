@@ -750,11 +750,20 @@ a
         width: calc( (100% - 30px) / 4)
 @media ( max-width: 1100px )
     .header__contacts
-        flex-direction: column-reverse
+        flex-direction: row-reverse
+        align-items: center
+        justify-content: space-between
+        width: 100%
         .sign-in
             margin-right: 0
-            margin-top: 10px
             margin-bottom: 0
+    .header-menu .phone
+        padding: 10px 15px
+        padding-left: 49px
+    .header-menu .phone .circle
+        left: 12px
+    .header-menu .sign-in
+        padding: 5px 15px
     .header-menu ul
         display: none
         position: fixed
@@ -930,8 +939,6 @@ a
         padding-bottom: 10px
         &__logo
             margin-bottom: 10px
-    .header-menu__logo svg
-        transform: translateX(20px)
     .header-menu ul
         top: 110px
     .accordion .btn 

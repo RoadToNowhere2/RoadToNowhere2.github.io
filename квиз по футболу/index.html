@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз по футболу</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <main class="main">
+        <img src="img/main_bg.png" alt="" class="background">
+        <div class="container">
+            <header class="header">
+                <div class="logo_container">
+                    <img src="img/logo.png" alt="">
+                    <span>Футбольная школа <br>
+                        нового поколения</span>
+                </div>
+                <div class="header_contacts">
+                    <a href="tel:+7 (811) 000-30-30">+7 (811) 000-30-30</a>
+                    <p>Ежедневно с 8:00 до 22:00</p>
+                </div>
+            </header>
+            <div class="content">
+                <h1>
+                    Ответьте на 4 вопроса и получите <br>
+                    бесплатный абонемент на месяц <br>
+                    в футбольной школе “LIGON”
+                </h1>
+                <p>
+                   Вашего ребенка будет обучать профессиональный тренерский состав. Мастера спорта СССР, <br>
+                   заслуженные мастера спорта России, чемпионы СССР и действуюшие игроки.
+                </p>
+                <button class="btn js-open-btn">
+                    <img src="img/button.png" alt="">
+                </button>
+            </div>
+            <div class="cards">
+                <div class="cards_inner_1 cards_inner">
+                    <img src="img/card_bg.png" alt="" class="card_bg">
+                    <p>Первый месяц трениро- <br>
+                        вок бесплатно</p>
+                    <img src="img/card_1.png" alt="" class="cards_img">
+                </div>
+                <div class="cards_inner_2 cards_inner">
+                    <img src="img/card_bg.png" alt="" class="card_bg">
+                    <p>Профессиональный <br>
+                        тренерский штаб</p>
+                    <img src="img/card_2.png" alt="" class="cards_img">
+                </div>
+                <div class="cards_inner_3 cards_inner">
+                    <img src="img/card_bg.png" alt="" class="card_bg">
+                    <p>Летний лагель и  сборы <br>
+                        заграницей</p>
+                    <img src="img/card_3.png" alt="" class="cards_img">
+                </div>
+            </div>
+
+            <div class="kviz_modal">
+                <form action="" method="POST">
+                    <div class="left_menu">
+                        <img src="img/myach_gold.png" alt="" class="myach_gold">
+                        <div class="text">
+                            <p>
+                                Пройдите тест до конца, <br>
+                                и получите абонемент <br>
+                                в подарок
+                            </p>
+                            <h3>Осталось:</h3>
+                            <h2><span>4</span> Вопроса</h2>
+                        </div>
+                        <img src="img/ruka.png" alt="" class="ruka">
+                        <img src="img/myach.png" alt="" class="myach">
+                    </div>
+                    <div class="left_menu_last">
+                        <img src="img/myach_gold.png" alt="" class="myach_gold">
+                        <div class="text">
+                            <p>
+                                Спасибо, вы успешно <br>
+                                прошли тест!
+                            </p>
+                            <h3>Ваши ответы:</h3>
+                            <h2 class="kviz_otvet_1">| 12 лет</h2>
+                            <h2 class="kviz_otvet_2">| Тренерский штаб</h2>
+                            <h2 class="kviz_otvet_3">| Вечером</h2>
+                            <h2 class="kviz_otvet_4">| 12 занятий</h2>
+                        </div>
+                        <img src="img/ruka.png" alt="" class="ruka">
+                        <img src="img/myach.png" alt="" class="myach">
+                    </div>
+                    <div class="right_menu">
+                        <h4>Пройдите тест, и мы свяжемся с вами</h4>
+                        <h3>Вопрос <span>1</span> из 4</h3>
+                        <div class="line">
+                            <div class="green_line"></div>
+                        </div>
+                        <div class="steps">
+                            <div class="step_1">
+                                <h2>Какое количество тренировок в месяц, <br>
+                                    вам будет комфортно?</h2>
+                                <label for="input_1_1">
+                                    <input type="radio" name="kviz_1" id="input_1_1" checked value="8">
+                                    <span class="number">8</span>
+                                    <span class="opisanie">8 тренировок в месяц</span>
+                                </label>
+                                <label for="input_1_2">
+                                    <input type="radio" name="kviz_1" id="input_1_2" value="12">
+                                    <span class="number ">12</span>
+                                    <span class="opisanie">12 тренировок в месяц</span>
+                                </label>
+                            </div>
+                            <div class="step_2">
+                                <h2>Какого года рождение ваш ребенок?</h2>
+                                <label for="input_2_1">
+                                    <input type="radio" name="kviz_2" id="input_2_1" checked value="16-14 лет">
+                                    <span class="number">16-14 лет</span>
+                                    <span class="opisanie">2004-2006</span>
+                                </label>
+                                <label for="input_2_2">
+                                    <input type="radio" name="kviz_2" id="input_2_2" value="14-12 лет">
+                                    <span class="number ">14-12 лет</span>
+                                    <span class="opisanie">2006-2008</span>
+                                </label>
+                                <label for="input_2_3">
+                                    <input type="radio" name="kviz_2" id="input_2_3" value="12-10 лет">
+                                    <span class="number ">12-10 лет</span>
+                                    <span class="opisanie">2008-2010</span>
+                                </label>
+                                <label for="input_2_4">
+                                    <input type="radio" name="kviz_2" id="input_2_4" value="10-8 лет">
+                                    <span class="number ">10-8 лет</span>
+                                    <span class="opisanie">2012-2012</span>
+                                </label>
+                                <label for="input_2_5">
+                                    <input type="radio" name="kviz_2" id="input_2_5" value="8-4 лет">
+                                    <span class="number ">8-4 лет</span>
+                                    <span class="opisanie">2012-2016</span>
+                                </label>    
+                            </div> 
+                             <div class="step_3">
+                                <h2>Что для вас самое главное в тренировках?</h2>
+                                <div class="flex_container">
+                                    <div class="flex_item">
+                                        <label for="input_3_1">
+                                            <img src="img/step_3_img_1.png" alt="">
+                                            <input type="radio" name="kviz_3" id="input_3_1" checked value="Тренерский штаб">
+                                            <p class="paragraf">Тренерский штаб</p>
+                                        </label>
+                                    </div>
+                                    <div class="flex_item">
+                                        <label for="input_3_2">
+                                            <img src="img/step_3_img_2.png" alt="">
+                                            <input type="radio" name="kviz_3" id="input_3_2" value="Методика обучения">
+                                            <p class="paragraf">Методика обучения</p>
+                                        </label>
+                                    </div>
+                                    <div class="flex_item">
+                                        <label for="input_3_3">
+                                            <img src="img/step_3_img_3.png" alt="">
+                                            <input type="radio" name="kviz_3" id="input_3_3" value="Индивидуальный подход">
+                                            <p class="paragraf">Индивидуальный подход</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="step_4">
+                                <h2>В какое время вы бы хотели тренироваться?</h2>
+                                <div class="flex_container">
+                                    <div class="flex_item">
+                                        <label for="input_4_1">
+                                            <img src="img/step_4_img_1.png" alt="">
+                                            <input type="radio" name="kviz_4" id="input_4_1" checked value="Утро">
+                                            <p class="paragraf">Утро</p>
+                                        </label>
+                                    </div>
+                                    <div class="flex_item">
+                                        <label for="input_4_2">
+                                            <img src="img/step_4_img_2.png" alt="">
+                                            <input type="radio" name="kviz_4" id="input_4_2" value="Обед">
+                                            <p class="paragraf">Обед</p>
+                                        </label>
+                                    </div>
+                                    <div class="flex_item">
+                                        <label for="input_4_3">
+                                            <img src="img/step_4_img_3.png" alt="">
+                                            <input type="radio" name="kviz_4" id="input_4_3" value="Вечер">
+                                            <p class="paragraf">Вечер</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_next js-btn-next">
+                            <img src="img/btn_next.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right_menu_last">
+                        <div class="left_item">
+                            <h2>Мы ждем Вас на первой <br>
+                                бесплатной тренировке!</h2>
+                            <h3>Введите ваш телефон и мы перезвоним Вам <br>
+                                в течении 15 минут.</h3>
+                            <input type="hidden" name="kviz_submit_1" required id="kviz_submit_1">
+                            <input type="hidden" name="kviz_submit_2" required id="kviz_submit_2">
+                            <input type="hidden" name="kviz_submit_3" required id="kviz_submit_3">
+                            <input type="hidden" name="kviz_submit_4" required id="kviz_submit_4">
+                            <input type="tel" name="kviz_submit_5" required class="kviz_submit_5" placeholder="+7(___)-___-__-__">
+                            <button type="submit" id="submit_kviz"><img src="img/submit.png" alt=""></button>
+                            <label for="checkbox">
+                                <input type="checkbox" required id="checkbox" checked>
+                                <p class="paragraf">Вы соглашаетесь с условиями обработки <br>
+                                    персональных данных <a href="#">(ознакомиться)</a></p>
+                            </label>
+                        </div>
+                        <div class="right_item">
+                            <h2>Получите абонемент в подарок:</h2>
+                            <img src="img/podarok.png" alt="">
+                            <p>В течении 15 минут, с Вами <br>
+                                свяжется наш менеджер и <br>
+                                ответит на всех вопросы.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

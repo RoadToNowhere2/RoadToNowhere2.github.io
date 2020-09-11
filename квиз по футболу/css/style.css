@@ -1,0 +1,680 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main .background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main .container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.main .header {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .header .logo_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .header .logo_container span {
+  margin-left: 15px;
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17.8px;
+}
+
+.main .header_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main .header_contacts a {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.main .header_contacts p {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 11px;
+  font-weight: 400;
+  position: relative;
+}
+
+.main .header_contacts p::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #7eff4b;
+  border-radius: 50%;
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main .content {
+  padding-left: 430px;
+  margin-top: 130px;
+}
+
+.main .content h1 {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 54.97px;
+}
+
+.main .content p {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.main .content .btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main .cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 400px;
+}
+
+.main .cards_inner {
+  position: relative;
+  bottom: 0;
+  min-height: 350px;
+}
+
+.main .cards_inner img.card_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.main .cards_inner .cards_img {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .cards_inner p {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.72px;
+  z-index: 6;
+  position: relative;
+  padding-top: 90px;
+  padding-left: 30px;
+  min-width: 220px;
+}
+
+.main .cards_inner_1 {
+  z-index: 5;
+}
+
+.main .cards_inner_2 {
+  z-index: 4;
+}
+
+.main .cards_inner_3 {
+  z-index: 3;
+}
+
+.kviz_modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  min-width: 1176px;
+  min-height: 846px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #f4f4f4;
+  z-index: 10;
+}
+
+.kviz_modal form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 846px;
+}
+
+.kviz_modal form .left_menu,
+.kviz_modal form .left_menu_last {
+  background-image: url(../img/left_menu_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 322px;
+  min-height: 846px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.kviz_modal form .left_menu img,
+.kviz_modal form .left_menu_last img {
+  position: absolute;
+}
+
+.kviz_modal form .left_menu img.myach_gold,
+.kviz_modal form .left_menu_last img.myach_gold {
+  top: 53px;
+  right: 19px;
+}
+
+.kviz_modal form .left_menu img.ruka,
+.kviz_modal form .left_menu_last img.ruka {
+  bottom: 153px;
+  left: -4px;
+}
+
+.kviz_modal form .left_menu img.myach,
+.kviz_modal form .left_menu_last img.myach {
+  bottom: 0;
+  right: 13px;
+}
+
+.kviz_modal form .left_menu p,
+.kviz_modal form .left_menu_last p {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 22.57px;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.kviz_modal form .left_menu h3,
+.kviz_modal form .left_menu_last h3 {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.57px;
+  margin: 0;
+}
+
+.kviz_modal form .left_menu h2,
+.kviz_modal form .left_menu_last h2 {
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 27px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.kviz_modal form .left_menu_last {
+  display: none;
+}
+
+.kviz_modal form .left_menu_last h2 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.kviz_modal form .left_menu_last img.myach_gold {
+  top: -58px;
+  right: 19px;
+}
+
+.kviz_modal form .left_menu_last img.ruka {
+  bottom: 20px;
+  left: 50px;
+}
+
+.kviz_modal form .left_menu_last img.myach {
+  bottom: -53px;
+  right: -50px;
+}
+
+.kviz_modal form .right_menu {
+  padding-top: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.kviz_modal form .right_menu h4 {
+  color: #121212;
+  font-family: Gilroy;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 23.33px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.kviz_modal form .right_menu h3 {
+  color: #121212;
+  font-family: Gilroy;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 27.21px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.kviz_modal form .right_menu .line {
+  width: calc(100% - 120px);
+  height: 4px;
+  border-radius: 2px;
+  background-color: #a6a6a646;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.kviz_modal form .right_menu .line .green_line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: calc(100% / 6);
+  height: 4px;
+  border-radius: 2px;
+  background-color: #71ea2f;
+  opacity: 1;
+}
+
+.kviz_modal form .right_menu .steps .step_1 h2,
+.kviz_modal form .right_menu .steps .step_2 h2 {
+  color: #1d1d27;
+  font-family: Gilroy;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28.68px;
+  text-align: center;
+}
+
+.kviz_modal form .right_menu .steps .step_1 label,
+.kviz_modal form .right_menu .steps .step_2 label {
+  display: block;
+  max-width: 682px;
+  margin: 0 auto;
+  height: 70px;
+  -webkit-box-shadow: inset 3px 4px 54px rgba(0, 1, 5, 0.17);
+          box-shadow: inset 3px 4px 54px rgba(0, 1, 5, 0.17);
+  border-radius: 7px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kviz_modal form .right_menu .steps .step_1 label .number,
+.kviz_modal form .right_menu .steps .step_2 label .number {
+  width: 98px;
+  height: 70px;
+  border-radius: 7px;
+  background-color: #2e83f6;
+  display: block;
+  color: #ffffff;
+  font-family: Gilroy;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 70px;
+  text-align: center;
+}
+
+.kviz_modal form .right_menu .steps .step_1 label .opisanie,
+.kviz_modal form .right_menu .steps .step_2 label .opisanie {
+  display: block;
+  line-height: 70px;
+  margin-left: 50px;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.kviz_modal form .right_menu .steps .step_1 input,
+.kviz_modal form .right_menu .steps .step_2 input {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-appearance: none;
+}
+
+.kviz_modal form .right_menu .steps .step_1 input:checked + .number,
+.kviz_modal form .right_menu .steps .step_2 input:checked + .number {
+  background-color: #3966a4;
+}
+
+.kviz_modal form .right_menu .steps .step_2 {
+  display: none;
+}
+
+.kviz_modal form .right_menu .steps .step_2 label .number {
+  width: 119px;
+  font-size: 18px;
+}
+
+.kviz_modal form .right_menu .steps .step_3,
+.kviz_modal form .right_menu .steps .step_4 {
+  display: none;
+}
+
+.kviz_modal form .right_menu .steps .step_3 h2,
+.kviz_modal form .right_menu .steps .step_4 h2 {
+  color: #1d1d27;
+  font-family: Gilroy;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28.68px;
+  text-align: center;
+}
+
+.kviz_modal form .right_menu .steps .step_3 .flex_container,
+.kviz_modal form .right_menu .steps .step_4 .flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kviz_modal form .right_menu .steps .step_3 .flex_container .flex_item,
+.kviz_modal form .right_menu .steps .step_4 .flex_container .flex_item {
+  margin: 0 10px;
+}
+
+.kviz_modal form .right_menu .steps .step_3 .flex_container .flex_item img,
+.kviz_modal form .right_menu .steps .step_4 .flex_container .flex_item img {
+  max-width: 100%;
+}
+
+.kviz_modal form .right_menu .steps .step_3 .flex_container .flex_item p,
+.kviz_modal form .right_menu .steps .step_4 .flex_container .flex_item p {
+  margin-top: 15px;
+  color: #1d1d27;
+  font-family: Gilroy;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 22.35px;
+  padding-left: 36px;
+  position: relative;
+}
+
+.kviz_modal form .right_menu .steps .step_3 .flex_container .flex_item p::before,
+.kviz_modal form .right_menu .steps .step_4 .flex_container .flex_item p::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  background-color: #e0e0e0;
+  border: 9px solid #e0e0e0;
+  border-radius: 50%;
+}
+
+.kviz_modal form .right_menu .steps .step_3 input,
+.kviz_modal form .right_menu .steps .step_4 input {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-appearance: none;
+}
+
+.kviz_modal form .right_menu .steps .step_3 input:checked + .paragraf::before,
+.kviz_modal form .right_menu .steps .step_4 input:checked + .paragraf::before {
+  background-color: #2f81f0;
+}
+
+.kviz_modal form .right_menu .btn_next {
+  max-width: 404px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.kviz_modal form .right_menu .btn_next img {
+  max-width: 100%;
+}
+
+.kviz_modal form .right_menu_last {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 80px;
+  padding-right: 40px;
+  display: none;
+}
+
+.kviz_modal form .right_menu_last .left_item {
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kviz_modal form .right_menu_last .left_item h2 {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 33px;
+  font-weight: 300;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.kviz_modal form .right_menu_last .left_item h3 {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 28.76px;
+}
+
+.kviz_modal form .right_menu_last .left_item input.kviz_submit_5 {
+  -webkit-box-shadow: inset 5px 8px 84px rgba(0, 1, 5, 0.16);
+          box-shadow: inset 5px 8px 84px rgba(0, 1, 5, 0.16);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 30px 50px;
+  border: none;
+  outline: none;
+  display: block;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+.kviz_modal form .right_menu_last .left_item button {
+  border: none;
+  outline: none;
+  background: none;
+  max-width: 400px;
+  padding: 0;
+}
+
+.kviz_modal form .right_menu_last .left_item button img {
+  width: 100%;
+}
+
+.kviz_modal form .right_menu_last .left_item input[type="checkbox"] {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-appearance: none;
+}
+
+.kviz_modal form .right_menu_last .left_item input[type="checkbox"]:checked + .paragraf::before {
+  background-color: #2f81f0;
+}
+
+.kviz_modal form .right_menu_last .left_item p {
+  display: block;
+  margin-top: 15px;
+  color: #1d1d27;
+  font-family: Gilroy;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 22.35px;
+  padding-left: 36px;
+  position: relative;
+}
+
+.kviz_modal form .right_menu_last .left_item p::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  background-color: #e0e0e0;
+  border: 9px solid #e0e0e0;
+  border-radius: 50%;
+}
+
+.kviz_modal form .right_menu_last .left_item p a {
+  text-decoration: none;
+  color: #1d1d27;
+}
+
+.kviz_modal form .right_menu_last .right_item {
+  min-width: 312px;
+  min-height: 476px;
+  -webkit-box-shadow: 7px 11px 38px 2px rgba(0, 0, 0, 0.08);
+          box-shadow: 7px 11px 38px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.kviz_modal form .right_menu_last .right_item h2 {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 21.96px;
+}
+
+.kviz_modal form .right_menu_last .right_item p {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.39px;
+}
+/*# sourceMappingURL=style.css.map */

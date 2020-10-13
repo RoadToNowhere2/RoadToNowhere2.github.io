@@ -88,8 +88,13 @@ h1, h2
                 font-weight: 400
                 border-radius: 10px
                 background-color: #fcd539
+                border: 1px solid #fcd539
                 margin-left: 25px
                 cursor: pointer
+                transition: .3s linear all
+                &:hover
+                    background-color: transparent
+                    color:  #fcd539
     &-bottom
         ul
             list-style: none
@@ -98,13 +103,30 @@ h1, h2
             justify-content: space-between
             width: 100%
             li
-                opacity: 0.8
-                color: #ffffff
+                color: #ffffffd8
                 font-size: 18px
                 font-weight: 400
-                transition: .3s linear opacity
+                transition: .3s linear all
+                position: relative
+                &::after
+                    content: ''
+                    position: absolute
+                    bottom: -2px
+                    left: 50%
+                    right: 0
+                    background-color: #fcd539
+                    height: 2px
+                    width: 0
+                    transition: .2s linear all
                 &:hover
-                    opacity: 1
+                    color: #fcd539
+                    &::after
+                        width: 100%
+                        left: 0
+            .close
+                display: none
+        .burger
+            display: none
 .firstscreen
     position: relative
     margin-bottom: 160px
@@ -164,9 +186,9 @@ h1, h2
         right: 30px
         bottom: 160px
         &-play
-            width: 50px
-            height: 50px
-            background-color: #fcd53994
+            width: 75px
+            height: 75px
+            background-color: #fcd539
             border-radius: 50%
             display: flex
             align-items: center
@@ -188,7 +210,7 @@ h1, h2
                 border-radius: 50%
                 animation: pulse 2s linear  infinite
             img
-                transform: translateX(3px)
+                transform: translateX(3px) scale(1.5)
         span
             opacity: 0.5
             color: #07001f
@@ -280,6 +302,9 @@ h1, h2
                 font-size: 15px
                 font-weight: 400
                 cursor: pointer
+                transition: .2s linear all
+                &:hover
+                   transform: scale(1.1) 
             &__block.active
                 background-color: #fcd539
                 box-shadow: 0 0 36px 10px rgba(252, 213, 57, 0.2)
@@ -331,7 +356,7 @@ h1, h2
 .zadachi
     margin-bottom: 160px
     h2
-        margin-bottom: 112px
+        margin-bottom: 80px
         text-align: center   
     &-block
         display: flex
@@ -360,9 +385,9 @@ h1, h2
         flex-basis: 50%
         position: relative
         .play
-            width: 50px
-            height: 50px
-            background-color: #fcd53994
+            width: 75px
+            height: 75px
+            background-color: #fcd539
             border-radius: 50%
             display: flex
             align-items: center
@@ -385,7 +410,7 @@ h1, h2
                 border-radius: 50%
                 animation: pulse 2s linear  infinite
             img
-                transform: translateX(3px)
+                transform: translateX(3px) scale(1.5)
         &__desc
             opacity: 0.5
             color: #07001f
@@ -482,6 +507,8 @@ h1, h2
             padding: 45px 115px     
             cursor: pointer
             margin: 0 15px
+            &:hover
+                transform: scale(1.1) 
         &__item.active       
             background-color: #2c196e 
             color: #ffffff
@@ -494,6 +521,7 @@ h1, h2
         justify-content: space-between
         flex-wrap: wrap
         margin-bottom: 60px
+        transition: .3s linear all
         &__item
             flex-basis: 30%
             margin-bottom: 60px
@@ -600,21 +628,20 @@ h1, h2
                         color: #01001f
                         font-size: 18px
                         font-weight: 600
-                    &-minitop
-                        flex-basis: 20%
-                        border-left: 1px solid #07001f
-                        display: flex
-                        align-items: center
-                        justify-content: center
-                        color: #01001f
-                        font-size: 18px
-                        font-weight: 600
+                        height: 55px
+                        z-index: 2
+                        position: relative
+                        background-color: #fff
+
             &--main
                 display: flex
                 .column
+                    margin-bottom: -70px
                     width: calc( (100% - 369.2px) / 5 )
                     border-top: 1px solid #07001f
                     border-left: 1px solid #07001f
+                    &:not(:first-child)
+                        transform: translateY(-70px)
                     &-item
                         height: 32px
                         display: flex
@@ -624,6 +651,16 @@ h1, h2
                         font-size: 18px
                         font-weight: 400
                         border-bottom: 1px solid #07001f
+                    .item-minitop
+                        flex-basis: 20%
+                        border-bottom: 1px solid #07001f
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        color: #01001f
+                        font-size: 18px
+                        font-weight: 600
+                        height: 70px
                     &:first-child
                         width: 369.2px
                         border-left: none
@@ -992,17 +1029,21 @@ h1, h2
         align-items: center
         justify-content: space-around
         text-align: center
-        img
-            max-width: 100%
-        h3
-            color: #01001f
-            font-size: 20px
-            font-weight: 600
-            margin: 30px 0 15px 0
-        p
-            color: #01001f
-            font-size: 16px
-            font-weight: 400
+        flex-wrap: wrap
+        &__inner
+            flex-basis: 26%
+            margin-bottom: 30px
+            img
+                max-width: 100%
+            h3
+                color: #01001f
+                font-size: 20px
+                font-weight: 600
+                margin: 30px 0 15px 0
+            p
+                color: #01001f
+                font-size: 16px
+                font-weight: 400
 .contacts
     margin-bottom: 170px
     h2
@@ -1086,6 +1127,8 @@ h1, h2
         color: #ffffff
 
 .modal
+    background-color: #392380be
+    z-index: 100
     position: fixed
     top: 0
     right: 0
@@ -1149,6 +1192,8 @@ h1, h2
             right: 20px
             cursor: pointer
 .modal-ty
+    background-color: #392380be
+    z-index: 100
     position: fixed
     top: 0
     right: 0
@@ -1175,6 +1220,31 @@ h1, h2
         top: 20px
         right: 20px
         cursor: pointer
+.modal-video
+    background-color: #392380be
+    z-index: 100
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    display: none
+    align-items: center
+    justify-content: center
+    &__inner
+        max-width: 800px
+        min-height: 400px
+        width: 100%
+        position: relative
+        iframe
+            max-width: 800px
+            min-height: 400px
+            width: 100%
+        &--close
+            position: absolute
+            top: -30px
+            right: -30px
+
 
 @media ( max-width: 1280px )
     .container
@@ -1316,16 +1386,76 @@ h1, h2
             font-size: 16px
             margin: 0 5px
 @media ( max-width: 700px )
+    .zadachi h2
+        margin-bottom: 40px
+    
+    .header-bottom .burger
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 30px
+        height: 30px
+        position: absolute
+        top: 40px
+        right: 20px
+        span
+            width: 30px
+            height: 4px
+            background-color: #fcd539
+        &::before
+            content: ''
+            position: absolute
+            width: 30px
+            height: 4px
+            background-color: #fcd539
+            top: 0
+        &::after
+            content: ''
+            position: absolute
+            width: 30px
+            height: 4px
+            background-color: #fcd539
+            bottom: 0
+            
+
+    .header-bottom ul .close
+        display: block
+        position: absolute
+        top: 30px
+        right: 30px
+    .header-bottom ul
+        display: none
+        padding-top: 30px
+        padding-left: 30px
+        z-index: 100
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color:#392380be
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        li
+            font-size: 24px
+            margin-bottom: 20px
+            
+    .header-top__desc
+        display: none
     h1, h2
         font-size: 24px
         line-height: 150%
         span
             display: inline-block
+    .header-top__block
+        margin-right: auto
     .header-top__block,
     .header-top__contacts
         flex-direction: column
     .header-top__logo
         margin-bottom: 10px
+        margin-right: 0
     .header-top__contacts--btn
         margin-left: 0
         margin-top: 10px
@@ -1357,6 +1487,10 @@ h1, h2
     .vozmojnosti,
     .tabs
         margin-bottom: 60px
+    .vozmojnosti
+        margin-bottom: 100px
+    .tabs
+        margin-bottom: 120px
     .footer .container
         flex-direction: column
     .footer ul
@@ -1408,5 +1542,5 @@ h1, h2
         height: 0px
     100%
         opacity: 0
-        width: 120px
-        height: 120px
+        width: 200px
+        height: 200px

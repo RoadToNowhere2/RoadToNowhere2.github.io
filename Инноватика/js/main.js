@@ -18,6 +18,50 @@ $(document).ready(function () {
       });
 
       {
+        $(".header-bottom ul").on("click","a", function (event) {
+            event.preventDefault();
+            let id  = $(this).attr('href'),
+                top = $(id).offset().top - 100;
+            $('body,html').animate({scrollTop: top}, 800);
+            if ($(window).width() <= '700') {
+              $('.header-bottom ul').css('display', 'none');
+            }
+        });
+      }
+
+      {
+        $('.firstscreen .video-play').on('click', function () {
+          $('.modal-video-1').css('display', 'flex');
+        })
+
+        $('.modal-video-1 .modal-video__inner--close').on('click', function () {
+          $('.modal-video-1').css('display', 'none');
+        })
+
+        $('.zadachi-video .play').on('click', function () {
+          $('.modal-video-2').css('display', 'flex');
+        })
+
+        $('.modal-video-2 .modal-video__inner--close').on('click', function () {
+          $('.modal-video-2').css('display', 'none');
+        })
+      }
+
+      {
+        $('.header-bottom ul .close').on('click', function () {
+          $('.header-bottom ul').css('display', 'none');
+        })
+
+        $('.burger').on('click', function () {
+          $('.header-bottom ul').css('display', 'flex');
+        })
+      }
+
+      {
+        $(".masked-input").mask("+7 (999) 999-9999");
+      }
+
+      {
 
         $('.js-modal').on('click', function() {
           $('.modal').css('display', 'flex');
@@ -41,10 +85,13 @@ $(document).ready(function () {
             let tabs = $('.tabs-content');
 
             tabs.each(function (index, element) {
+              $(element).fadeOut();
               if ($(element).hasClass('hidden')) {
                 $(element).removeClass('hidden');
+                $(element).fadeIn();
               } else {
                 $(element).addClass('hidden');
+                $(element).fadeOut();
               }
             })
 
@@ -105,6 +152,7 @@ $(document).ready(function () {
 
       {
 
+        const columnsName         = $('.calculator-inner__block--2 .column:last-child .column-item:nth-child(2) .column-item__inner');
         const columns             = $('.calculator-inner__block--main .column');
         const columnsPrice        = $('.calculator-inner__block--2 .column:nth-child(2) .column-item');
         let activeColumns         = [];
@@ -121,6 +169,13 @@ $(document).ready(function () {
         columnsPrice.splice(0, 1);
         columnsPrice.splice(2, 1);
 
+
+        columnsName.each(function (index, element) {
+          $(element).on('click', function () {
+            $(columns[index]).trigger( "click" );
+          })
+          
+        })
 
         columns.each(function (index, element) {
 

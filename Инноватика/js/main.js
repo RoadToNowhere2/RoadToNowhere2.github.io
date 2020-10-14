@@ -61,6 +61,7 @@ $(document).ready(function () {
         $(".masked-input").mask("+7 (999) 999-9999");
       }
 
+
       {
 
         $('.js-modal').on('click', function() {
@@ -124,26 +125,99 @@ $(document).ready(function () {
             } else {
 
               $(items).removeClass('active');
+              $(items).css('opacity', '0.5');
               $('.grid-nav__block').removeClass('active');
               $(element).addClass('active');
 
-              let data = $(element).data("item");
-
-              $(items).each(function (index, element) {
-
-                let dataInner = $(element).data("item");
-
-                if (data === dataInner) {
-                  $(element).addClass('active');
-                } else {
-                  $(element).css('opacity', '0.5')
-                }
-
-              })
-
+              
             }
 
           });
+
+          $(buttons[0]).on('click', function () {
+            
+            $(items[3]).addClass('active');
+            $(items[3]).css('opacity', '1');
+            $(items[8]).addClass('active');
+            $(items[8]).css('opacity', '1');
+            $(items[4]).addClass('active');
+            $(items[4]).css('opacity', '1');
+            $(items[10]).addClass('active');
+            $(items[10]).css('opacity', '1');
+            $(items[9]).addClass('active');
+            $(items[9]).css('opacity', '1');
+
+          })
+
+          $(buttons[1]).on('click', function () {
+            
+            $(items[5]).addClass('active');
+            $(items[5]).css('opacity', '1');
+            $(items[6]).addClass('active');
+            $(items[6]).css('opacity', '1');
+            $(items[13]).addClass('active');
+            $(items[13]).css('opacity', '1');
+            $(items[18]).addClass('active');
+            $(items[18]).css('opacity', '1');
+            $(items[23]).addClass('active');
+            $(items[23]).css('opacity', '1');
+            $(items[0]).addClass('active');
+            $(items[0]).css('opacity', '1');
+            $(items[10]).addClass('active');
+            $(items[10]).css('opacity', '1');
+            $(items[21]).addClass('active');
+            $(items[21]).css('opacity', '1');
+            $(items[14]).addClass('active');
+            $(items[14]).css('opacity', '1');
+
+          })
+
+          $(buttons[2]).on('click', function () {
+            
+            $(items[8]).addClass('active');
+            $(items[8]).css('opacity', '1');
+            $(items[19]).addClass('active');
+            $(items[19]).css('opacity', '1');
+            $(items[2]).addClass('active');
+            $(items[2]).css('opacity', '1');
+            $(items[21]).addClass('active');
+            $(items[21]).css('opacity', '1');
+            $(items[23]).addClass('active');
+            $(items[23]).css('opacity', '1');
+
+          })
+
+          $(buttons[3]).on('click', function () {
+            
+            $(items[22]).addClass('active');
+            $(items[22]).css('opacity', '1');
+            $(items[11]).addClass('active');
+            $(items[11]).css('opacity', '1');
+            $(items[17]).addClass('active');
+            $(items[17]).css('opacity', '1');
+            $(items[2]).addClass('active');
+            $(items[2]).css('opacity', '1');
+            $(items[20]).addClass('active');
+            $(items[20]).css('opacity', '1');
+
+          })
+
+          $(buttons[4]).on('click', function () {
+            
+            $(items[6]).addClass('active');
+            $(items[6]).css('opacity', '1');
+            $(items[17]).addClass('active');
+            $(items[17]).css('opacity', '1');
+            $(items[24]).addClass('active');
+            $(items[24]).css('opacity', '1');
+            $(items[1]).addClass('active');
+            $(items[1]).css('opacity', '1');
+            $(items[2]).addClass('active');
+            $(items[2]).css('opacity', '1');
+            $(items[14]).addClass('active');
+            $(items[14]).css('opacity', '1');
+          })
+
         })
 
       }
@@ -181,7 +255,15 @@ $(document).ready(function () {
 
           $(element).on('click', function () {
 
-            $(columnsPrice[1]).children().text('');
+            let inoutChek = +$('.calculator-inner__block--2 .column:last-child .column-item:first-child input').val();
+
+            console.log(inoutChek);
+
+            if (typeof (inoutChek) == NaN || inoutChek == 0) {
+              return;
+            } else {
+
+              $(columnsPrice[1]).children().text('');
 
             if (!$(element).hasClass('clicked')) {
 
@@ -290,30 +372,30 @@ $(document).ready(function () {
 
               if (index == 0) {
 
-                number1 = $('.column-price-1').val();
+                number1 = firstInputSumm;
                 $(activeColumnsPrice[1]).text(number1);
               
               } else if (index == 1) {
 
-                number2 = $('.column-price-1').val() * $('.column-price-2').val() / 100;
+                number2 = firstInputSumm * $('.column-price-2').val() / 100;
                 $(activeColumnsPrice[3]).text(number2);
                 
                 
               } else if (index == 2) {
                 
-                number3 = $('.column-price-1').val() * $('.column-price-3').val() / 100;
+                number3 = firstInputSumm * $('.column-price-3').val() / 100;
                 $(activeColumnsPrice[5]).text(number3);
                 
 
               } else if (index == 3) {
                 
-                number4 = $('.column-price-1').val() * $('.column-price-4').val() / 100;
+                number4 = firstInputSumm * $('.column-price-4').val() / 100;
                 $(activeColumnsPrice[7]).text(number4);
                 
 
               } else if (index == 4) {
                 
-                number5 = $('.column-price-1').val() * $('.column-price-5').val() / 100;
+                number5 = firstInputSumm * $('.column-price-5').val() / 100;
                 $(activeColumnsPrice[9]).text(number5);
                 
 
@@ -325,6 +407,8 @@ $(document).ready(function () {
 
 
             columnSumm = (number1 != undefined ? +number1 : 0) + (number2 != undefined ? +number2 : 0) + (number3 != undefined ? +number3 : 0) + (number4 != undefined ? +number4 : 0) + (number5 != undefined ? +number5 : 0);
+
+            }
             
             
           
@@ -366,6 +450,8 @@ $(document).ready(function () {
 
           +secondInputSumm
 
+          $('.calculator-inner__block--3 .column:last-child .column-item__inner:last-child').text(secondInputSumm);
+
         })
 
         if (firstInputSumm <= 250000) {
@@ -390,11 +476,11 @@ $(document).ready(function () {
 
           columnSumm = columnSumm != undefined ? columnSumm : 0;
 
-          allSumm = (+columnSumm) + (+firstInputSumm) + (+secondInputSumm);
+          allSumm = (+columnSumm) + (+secondInputSumm);
           
-          $('.calculator-inner__block--3 .column:last-child .column-item:last-child').text(allSumm);
+          $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text(columnSumm);
           $('.calculator-inner__block--3 .column:last-child .column-item__inner:last-child').text(secondInputSumm);
-          $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text(columnSumm + firstInputSumm);
+          $('.calculator-inner__block--3 .column:last-child .column-item:last-child').text(allSumm);
         }
         
 

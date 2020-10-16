@@ -75,6 +75,12 @@ $(document).ready(function () {
       }
 
       {
+        $('.modal-ty-close').on('click', function() {
+          $('.modal-ty').css('display', 'none');
+        })
+      }
+
+      {
 
         $('.tabs-nav__item').on('click', function () {
           if ($(this).hasClass('active')) {
@@ -417,8 +423,6 @@ $(document).ready(function () {
 
         $('.calculator-inner__block--2 .column:last-child .column-item:first-child input').on('input', function() {
 
-          //$(this).val($(this).val().replace(/ +/g, ''));
-
           firstInputSumm = $(this).val();
 
           +firstInputSumm
@@ -439,6 +443,10 @@ $(document).ready(function () {
             firstInputSumm = firstInputSumm * 0.05;
           }
 
+          $(activeColumns).each(function (index, element) {
+            $(element).trigger('click');
+            $(element).trigger('click');
+          })
           
         })
 

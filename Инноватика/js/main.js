@@ -29,6 +29,10 @@ $(document).ready(function () {
         });
       }
 
+      $('footer .header-top__logo').on('click', function () {
+        $('body,html').animate({scrollTop: 0}, 800);
+      })
+
       {
         $('.firstscreen .video-play').on('click', function () {
           $('.modal-video-1').css('display', 'flex');
@@ -131,7 +135,7 @@ $(document).ready(function () {
             } else {
 
               $(items).removeClass('active');
-              $(items).css('opacity', '0.5');
+              $(items).css('opacity', '0.1');
               $('.grid-nav__block').removeClass('active');
               $(element).addClass('active');
 
@@ -142,8 +146,8 @@ $(document).ready(function () {
 
           $(buttons[0]).on('click', function () {
             
-            $(items[3]).addClass('active');
-            $(items[3]).css('opacity', '1');
+            $(items[7]).addClass('active');
+            $(items[7]).css('opacity', '1');
             $(items[8]).addClass('active');
             $(items[8]).css('opacity', '1');
             $(items[4]).addClass('active');
@@ -157,8 +161,8 @@ $(document).ready(function () {
 
           $(buttons[1]).on('click', function () {
             
-            $(items[5]).addClass('active');
-            $(items[5]).css('opacity', '1');
+            $(items[7]).addClass('active');
+            $(items[7]).css('opacity', '1');
             $(items[6]).addClass('active');
             $(items[6]).css('opacity', '1');
             $(items[13]).addClass('active');
@@ -182,8 +186,8 @@ $(document).ready(function () {
             
             $(items[8]).addClass('active');
             $(items[8]).css('opacity', '1');
-            $(items[19]).addClass('active');
-            $(items[19]).css('opacity', '1');
+            $(items[7]).addClass('active');
+            $(items[7]).css('opacity', '1');
             $(items[2]).addClass('active');
             $(items[2]).css('opacity', '1');
             $(items[21]).addClass('active');
@@ -195,8 +199,8 @@ $(document).ready(function () {
 
           $(buttons[3]).on('click', function () {
             
-            $(items[22]).addClass('active');
-            $(items[22]).css('opacity', '1');
+            $(items[7]).addClass('active');
+            $(items[7]).css('opacity', '1');
             $(items[11]).addClass('active');
             $(items[11]).css('opacity', '1');
             $(items[17]).addClass('active');
@@ -222,6 +226,8 @@ $(document).ready(function () {
             $(items[2]).css('opacity', '1');
             $(items[14]).addClass('active');
             $(items[14]).css('opacity', '1');
+            $(items[20]).addClass('active');
+            $(items[20]).css('opacity', '1');
           })
 
         })

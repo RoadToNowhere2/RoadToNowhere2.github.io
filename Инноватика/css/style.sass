@@ -265,6 +265,7 @@ h1, h2
         position: absolute
         top: 100px
         left: -260px
+        z-index: -1
     h2
         text-align: center
         margin-bottom: 36px
@@ -1116,6 +1117,8 @@ h1, h2
 .footer
     background-color: #07001f
     padding: 50px 0
+    .header-top__logo
+        cursor: pointer
     .container
         display: flex
         align-items: center
@@ -1167,7 +1170,8 @@ h1, h2
             width: 100%
             margin-bottom: 10px    
             padding: 25px 44px
-            padding-left: 70px
+            padding-left: 50px
+            padding-right: 0
             border-radius: 10px
             border: 1px solid #07001f
             color: #07001f
@@ -1176,7 +1180,7 @@ h1, h2
             line-height: 32px
             background-repeat: no-repeat
             background-size: 18px
-            background-position: 44px 32px
+            background-position: 24px 32px
             outline: none
             &:nth-child(1)
                 background-image: url(../img/name.png)
@@ -1186,7 +1190,7 @@ h1, h2
                 margin-top: 20px
                 margin-bottom: 0
                 border: none
-                padding: 25px 44px
+                padding: 25px 0
                 background-color: #fcd539
                 color: #07001f
                 font-size: 16px

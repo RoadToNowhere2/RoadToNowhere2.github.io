@@ -464,13 +464,13 @@ $(document).ready(function () {
 
         $('.calculator-inner__block--3 .column:last-child .column-item__inner input').on('input', function() {
 
-          //$(this).val($(this).val().replace(/ +/g, ''));
-
           secondInputSumm = $(this).val();
 
           +secondInputSumm
 
-          $('.calculator-inner__block--3 .column:last-child .column-item__inner:last-child').text(secondInputSumm);
+          let format = new Intl.NumberFormat().format(secondInputSumm)
+
+          $('.calculator-inner__block--3 .column:last-child .column-item__inner:last-child').text(format);
 
         })
 
@@ -499,11 +499,15 @@ $(document).ready(function () {
           allSumm = (+columnSumm) + (+secondInputSumm);
 
           
+          allSumm = Math.round(allSumm);
+          columnSumm = Math.round(columnSumm);
+
+          let formatAll = new Intl.NumberFormat().format(allSumm);
+          let formatColumns = new Intl.NumberFormat().format(columnSumm);
 
           
-          $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text(Math.round(columnSumm));
-          $('.calculator-inner__block--3 .column:last-child .column-item__inner:last-child').text(Math.round(secondInputSumm));
-          $('.calculator-inner__block--3 .column:last-child .column-item:last-child').text(Math.round(allSumm));
+          $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text(formatColumns);
+          $('.calculator-inner__block--3 .column:last-child .column-item:last-child').text(formatAll);
         }
         
 

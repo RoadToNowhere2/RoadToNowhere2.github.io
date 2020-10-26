@@ -190,7 +190,7 @@ h1, h2
         align-items: center
         position: absolute
         right: 30px
-        bottom: 160px
+        bottom: 143px
         &-play
             width: 75px
             height: 75px
@@ -380,12 +380,13 @@ h1, h2
             line-height: 26px  
             margin-bottom: 70px    
             position: relative
+            padding-left: 60px
             .arrow-before
                 position: absolute
                 width: 118px
                 height: 76px   
                 top: 50%
-                left: -65px
+                left: 0
                 z-index: -1
                 transform: translateY(-50%)
     &-video
@@ -1062,8 +1063,8 @@ h1, h2
         justify-content: center
         &__block
             width: 50%
-            &:first-child
-                padding-left: 200px
+            &:last-child
+                transform: translateY(4px)
             ul
                 margin-bottom: 50px
                 list-style: none
@@ -1087,11 +1088,11 @@ h1, h2
                     margin-bottom: 0
                     margin-right: 5px
             .btn
+                max-width: 350px
                 margin-top: 50px
                 color: #07001f
                 font-size: 18px
                 font-weight: 400
-                max-width: 90%
                 padding: 16px 0
                 text-align: center
                 cursor: pointer

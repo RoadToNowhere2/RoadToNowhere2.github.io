@@ -179,6 +179,8 @@ $(document).ready(function () {
             $(items[21]).css('opacity', '1');
             $(items[14]).addClass('active');
             $(items[14]).css('opacity', '1');
+            $(items[22]).addClass('active');
+            $(items[22]).css('opacity', '1');
 
           })
 
@@ -194,6 +196,8 @@ $(document).ready(function () {
             $(items[21]).css('opacity', '1');
             $(items[23]).addClass('active');
             $(items[23]).css('opacity', '1');
+            $(items[22]).addClass('active');
+            $(items[22]).css('opacity', '1');
 
           })
 
@@ -214,6 +218,8 @@ $(document).ready(function () {
 
           $(buttons[4]).on('click', function () {
             
+            $(items[3]).addClass('active');
+            $(items[3]).css('opacity', '1');
             $(items[6]).addClass('active');
             $(items[6]).css('opacity', '1');
             $(items[17]).addClass('active');
@@ -246,7 +252,7 @@ $(document).ready(function () {
 
         let columnSumm;
         let firstInputSumm        = 200000;
-        let secondInputSumm       = 20000;
+        let secondInputSumm       = '';
         let allSumm;
 
 
@@ -385,30 +391,30 @@ $(document).ready(function () {
               if (index == 0) {
 
                 number1 = firstInputSumm;
-                $(activeColumnsPrice[1]).text(number1);
+                $(activeColumnsPrice[1]).text(Math.round(number1));
               
               } else if (index == 1) {
 
                 number2 = firstInputSumm * $('.column-price-2').val() / 100;
-                $(activeColumnsPrice[3]).text(number2);
+                $(activeColumnsPrice[3]).text(Math.round(number2));
                 
                 
               } else if (index == 2) {
                 
                 number3 = firstInputSumm * $('.column-price-3').val() / 100;
-                $(activeColumnsPrice[5]).text(number3);
+                $(activeColumnsPrice[5]).text(Math.round(number3));
                 
 
               } else if (index == 3) {
                 
                 number4 = firstInputSumm * $('.column-price-4').val() / 100;
-                $(activeColumnsPrice[7]).text(number4);
+                $(activeColumnsPrice[7]).text(Math.round(number4));
                 
 
               } else if (index == 4) {
                 
                 number5 = firstInputSumm * $('.column-price-5').val() / 100;
-                $(activeColumnsPrice[9]).text(number5);
+                $(activeColumnsPrice[9]).text(Math.round(number5));
                 
 
               }
@@ -491,10 +497,13 @@ $(document).ready(function () {
           columnSumm = columnSumm != undefined ? columnSumm : 0;
 
           allSumm = (+columnSumm) + (+secondInputSumm);
+
           
-          $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text(columnSumm);
-          $('.calculator-inner__block--3 .column:last-child .column-item__inner:last-child').text(secondInputSumm);
-          $('.calculator-inner__block--3 .column:last-child .column-item:last-child').text(allSumm);
+
+          
+          $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text(Math.round(columnSumm));
+          $('.calculator-inner__block--3 .column:last-child .column-item__inner:last-child').text(Math.round(secondInputSumm));
+          $('.calculator-inner__block--3 .column:last-child .column-item:last-child').text(Math.round(allSumm));
         }
         
 

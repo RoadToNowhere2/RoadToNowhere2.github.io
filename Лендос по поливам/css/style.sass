@@ -1,0 +1,456 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 18px
+    font-family: 'Montserrat', sans-serif
+
+.container
+    margin: 0 auto
+    max-width: 1200px
+
+body,
+html
+    overflow-x: hidden 
+
+a
+    text-decoration: none
+    color: inherit
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 0
+    &-menu
+        display: flex
+        align-items: center
+        justify-content: center
+        list-style: none
+        li
+            margin-right: 50px
+            color: #070606
+    &-languages
+        position: relative
+        cursor: pointer
+        &.active
+            ul
+                display: block
+        span
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #070606
+            img
+                margin-left: 15px
+        ul
+            position: absolute
+            top: calc( 100% + 10px )
+            left: 0
+            right: 0
+            list-style: none
+            display: none
+            li
+                width: 100%
+                a
+                    display: block
+                    width: 100%
+.firstscreen
+    padding-top: 30vh
+    min-height: calc(100vh - 91px)
+    background-image: url(../img/firstscreen-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    color: #fff
+    h1
+        font-size: 48px
+        font-weight: 600
+        margin-bottom: 30px
+        text-align: center
+    p
+        font-size: 30px
+        font-weight: 400
+        line-height: 48px
+        text-align: center
+        letter-spacing: 2.25px
+        margin-bottom: 45px
+    .btn
+        margin: 0 auto
+        max-width: 420px
+        min-height: 80px
+        border-radius: 41px
+        background-color: #ffffff
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #070606
+        font-size: 24px
+        font-weight: 400
+        cursor: pointer
+.advantages
+    margin-top: 60px
+    margin-bottom: 100px
+    h2
+        color: #070606
+        text-align: center
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 60px
+    &-inner
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-wrap: wrap
+        &__block
+            padding: 40px 20px 20px 20px
+            border: 1px solid #f8f8f8
+            min-height: 345px
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            flex-direction: column
+            margin: 0 10px
+            margin-bottom: 30px
+            flex-basis: calc((100% - 60px) / 3)
+            p
+                margin-top: 40px
+                color: #070606
+                font-size: 18px
+                font-weight: 400
+.list
+    margin-bottom: 200px
+    h2
+        color: #070606
+        text-align: center
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 25px
+    h3
+        color: #070606
+        text-align: center
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 70px
+    &-inner
+        display: flex
+        justify-content: space-between
+        &__block
+            &--item
+                padding: 32px
+                border: 1px solid #dcdcdc
+                margin-bottom: 13px
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                img
+                    margin-right: 45px
+                p
+                    color: #070606
+                    font-size: 18px
+                    font-weight: 400
+            .hidden
+                display: none
+            &:nth-child(2)
+                margin-left: 30px
+                    
+.uslugi
+    position: relative
+    margin-bottom: 100px
+    h2
+        color: #ffffff
+        font-size: 24px
+        font-weight: 600
+        text-align: center
+        margin-bottom: 90px
+        position: relative
+    &-banner
+        position: absolute
+        z-index: -1
+        top: -90px
+        left: -60px
+        right: -60px
+        max-width: calc(100% + 120px)
+    &-inner
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &__block
+            text-align: center
+            box-shadow: 1px -1px 7px rgba(0, 4, 7, 0.12)
+            border: 1px solid #dcdcdc
+            min-height: 340px
+            transform: translateY(-50px)
+            p
+                color: #070606
+                font-weight: 400
+                text-align: center
+                margin-top: 30px
+.contacts
+    padding: 45px 0 60px 0
+    background-image: url(../img/contacts.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    margin-bottom: 90px
+    h2
+        color: #ffffff
+        font-size: 30px
+        font-weight: 600
+        text-align: center
+        margin-bottom: 10px
+    h3
+        color: #ffffff
+        font-weight: 400
+        text-align: center
+        margin-bottom: 50px
+    .inputs
+        display: flex
+        align-items: center
+        justify-content: space-around
+        input
+            padding: 15px 25px
+            border-radius: 10px
+            background-color: #ffffff
+            max-width: 330px
+            width: 100%
+            font-family: Montserrat
+            font-size: 18px
+            border: none
+            outline: none
+    button
+        margin: 0 auto
+        margin-top: 50px
+        max-width: 330px
+        border-radius: 36px
+        background-color: #a0d6f9
+        width: 100%
+        height: 70px
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #ffffff
+        font-size: 18px
+        font-weight: 600
+        border: none
+        outline: none
+.footer
+    padding-bottom: 45px
+    border-top: 1px solid #dcdcdc
+    .container
+        margin-top: 45px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        ul
+            list-style: none
+            li
+                color: #070606
+                font-weight: 400
+            &:first-child
+                li
+                    line-height: 48px
+            &:last-child
+                text-align: right
+                li
+                    line-height: 36px
+.burger
+    display: none
+.mobileMenu
+    position: fixed
+    z-index: 100
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: #000000c9
+    display: none
+    align-items: flex-end
+    justify-content: flex-start
+    flex-direction: column
+    ul
+        padding-right: 50px
+        padding-top: 100px
+        list-style: none
+        li
+            color: #ffffff
+            text-align: right
+            margin-bottom: 25px
+    .close-menu
+        position: absolute
+        top: 30px
+        right: 50px
+        color: #ffffff
+        font-size: 30px
+        font: 5px
+.modal
+    position: fixed
+    z-index: 100
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: #000000c9
+    display: none
+    align-items: center
+    justify-content: center
+    &-inner
+        h2
+            color: #ffffff
+            font-size: 30px
+            font-weight: 600
+            text-align: center
+            margin-bottom: 10px
+        h3
+            color: #ffffff
+            font-weight: 400
+            text-align: center
+            margin-bottom: 50px
+        form
+            display: flex
+            align-items: center
+            justify-content: space-around
+            flex-direction: column
+            input
+                padding: 15px 25px
+                border-radius: 10px
+                background-color: #ffffff
+                max-width: 330px
+                width: 100%
+                font-family: Montserrat
+                font-size: 18px
+                border: none
+                outline: none
+                margin-bottom: 15px
+            button
+                margin: 0 auto
+                margin-top: 50px
+                max-width: 330px
+                border-radius: 36px
+                background-color: #a0d6f9
+                width: 100%
+                height: 70px
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #ffffff
+                font-size: 18px
+                font-weight: 600
+                border: none
+                outline: none
+    .close
+        position: absolute
+        top: 30px
+        right: 30px
+        color: #ffffff
+        font-size: 30px
+        padding: 5px
+        cursor: pointer        
+    
+@media ( max-width: 1250px )
+    .uslugi-inner
+        flex-wrap: wrap
+    .uslugi-inner__block
+        img
+            max-width: 100%
+    .container
+        padding-left: 10px
+        padding-right: 10px
+
+@media ( max-width: 1130px )
+    .uslugi
+        margin-bottom: 0
+    .list-inner__block:nth-child(2)
+        margin-left: 0
+    .firstscreen h1
+        font-size: 36px
+    .modal .close
+        top: 0
+        right: 0
+    .list-inner__block--item
+        padding: 25px 15px
+    .list-inner__block--item img
+        margin-right: 25px
+    .list-inner__block--item p
+        font-size: 16px
+    .contacts .inputs
+        flex-direction: column
+        input
+            margin-bottom: 10px
+    .footer .container
+        flex-direction: column
+        align-items: center
+    .uslugi-banner
+        height: 210px
+        right: auto
+        max-width: none
+    .footer .container ul:last-child,
+    .footer .container ul:first-child
+        text-align: center
+    .firstscreen
+        padding-bottom: 30px
+    .firstscreen p
+        font-size: 24px
+        line-height: 150%
+    .uslugi-inner
+        justify-content: center
+    .uslugi-inner__block
+        margin: 0 10px 20px 10px
+    .list-inner
+        flex-direction: column-reverse
+        &__block:last-child
+            img
+                display: none
+            .hidden
+                display: block
+                margin: 0 auto
+                max-width: 100%
+                margin-bottom: 30px
+    .advantages-inner
+        flex-direction: column
+        align-items: center
+    .header-menu,
+    .header-languages
+        display: none
+    .mobileMenu .header-languages
+        display: block
+        padding-right: 50px
+        span
+            color: #fff
+        ul
+            padding: 0
+            li
+                a
+                    padding-right: 90px
+    .burger
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 30px
+        height: 25px
+        position: absolute
+        top: 40px
+        right: 20px
+        span
+            width: 30px
+            height: 4px
+            background-color: #000
+        &::before
+            content: ''
+            position: absolute
+            width: 30px
+            height: 4px
+            background-color: #000
+            top: 0
+        &::after
+            content: ''
+            position: absolute
+            width: 30px
+            height: 4px
+            background-color: #000
+            bottom: 0
+
+
+
+

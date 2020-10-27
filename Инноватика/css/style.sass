@@ -1255,6 +1255,93 @@ h1, h2
             position: absolute
             top: -30px
             right: -30px
+.modal-reviews
+    background-color: #392380be
+    z-index: 100
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    display: none
+    overflow-y: scroll
+    &::-webkit-scrollbar
+        display: none
+    &__all
+        margin: 100px auto
+        max-width: 750px
+        min-height: 400px
+        width: 100%
+        position: relative
+        background-color: #fff
+        padding: 70px 67px
+        box-shadow: 0 0 23px 6px rgba(7, 0, 31, 0.06)
+        border-radius: 10px
+        &--close
+            position: absolute
+            top: 30px
+            right: 30px
+            cursor: pointer
+        &--inner
+            border-radius: 10px
+            background-color: #d0c3ff
+            padding: 60px 20px 20px 20px
+            position: relative
+            &::before
+                content: ''
+                width: 65px
+                height: 65px
+                position: absolute
+                top: -30px
+                right: 75px
+                background-image: url(../img/quote.png)
+                background-repeat: no-repeat
+                background-size: contain
+                background-position: center center
+            p
+                display: none
+.slider___container
+    position: relative
+    .slick-navigation
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(calc( -50% - 20px ))
+        width: 100%
+        max-width: 720px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        list-style: none
+        li
+            button
+                width: 85px
+                height: 85px
+                background-color: #dadada
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                border: none
+                outline: none
+                cursor: pointer
+                transform-origin: 50% 50%
+                transition: .3s linear all
+                img
+                    opacity: 0.5
+                    transition: .3s linear all
+                &:hover
+                    background-color: #fcd539
+                    img
+                        opacity: 1
+            &:first-child
+                transform: rotate(180deg)
+
+    
+
+
+            
+
 
 
 @media ( max-width: 1280px )

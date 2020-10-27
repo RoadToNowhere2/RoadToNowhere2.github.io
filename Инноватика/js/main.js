@@ -3,7 +3,9 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         dots: true,
         centerMode: true,
         centerPadding: '260px',
@@ -32,6 +34,39 @@ $(document).ready(function () {
       $('footer .header-top__logo').on('click', function () {
         $('body,html').animate({scrollTop: 0}, 800);
       })
+
+      {
+
+        let reviewsSlides = $('.slider-inner__slide');
+        let reviewsAll    = $('.modal-reviews__all--inner p');
+
+
+        $(reviewsSlides).each(function(index, element) {
+          let slideData = $(element).data('slide');
+          
+          $(element).on('click', "a", function (event) {
+            event.preventDefault();
+            
+            $('.modal-reviews').css('display', 'block');
+            $(reviewsAll).css('display', 'none');
+            $(reviewsAll).each(function(i, e) {
+              let allData = $(e).data('paragraf');
+              console.log(allData)
+              if (slideData == allData) {
+                $(e).css('display', 'block');
+              }
+            })
+
+          })
+        })
+
+
+        $('.modal-reviews__all--close').on('click', function () {
+          $('.modal-reviews').css('display', 'none');
+        })
+
+      }
+      
 
       {
         $('.firstscreen .video-play').on('click', function () {

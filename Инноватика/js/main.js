@@ -38,7 +38,7 @@ $(document).ready(function () {
       {
 
         let reviewsSlides = $('.slider-inner__slide');
-        let reviewsAll    = $('.modal-reviews__all--inner p');
+        let reviewsAll    = $('.modal-reviews__all--inner img');
 
 
         $(reviewsSlides).each(function(index, element) {

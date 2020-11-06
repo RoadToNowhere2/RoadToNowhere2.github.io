@@ -23,7 +23,7 @@ $(document).ready(function () {
         $(".header-bottom ul").on("click","a", function (event) {
             event.preventDefault();
             let id  = $(this).attr('href'),
-                top = $(id).offset().top - 100;
+                top = $(id).offset().top - 30;
             $('body,html').animate({scrollTop: top}, 800);
             if ($(window).width() <= '700') {
               $('.header-bottom ul').css('display', 'none');
@@ -312,7 +312,7 @@ $(document).ready(function () {
 
             console.log(inoutChek);
 
-            if (typeof (inoutChek) == NaN || inoutChek == 0) {
+            if (typeof (inoutChek) == NaN || inoutChek == '') {
               return;
             } else {
 
@@ -494,6 +494,32 @@ $(document).ready(function () {
             $(element).trigger('click');
             $(element).trigger('click');
           })
+
+          if (firstInputSumm == '') {
+            $(columns).each(function (index, element) {
+              $(element).removeClass('clicked');
+              $(element).css('background-color', '#fff');
+              $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text('');
+              $(activeColumnsPrice[1]).text('');
+              $(activeColumnsPrice[3]).text('');
+              $(activeColumnsPrice[5]).text('');
+              $(activeColumnsPrice[7]).text('');
+              $(activeColumnsPrice[9]).text('');
+            })
+
+            $(columnsName).each(function (index, element) {
+              $(element).removeClass('clicked');
+              $(element).css('background-color', '#fff');
+            })
+
+            $(activeColumnsPrice).each(function (index, element) {
+              $(element).removeClass('clicked');
+              $(element).css('background-color', '#fff');
+            })
+
+            activeColumns.splice(0, activeColumns.length);
+            activeColumnsPrice.splice(0, activeColumnsPrice.length);
+          }
           
         })
 
@@ -540,9 +566,15 @@ $(document).ready(function () {
           let formatAll = new Intl.NumberFormat().format(allSumm);
           let formatColumns = new Intl.NumberFormat().format(columnSumm);
 
+          if (firstInputSumm == '') {
+            formatColumns = 0;
+          }
+
           
           $('.calculator-inner__block--2 .column:last-child .column-item:last-child').text(formatColumns);
           $('.calculator-inner__block--3 .column:last-child .column-item:last-child').text(formatAll);
+
+          
         }
         
 

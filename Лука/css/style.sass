@@ -36,10 +36,26 @@ ul
         justify-content: space-between
         min-width: 680px
         li
+            position: relative
             a
                 color: #a6a6a6
                 font-size: 16px
                 font-weight: 400
+            &::before
+                content: ''
+                position: absolute
+                left: 50%
+                right: 50%
+                width: 0%
+                background-color: #db2449
+                height: 2px
+                bottom: -2px
+                transition: .3s all linear
+            &:hover::before
+                width: 100%
+                left: 0
+                right: 0
+                
     &-btn
         display: flex
         align-items: center
@@ -705,6 +721,31 @@ ul
             background-position: center center
 .burger
     display: none
+.modal
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: #000000e0
+    display: none
+    align-items: center
+    justify-content: center
+    &-video
+        min-height: 350px
+        max-width: 800px
+        width: 100%
+        position: relative
+        &__close
+            position: absolute
+            right: 0
+            top: -50px
+            font-size: 40px
+            color: #fff
+            cursor: pointer
+        iframe
+            width: 100%
+            min-height: 350px
 
 
 
@@ -916,6 +957,17 @@ ul
         display: none
     .video-inner__block .play
         top: 100px
+    .header
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 10
+        background-color: #fff
+        padding-top: 15px
+        padding-bottom: 10px
+    .firstscreen
+        padding-top: 250px
 
 @media ( max-width: 400px )
     .video-inner__block .play

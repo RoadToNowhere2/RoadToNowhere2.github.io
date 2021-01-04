@@ -1,0 +1,741 @@
+$akcent: #FF5732
+$mainColor: #134571
+
+* 
+    font-family: 'Open Sans'
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body, html
+    overflow-x: hidden
+
+h1, h2 
+    font-family: 'Caveat'
+    span
+        font-family: 'Caveat'
+
+.container
+    max-width: 1280px
+    margin: 0 auto
+
+a
+    text-decoration: none
+    color: inherit
+
+ul
+    list-style: none
+
+.burger
+    display: none
+
+.header
+    padding-top: 60px
+    padding-bottom: 140px
+    background-image: url(../img/header-bg.png)
+    background-size: cover  
+    background-repeat: no-repeat
+    background-position: center right
+    position: relative
+    .hvost
+        position: absolute
+        right: 0
+        bottom: 0
+        pointer-events: none
+    .container
+        position: relative
+        z-index: 2
+    &-top
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-bottom: 75px
+        ul
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-top: 5px
+            li
+                margin: 0 30px
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                color: $mainColor
+                transition: .3s all linear
+                &:hover
+                    color: $akcent
+        &__contacts
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            justify-content: center
+            .tel
+                font-size: 22px
+                color: #ffffff
+                margin-bottom: 10px
+                span
+                    font-size: 22px
+                    color: $akcent
+            .btn
+                padding: 15px 30px
+                background: transparent
+                border-radius: 30px
+                font-weight: 600
+                font-size: 16px
+                line-height: 19px
+                color: #ffffff
+                border: 1px solid #ffff
+                transition: .3s all linear
+                &:hover
+                    background-color: #134571
+                    border: 1px solid #134571
+    &-main
+        h1
+            font-size: 50px
+            line-height: 58px
+            color: $mainColor
+            text-transform: uppercase
+            margin-bottom: 35px
+            span
+                font-size: 50px
+                line-height: 58px
+                color: $akcent
+                text-transform: uppercase
+        ul
+            padding-left: 20px
+            margin-bottom: 45px
+            li
+                margin-bottom: 18px
+                color: $mainColor
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                position: relative
+                &::before
+                    content: ''
+                    width: 10px
+                    height: 10px
+                    border-radius: 50%
+                    background-color: $akcent
+                    position: absolute
+                    top: 7px
+                    left: -20px
+        .btn
+            display: inline-block
+            padding: 24px 65px
+            background: $akcent
+            border-radius: 40px
+            color: #ffffff
+            font-size: 20px
+            line-height: 23px
+            border: 1px solid $akcent
+            transition: .3s all linear
+            &:hover
+                background-color: transparent
+                color: $akcent
+    .ices
+        position: absolute!important
+        top: -60px  
+        bottom: -140px
+        right: 0
+        left: 0
+        pointer-events: none
+        img
+            position: absolute!important
+            pointer-events: none
+        .ice-1
+            top: -60px!important
+            left: 60px!important
+        .ice-2
+            left: -85px!important
+            top: -20px!important
+        .ice-3
+            bottom: 170px!important
+            left: -140px!important
+            top: auto!important
+        .ice-4
+            bottom: 25px!important
+            left: 400px!important
+            top: auto!important
+        .ice-5
+            bottom: 10px!important
+            right: 315px!important
+            top: auto!important
+            left: auto!important
+        .ice-6
+            top: 190px!important
+            right: 205px!important
+            left: auto!important
+        .ice-7
+            top: 100px!important
+            right: 80px!important
+            left: auto!important
+        .ice-8
+            top: -180px!important
+            right: calc( 0px - 20vw)!important
+            left: auto!important
+        .ice-9
+            right:  calc( 0px - 10vw)!important
+            bottom: -140px!important
+            top: auto!important
+            left: auto!important
+        .ice-10
+            left: -100px!important
+            top: auto!important
+            bottom: -180px!important
+        .ice-11
+            right:  150px!important
+            bottom: -180px!important
+            top: auto!important
+            left: auto!important
+.catalog
+    padding-top: 70px
+    padding-bottom: 90px
+    text-align: center
+    h2
+        font-size: 40px
+        color: $mainColor
+        margin-bottom: 70px
+        span
+            font-size: 40px
+            color: $akcent
+    &-inner
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &__block
+            flex-basis: calc( (100% - 60px) / 4 )
+            img
+                max-width: 100%
+            p
+                margin-top: 30px
+                margin-bottom: 40px
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                min-height: 48px
+            span
+                font-weight: 600
+                font-size: 36px
+                line-height: 44px
+                display: inline-block
+                margin-bottom: 25px
+                color: $akcent
+            .btn
+                display: inline-block
+                font-size: 18px
+                line-height: 21px
+                color: #FFFFFF
+                background: $mainColor
+                border-radius: 30px
+                padding: 15px 50px
+                border: 1px solid $mainColor
+                transition: .3s all linear
+                &:hover
+                    background: transparent
+                    color: $mainColor
+.paymant
+    background-image: url(../img/paymant-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center right
+    padding-top: 110px
+    padding-bottom: 80px
+    position: relative
+    .paymant-ice-1
+        pointer-events: none
+        position: absolute
+        top: -105px
+        left: 10vw
+    .paymant-ice-3
+        pointer-events: none
+        position: absolute
+        top: -170px
+        right: 10vw
+    h2
+        font-size: 40px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 70px
+        span
+            font-size: 40px
+            color: $akcent
+    &-inner
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-bottom: 85px
+        &__block
+            flex-basis: calc( (100% - 20px) / 2 )
+            background: #FFFFFF
+            box-shadow: 0px 0px 30px rgba(19, 69, 113, 0.5)
+            border-radius: 20px
+            min-height: 280px
+            padding-top: 80px
+            padding-left: 85px
+            position: relative
+            p
+                color: $mainColor
+                font-weight: 600
+                font-size: 24px
+                line-height: 29px
+                span
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 29px
+                    color: $akcent
+            img
+                position: absolute
+            &:first-child
+                img
+                    bottom: -50px
+                    left: 40px
+            &:last-child
+                img
+                    top: -60px
+                    right: 40px
+    .btn
+        padding: 20px 75px
+        display: block
+        margin: 0 auto
+        background: $akcent
+        border-radius: 40px
+        font-size: 24px
+        color: #FFFFFF
+        max-width: 325px
+        text-align: center
+        border: 1px solid $akcent
+        transition: .3s all linear
+        &:hover
+            background-color: transparent
+            color: $akcent
+.about
+    background-image: url(../img/about_bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top right
+    padding-top: 56px
+    padding-bottom: 80px
+    position: relative
+    .about-ice-1
+        pointer-events: none
+        position: absolute
+        right: 10vw
+        top: -120px
+    .about-ice-2
+        pointer-events: none
+        position: absolute
+        left: -130px
+        top: -80px
+    .about-ice-3
+        pointer-events: none
+        position: absolute
+        left: 10vw
+        bottom: -50px
+    .about-ice-4
+        pointer-events: none
+        position: absolute
+        right: 10vw
+        bottom: -100px
+        z-index: 1
+    h2
+        font-size: 40px
+        color: $mainColor
+        margin-bottom: 22px
+        text-align: center
+    &-inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 1020px
+        margin: 0 auto
+        img
+            margin-right: 90px
+        p
+            font-size: 20px
+            line-height: 26px
+            color: $mainColor
+            margin-bottom: 25px
+        span
+            font-size: 18px
+            color: $mainColor
+.contacts
+    background-image: url(../img/contacts-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center right
+    padding-top: 90px
+    padding-bottom: 80px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    .contacts-ice
+        position: absolute
+        pointer-events: none
+        left: 15vw
+        bottom: 0px
+    &-inner
+        width: 100%
+        max-width: 780px
+        min-height: 380px
+        background: #FFFFFF
+        box-shadow: 0px 0px 30px rgba(19, 69, 113, 0.5)
+        border-radius: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        flex-direction: column
+        h2
+            font-family: Open Sans
+            font-size: 40px
+            font-weight: 400
+            color: $mainColor
+            margin-bottom: 5px
+        .tel
+            font-weight: 600
+            font-size: 40px
+            color: $mainColor
+            margin-bottom: 25px
+            span
+                font-weight: 600
+                font-size: 40px
+                color: $akcent
+        &__buttons
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 15px
+            a
+                min-width: 305px
+                height: 65px
+                border-radius: 40px
+                margin: 0 10px
+                color: #ffffff
+                font-size: 18px
+                display: flex
+                align-items: center
+                justify-content: center
+                transition: .3s all linear
+                &:first-child
+                    background: #4A9DFF
+                    &:hover
+                        background: #3F84D3
+                &:last-child
+                    background: #38E47D
+                    &:hover
+                        background: #33D072
+        p
+            margin-bottom: 15px
+            font-size: 24px
+            color: $mainColor
+        .inst
+            font-size: 40px
+            color: $akcent
+            transition: .3s all linear
+            &:hover
+                opacity: 0.55
+.footer
+    padding: 30px 0
+    background: $mainColor
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .phone
+            display: flex
+            align-items: center
+            .tel
+                margin-left: 5px
+                font-size: 22px
+                color: #ffffff
+                span
+                    font-size: 22px
+                    color: $akcent
+        ul
+            li
+                font-size: 12px
+                line-height: 16px
+                text-align: center
+                color: #FFFFFF
+                opacity: 0.5
+.modal, .modal-catalog
+    z-index: 100
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+    max-width: 725px
+    min-height: 570px
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(19, 69, 113, 0.5)
+    border-radius: 20px
+    overflow: hidden
+    display: none
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    padding: 30px 100px
+    text-align: center
+    .modal-ice-1
+        pointer-events: none
+        position: absolute
+        right: -30px
+        top: 50%
+        transform: translateY(-50%)
+    .modal-ice-2
+        pointer-events: none
+        position: absolute
+        left: 0
+        top: 0
+    .close
+        position: absolute
+        top: 30px
+        right: 30px
+        font-size: 30px
+        color: #333333
+        z-index: 2
+        cursor: pointer
+    .price
+        display: block
+        font-weight: bold
+        font-size: 24px
+        color: $akcent
+        margin-bottom: 30px
+        z-index: 2
+    h2
+        z-index: 2
+        font-family: 'Open Sans'
+        font-size: 30px
+        line-height: 41px
+        color: $mainColor
+        span
+            font-family: 'Open Sans'
+            font-size: 30px
+            line-height: 41px
+            color: $akcent
+            margin-bottom: 20px
+    p
+        z-index: 2
+        margin-bottom: 40px
+        font-size: 24px
+        color: $mainColor
+    form
+        z-index: 2
+        width: 100%
+        align-items: center
+        justify-content: center
+        display: flex
+        flex-direction: column
+        input
+            display: block
+            width: 100%
+            max-width: 420px
+            height: 55px;
+            border: 1px solid $mainColor
+            border-radius: 30px
+            margin-bottom: 25px
+            font-size: 18px
+            line-height: 25px
+            outline: none
+            color: rgba(19, 69, 113, 0.7)
+        input.submit
+            margin-top: 20px
+            margin-bottom: 0
+            background-color: $akcent
+            border: 1px solid $akcent
+            color: #ffffff
+            transition: .3s all linear
+            cursor: pointer
+            &:hover
+                background-color: transparent
+                color: $akcent
+        input.email
+            padding-left: 65px
+            background-image: url(../img/email.png)
+            background-repeat: no-repeat
+            background-position: 30px center
+        input.tel
+            padding-left: 65px
+            background-image: url(../img/tel.png)
+            background-repeat: no-repeat
+            background-position: 30px center
+        
+.modal-catalog form input.submit
+    border: 1px solid $mainColor
+    background-color: $mainColor
+    &:hover
+        color: $mainColor
+    
+    
+
+
+@media ( max-width: 1300px )
+    .container
+        padding-left: 15px
+        padding-right: 15px
+    .catalog-inner__block p
+        min-height: 72px
+    .paymant .paymant-ice-1
+        left: 0
+    .paymant .paymant-ice-3
+        right: 0
+    .header .ices .ice-6
+        top: 280px !important
+
+@media ( max-width: 1000px )
+    .contacts-ice,
+    .header .ices,
+    .paymant-ice-1,
+    .paymant-ice-3,
+    .about-ice-1,
+    .about-ice-2,
+    .about-ice-3,
+    .about-ice-4
+        display: none
+    .header .hvost
+        max-width: 500px
+        bottom: 50%
+        transform: translateY(50%)
+    .catalog-inner__block span
+        display: block
+    .catalog-inner
+        flex-wrap: wrap
+        &__block
+            flex-basis: calc( (100% - 30px) / 2)
+            margin-bottom: 30px
+    .paymant-inner
+        flex-wrap: wrap
+        margin-bottom: 0
+        &__block
+            flex-basis: 100%
+            margin-bottom: 130px
+    .about-inner
+        flex-direction: column
+        img
+            margin-right: 0
+            margin: 0 auto
+            margin-bottom: 30px
+            max-width: 100%
+    .header-main h1 br
+        display: none
+    .header-top ul
+        flex-direction: column
+        margin-top: 0
+        z-index: 10
+        position: fixed
+        top: 0
+        bottom: 0
+        width: 50%
+        left: 100%
+        background-color: #ffffffe3
+        transition: .3s all linear
+        align-items: flex-end
+        justify-content: center
+        padding-right: 30px
+        li
+            margin: 30px 0
+    .header-top ul.active
+        left: 50%
+    .header
+        padding-top: 30px
+        &-top
+            flex-direction: column
+            align-items: center
+            position: relative
+            img
+                margin-bottom: 20px
+            &__contacts
+                align-items: center
+    .burger
+        z-index: 11
+        position: absolute
+        top: 5px
+        right: 0
+        width: 30px
+        height: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        span
+            width: 100%
+            height: 3px
+            background-color: $mainColor
+        &::before
+            content: ''
+            position: absolute
+            transform-origin: center center
+            width: 100%
+            height: 3px
+            background-color: $mainColor
+            top: 0
+            transition: .3s all linear
+        &::after
+            content: ''
+            position: absolute
+            transform-origin: center center
+            width: 100%
+            height: 3px
+            background-color: $mainColor
+            bottom: 0
+            transition: .3s all linear
+    .burger.active
+        span
+            display: none
+        &::before
+            transform: rotate(45deg)
+            top: calc( 50% - 1.5px )
+        &::after
+            transform: rotate(-45deg)
+            bottom: calc( 50% - 1.5px )
+            
+
+
+@media ( max-width: 700px )
+    .contacts-inner__buttons
+        flex-direction: column
+        a   
+            margin-bottom: 10px
+    .contacts-inner
+        padding-top: 10px
+        padding-bottom: 15px
+    .header .hvost
+        max-width: 300px
+    .header
+        background-position: center left
+    .modal, .modal-catalog
+        padding: 30px
+
+@media ( max-width: 500px )
+    .modal h2, .modal-catalog h2,
+    .modal h2, .modal-catalog h2 span
+        font-size: 28px
+        line-height: 36px
+    .catalog-inner__block
+        flex-basis: 100%
+        p
+            min-height: 0
+    .paymant-inner__block
+        padding: 60px 10px 10px 60px
+        br
+            display: none
+    .footer .container
+        flex-direction: column
+        ul
+            margin: 20px 0
+    .header-main h1
+        font-size: 40px
+        line-height: 48px
+        span
+            font-size: 40px
+            line-height: 48px
+    .header-top ul
+        padding-left: 10px
+        width: 70%
+    .header-top ul.active
+        left: 30%
+
+
+

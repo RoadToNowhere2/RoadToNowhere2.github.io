@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рыба</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <img src="img/header-logo.png" alt="">
+                <ul>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#dostavka">Доставка и оплата </a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li class="close"></li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="header-top__contacts">
+                    <a class="tel" href="tel:+79995285848"><span>7 999</span> 528 58 48</a>
+                    <a class="btn js-modal wow animate__animated animate__fadeIn" href="#">Перезвоните мне</a>
+                </div>
+            </div>
+            <div class="header-main">
+                <h1 class="wow animate__animated animate__fadeInLeft">
+                    СВЕЖАЯ КРАСНАЯ РЫБА И МОРЕПРОДУКТЫ <br>
+                    <span>С ДОСТАВКОЙ ПО САНКТ-ПЕТЕРБУРГУ</span>
+                </h1>
+                <ul>
+                    <li>
+                        В нашем ассортименте есть как сырая рыба, <br>
+                        так и готовая к употреблению
+                    </li>
+                    <li>Вся продукция сертифицирована</li>
+                    <li>
+                        Возврат денег при несоблюдении <br>
+                        времени доставки
+                    </li>
+                </ul>
+                <a href="#catalog" class="btn wow animate__animated animate__fadeIn">Перейти в каталог</a>
+            </div>
+            <div class="ices" id="scene">
+                <img data-depth="0.1" class="ice-1" src="img/firstscreen-ice-1.png" alt="">
+                <img data-depth="0.2" class="ice-2" src="img/firstscreen-ice-2.png" alt="">
+                <img data-depth="0.25" class="ice-3" src="img/firstscreen-ice-3.png" alt="">
+                <img data-depth="0.3" class="ice-4" src="img/firstscreen-ice-4.png" alt="">
+                <img data-depth="0.28" class="ice-5" src="img/firstscreen-ice-5.png" alt="">
+                <img data-depth="0.15" class="ice-6" src="img/firstscreen-ice-6.png" alt="">
+                <img data-depth="0.36" class="ice-7" src="img/firstscreen-ice-7.png" alt="">
+                <img data-depth="0.1" class="ice-8" src="img/firstscreen-ice-8.png" alt="">
+                <img data-depth="0.25" class="ice-9" src="img/firstscreen-ice-9.png" alt="">
+                <img data-depth="0.19" class="ice-10" src="img/firstscreen-ice-10.png" alt="">
+                <img data-depth="0.2" class="ice-11" src="img/firstscreen-ice-11.png" alt="">
+            </div>
+        </div>
+        <img src="img/hvost.png" alt="" class="hvost">
+    </header>
+
+    <section id="catalog" class="catalog container">
+        <h2 class="wow animate__animated animate__fadeInDown">КАТАЛОГ <span>НАШЕЙ ПРОДУКЦИИ</span></h2>
+        <div class="catalog-inner">
+            <div class="catalog-inner__block">
+                <img src="img/catalog-img-1.png" alt="">
+                <p>
+                    Форель слабой соли <br>
+                    в вакуумной упаковке
+                </p>
+                <span>1500 р/кг</span>
+                <a href="#" class="btn modal-catalog-open-1">Заказать</a>
+            </div>
+            <div class="catalog-inner__block">
+                <img src="img/catalog-img-1.png" alt="">
+                <p>
+                    Форель горячего копчения <br>
+                    в вакуумной упаковке
+                </p>
+                <span>770 р/кг</span>
+                <a href="#" class="btn modal-catalog-open-2">Заказать</a>
+            </div>
+            <div class="catalog-inner__block">
+                <img src="img/catalog-img-1.png" alt="">
+                <p>
+                    Форель потрошеная <br>
+                    без головы
+                </p>
+                <span>720 р/кг</span>
+                <a href="#" class="btn modal-catalog-open-3">Заказать</a>
+            </div>
+            <div class="catalog-inner__block">
+                <img src="img/catalog-img-1.png" alt="">
+                <p>
+                    Икра форелевая
+                </p>
+                <span>1900 р/кг</span>
+                <a href="#" class="btn modal-catalog-open-4">Заказать</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dostavka" class="paymant">
+        <div class="container">
+            <h2 class="wow animate__animated animate__fadeInDown">ДОСТАВКА <span>И ОПЛАТА</span></h2>
+            <div class="paymant-inner">
+                <div class="paymant-inner__block">
+                    <p>
+                        <span>Оплатить товар</span> вы можете наличными <br>
+                        или переводом Сбербанк онлайн
+                    </p>
+                    <img src="img/card.png" alt="" class="wow animate__animated animate__fadeInUp ">
+                </div>
+                <div class="paymant-inner__block">
+                    <p>
+                        <span>Бесплатная доставка</span> по Санкт-Петербургу <br>
+                        при заказе от 4000 р
+                        <br><br>
+                        Стоимость доставки 400 р
+                    </p>
+                    <img src="img/car.png" alt="" class="wow animate__animated animate__fadeInRight">
+                </div>
+            </div>
+            <a href="#" class="btn js-modal wow animate__animated animate__fadeIn">Сделать заказ</a>
+        </div>
+        <img src="img/paymant-ice-1.png" alt="" class="paymant-ice-1">
+        <img src="img/paymant-ice-3.png" alt="" class="paymant-ice-3">
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="wow animate__animated animate__fadeInDown">О НАС</h2>
+            <div class="about-inner">
+                <div class="about-inner__block">
+                    <img src="img/about-img.png" alt="" class="wow animate__animated animate__fadeInLeft">
+                </div>
+                <div class="about-inner__block">
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                        “ Я понимаю, как вам важно найти вкусный продукт
+                        с известным сроком годности, условиями хранения,
+                        датой и местом производства. Именно поэтому я готов предоставить вам такую продукцию!
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                        Отборная, свежая и готовая к употреблению рыба,
+                        прямиком из Карелии, может в миг оказаться
+                        на вашем столе благодаря пунктуальной доставке
+                        до двери по Санкт-Петербургу
+                    </p>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
+                        Жду вас! ”
+                    </p>
+                    <span class="wow animate__animated animate__fadeInUp" data-wow-delay="1.5s">Юдин Александр Андреевич</span>
+                </div>
+            </div>
+        </div>
+        <img src="img/about-ice-1.png" alt="" class="about-ice-1">
+        <img src="img/about-ice-2.png" alt="" class="about-ice-2">
+        <img src="img/about-ice-3.png" alt="" class="about-ice-3">
+        <img src="img/about-ice-4.png" alt="" class="about-ice-4">
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="contacts-inner">
+            <h2 >Свяжитесь с нами:</h2>
+            <a href="tel:+79995285848" class="tel"><span>+7 999</span> 528 58 48</a>
+            <div class="contacts-inner__buttons">
+                <a href="">Написать в Telegram</a>
+                <a href="">Написать в Whatsapp</a>
+            </div>
+            <p>Подписывайтесь на наш инстаграм:</p>
+            <a href="" class="inst">@рыбарыба</a>
+        </div>
+        <img src="img/contacts-ice.png" alt="" class="contacts-ice">
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="img/footer-logo.png" alt="">
+            <ul>
+                <li>На сайте используются изображения с:</li>
+                <li><a href="https://www.freepik.com/photos/winter">Winter photo created by Racool_studio - www.freepik.com</a></li>
+                <li><a href="https://www.freepik.com/photos/texture">Texture photo created by freestockcenter - www.freepik.com</a></li>
+                <li><a href="https://ru.freepik.com/vectors/background">Background вектор создан(а) createvil - ru.freepik.com</a></li>
+                <li><a href="https://www.freepik.com/photos/winter">Winter photo created by Racool_studio - www.freepik.com</a></li>
+                <li><a href="https://www.freepik.com/photos/winter">Winter photo created by Racool_studio - www.freepik.com</a></li>
+            </ul>
+            <div class="phone">
+                <img src="img/tel.svg" alt="">
+                <a class="tel" href="tel:+79995285848"><span>7 999</span> 528 58 48</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <h2>
+            Чтобы сделать заказ оставьте <br>
+            <span>свои данные ниже</span>
+        </h2>
+        <p>Мы свяжемся с Вами в ближайшее время</p>
+        <form action="">
+            <input type="email" placeholder="Введите Ваш e-mail" class="email">
+            <input type="tel" id="tel" placeholder="Введите Ваш телефон" required class="tel">
+            <input type="submit" value="Сделать заказ" class="submit">
+        </form>
+        <div class="close">&#10006;</div>
+        <img src="img/modal-ice-1.png" alt="" class="modal-ice-1">
+        <img src="img/modal-ice-2.png" alt="" class="modal-ice-2">
+    </div>
+
+    <div class="modal-catalog modal-catalog-1 ">
+        <h2><span>Заполните форму</span> чтобы заказать</h2>
+        <p>Форель слабой соли в вакуумной упаковке</p>
+        <span class="price">1500 р/кг</span>
+        <form action="">
+            <input type="email" placeholder="Введите Ваш e-mail" class="email">
+            <input type="tel" id="tel" placeholder="Введите Ваш телефон" required class="tel">
+            <input type="submit" value="Сделать заказ" class="submit">
+        </form>
+        <div class="close">&#10006;</div>
+        <img src="img/modal-ice-1.png" alt="" class="modal-ice-1">
+        <img src="img/modal-ice-2.png" alt="" class="modal-ice-2">
+    </div>
+
+    <div class="modal-catalog modal-catalog-2 ">
+        <h2><span>Заполните форму</span> чтобы заказать</h2>
+        <p>Форель горячего копчения в вакуумной упаковке</p>
+        <span class="price">770 р/кг</span>
+        <form action="">
+            <input type="email" placeholder="Введите Ваш e-mail" class="email">
+            <input type="tel" id="tel" placeholder="Введите Ваш телефон" required class="tel">
+            <input type="submit" value="Сделать заказ" class="submit">
+        </form>
+        <div class="close">&#10006;</div>
+        <img src="img/modal-ice-1.png" alt="" class="modal-ice-1">
+        <img src="img/modal-ice-2.png" alt="" class="modal-ice-2">
+    </div>
+
+    <div class="modal-catalog modal-catalog-3 ">
+        <h2><span>Заполните форму</span> чтобы заказать</h2>
+        <p>Форель потрошеная без головы</p>
+        <span class="price">720 р/кг</span>
+        <form action="">
+            <input type="email" placeholder="Введите Ваш e-mail" class="email">
+            <input type="tel" id="tel" placeholder="Введите Ваш телефон" required class="tel">
+            <input type="submit" value="Сделать заказ" class="submit">
+        </form>
+        <div class="close">&#10006;</div>
+        <img src="img/modal-ice-1.png" alt="" class="modal-ice-1">
+        <img src="img/modal-ice-2.png" alt="" class="modal-ice-2">
+    </div>
+
+    <div class="modal-catalog modal-catalog-4 ">
+        <h2><span>Заполните форму</span> чтобы заказать</h2>
+        <p>Икра форелевая</p>
+        <span class="price">1900 р/кг</span>
+        <form action="">
+            <input type="email" placeholder="Введите Ваш e-mail" class="email">
+            <input type="tel" id="tel" placeholder="Введите Ваш телефон" required class="tel">
+            <input type="submit" value="Сделать заказ" class="submit">
+        </form>
+        <div class="close">&#10006;</div>
+        <img src="img/modal-ice-1.png" alt="" class="modal-ice-1">
+        <img src="img/modal-ice-2.png" alt="" class="modal-ice-2">
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js""></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

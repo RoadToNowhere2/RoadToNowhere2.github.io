@@ -78,17 +78,17 @@ $(document).ready(function () {
 
 
 
-    $('.catalog-inner__block img').on('mouseenter', function() {
-        $(this).addClass('animate__animated');
-        $(this).addClass('animate__zoomIn');
+    // $('.catalog-inner__block img').on('mouseenter', function() {
+    //     $(this).addClass('animate__animated');
+    //     $(this).addClass('animate__zoomIn');
 
-        let item = $(this);
+    //     let item = $(this);
 
-        setTimeout(function() {
-            $(item).removeClass('animate__animated');
-            $(item).removeClass('animate__zoomIn');
-        }, 1000)
-    })
+    //     setTimeout(function() {
+    //         $(item).removeClass('animate__animated');
+    //         $(item).removeClass('animate__zoomIn');
+    //     }, 1000)
+    // })
 
 
 

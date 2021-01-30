@@ -15,6 +15,20 @@ $(document).ready(function () {
             $('.footer-top-contacts__lang--dropdawn').toggleClass('active');
             
         })
+
+        $('.product-inner__info .select-lang').on('click', function (e) {
+    
+            e.preventDefault();
+            $('.select-lang__dropdawn').toggleClass('active');
+            
+        })
+
+        $('.select-lang__dropdawn span').on('click', function (e) {
+    
+            e.preventDefault();
+            $('.product-inner__info .select-lang h3').text($(this).text());
+            
+        })
     }
 
     // cart
@@ -83,17 +97,54 @@ $(document).ready(function () {
 
         const plusProductOnCart = (id) => {
 
-            if (cart[id]) {
-                allProductsOnCart++;
-                cart[id].count++;
+            if ($('body').hasClass('single-page')) {
 
+                let numbers = $('.count-number').text();
+                let language = $('.select-lang h3').text();
+                +numbers;
+
+                if (cart[id]) {
+
+                    if (language.length < 5) {
+                        cart[id].lang = language;
+                    }
+
+                    allProductsOnCart+= +numbers;
+                    cart[id].count+= +numbers;
+
+    
+    
+                } else {
+
+                    allProductsOnCart+= +numbers;
+                    cart[id] = priceList[id];
+                    cart[id].count = +numbers;
+
+
+
+                    if (language.length < 5) {
+                        cart[id].lang = language;
+                    }
+
+
+                }
 
             } else {
-                
-                allProductsOnCart++;
-                cart[id] = priceList[id];
-                cart[id].count = 1;
+
+                if (cart[id]) {
+                    allProductsOnCart++;
+                    cart[id].count++;
+    
+    
+                } else {
+                    
+                    allProductsOnCart++;
+                    cart[id] = priceList[id];
+                    cart[id].count = 1;
+                }
             }
+
+            
 
             if ($('body').hasClass('cart-page')) {
                 $('.cart-inner__productsList--item').detach();
@@ -217,6 +268,9 @@ $(document).ready(function () {
 
             }
 
+            
+
+
             renderCart();
         }
 
@@ -255,6 +309,7 @@ $(document).ready(function () {
             $('.cart-inner__info--price').text(`${cartPrice} грн`)
 
             console.log(cart);
+
 
             $('.mini-cart .count').text(allProductsOnCart);
             localStorage.setItem('cart', JSON.stringify(cart));
@@ -385,7 +440,12 @@ $(document).ready(function () {
                     })
     
     
-                }   
+                }  
+                
+                
+
+                
+
 
                 renderCart();
             }
@@ -394,12 +454,65 @@ $(document).ready(function () {
 
         loadCart(); 
         
+        if ($('body').hasClass('single-page')) {
 
+            let element = $('.count-number');
+        
+            $('.count-plus').on('click', function() {
+
+                let id = $(this).data('id');
+                let elementText = $(element).text();
+                let price = $('.product-inner__info .price-info .price');
+
+                +elementText
+                elementText++
+
+                $(element).text(elementText);
+                $(price).text(`${elementText * priceList[id].price} грн`)
+                
+            })
+
+            $('.count-minus').on('click', function() {
+
+                let id = $(this).data('id');
+                let elementText = $(element).text();
+                let price = $('.product-inner__info .price-info .price');
+
+                +elementText
+
+                if (elementText == 1) {
+                    return
+                } else {
+                    elementText--
+
+                    $(element).text(elementText);
+                    $(price).text(`${elementText * priceList[id].price} грн`)
+                }
+                
+            })
+            
+        }
 
         
 
     }
 
+
+    {
+        //single product
+
+        let img = $('.main-img');
+
+        $('.product-inner__slider--nav img').on('click', function() {
+            let src = $(this).attr('src');
+            $(img).attr('src', src);
+        })
+
+
+
+
+        
+    }
 
 
 });

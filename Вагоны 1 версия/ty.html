@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасибо!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+    
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background-image: url(img/header-bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top right;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Спасибо за обращение!</h2>
+        <p>Наши специалисты свяжутся с вами в ближайшее время</p>
+    </section>
+  
+  <script>
+    setTimeout(function(){
+      window.location.href = '/';
+    }, 4000)
+  </script>
+</body>
+</html>
